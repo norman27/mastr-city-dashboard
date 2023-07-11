@@ -1,8 +1,8 @@
 FROM php:8.2-apache
 
 # install php dependencies
-RUN apt-get update && apt-get upgrade -y && apt-get install -y net-tools git libzip-dev libpng-dev zsh unzip build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev python3
-RUN docker-php-ext-install pdo pdo_mysql sockets zip gd
+RUN apt-get update && apt-get upgrade -y && apt-get install -y net-tools git libzip-dev libpng-dev zsh unzip build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev python3 libxml2-dev
+RUN docker-php-ext-install pdo pdo_mysql sockets zip gd soap
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 
