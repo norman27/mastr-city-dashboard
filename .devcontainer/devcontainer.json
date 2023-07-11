@@ -1,0 +1,33 @@
+{
+  "name": "marktstammdatenregister",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          }
+        },
+        "php.validate.executablePath": "/usr/local/bin/php"
+      },
+      "extensions": [
+        "mutantdino.resourcemonitor",
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "mrmlnc.vscode-apache",
+        "esbenp.prettier-vscode",
+	"dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [
+    8080,
+    8081
+  ],
+  "postCreateCommand": "./.devcontainer/postcreate.sh",
+  "remoteUser": "root"
+}
