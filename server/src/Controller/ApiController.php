@@ -12,9 +12,36 @@ class ApiController extends AbstractController
     #[Route('/api', name: 'app_api')]
     public function index(): JsonResponse
     {
-        $soap = new SoapClient('https://test.marktstammdatenregister.de/MaStRAPI/wsdl/mastr.wsdl');
-        var_dump($soap->__getFunctions()); exit;
+        $apiKey = $this->getParameter('app.mastr_api_key');
+        $apiUser = $this->getParameter('app.mastr_api_user');
+        $wsdl = $this->getParameter('app.mastr_api_wsdl');
 
+        $soap = new SoapClient($wsdl);
+
+        $response = $soap->GetGefilterteListeStromErzeuger(
+            [
+                'apiKey' => $apiKey,
+                'marktakteurMastrNummer' => $apiUser,
+                //'postleitzahl' => 44628,
+                'ort' => 'Herne',
+                'einheitBetriebsstatus' => 'InBetrieb'
+            ]
+        );
+
+        foreach ($response->Einheiten as $einheit) {
+            var_dump($einheit);
+        }
+
+        var_dump(
+            $soap->GetAktuellerStandTageskontingent(
+                [
+                    'apiKey' => $apiKey,
+                    'marktakteurMastrNummer' => $apiUser,
+                ]
+            )
+        );
+        
+        exit;
 
         return $this->json([
             'message' => 'Welcome to your new controller!',
