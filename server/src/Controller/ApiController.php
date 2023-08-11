@@ -2,10 +2,13 @@
 
 namespace App\Controller;
 
+use App\Marktstammdatenregister\Soap\Client;
 use SoapClient;
+use stdClass;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Marktstammdatenregister\Types\Einheit;
 
 class ApiController extends AbstractController
 {
