@@ -23,6 +23,16 @@ class Client
         $this->soapClient = new SoapClient('https://www.marktstammdatenregister.de/MaStRApi/wsdl/mastr.wsdl');
     }
 
+    public function GetAktuellerStandTageskontingent(): stdClass
+    {
+        return $this->soapClient->GetAktuellerStandTageskontingent(
+            [
+                'apiKey' => $this->apiKey,
+                'marktakteurMastrNummer' => $this->apiUser,
+            ]
+        );
+    }
+
     /**
      * @return Einheit[]
      */
