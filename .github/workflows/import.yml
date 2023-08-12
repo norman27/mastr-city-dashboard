@@ -46,4 +46,6 @@ jobs:
       #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
-        run: bin/console
+        run: 
+            server/bin/console
+            server/bin/console -V
