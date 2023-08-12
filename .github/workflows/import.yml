@@ -46,6 +46,6 @@ jobs:
       #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
-        run: 
+        run: |
             APP_ENV=prod server/bin/console
             APP_ENV=prod server/bin/console -V
