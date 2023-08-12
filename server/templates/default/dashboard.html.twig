@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+{% set title = 'Herne Solar' %}
+{% set pageTitle = 'Dashboard' %}
+{% block body %}
+    <div class="row">
+
+        <!-- Area Chart -->
+        <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Installed Power by Date</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <script type="text/javascript">
+                        var myAreaChartLabels = {{ areaChart.labels|json_encode|raw }};
+                        var myAreaChartValuesPower = {{ areaChart.values.power|json_encode|raw }};
+                        var myAreaChartValuesUnits = {{ areaChart.values.units|json_encode|raw }};
+                        </script>
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Power Clusters</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-center small">
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-primary"></i> C1
+                        </span>
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-success"></i> C2
+                        </span>
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-info"></i> C3
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

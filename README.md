@@ -1,9 +1,11 @@
 # Marktstammdatenregister Dashboard
 
+![Preview](https://raw.githubusercontent.com/norman27/marktstammdatenregister/main/docs/preview.png)
+
 ## TODOs
-- [ ] add github action daily running the importer
-- [ ] create proof of concept with dashboard and initial visualizations
-- [ ] add a local mysql container
+- [x] add github action daily running the importer
+- [x] create proof of concept with dashboard and initial visualizations
+- [ ] add a local mysql container?
 - [ ] add documentation
 
 ## Requirements

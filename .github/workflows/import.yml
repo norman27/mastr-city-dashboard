@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  trigger_import:
+  trigger-import:
     name: Import
     runs-on: ubuntu-latest
     steps:
