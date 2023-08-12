@@ -40,10 +40,10 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install Composer dependencies
-        run: cd server && composer install --no-dev
+        run: cd server && composer install --no-dev --no-scripts
 
       #- name: Check Symfony requirements
       #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
-        run: bin/console -V
+        run: bin/console
