@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Marktstammdatenregister;
+namespace App\Importer;
 
-use App\Marktstammdatenregister\Soap\Client;
-use App\Marktstammdatenregister\Types\Einheit;
+use App\Importer\SoapClient;
+use App\Importer\Types\Einheit;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\ProgressBar;
 
 class SolarFacade
 {
-    private Client $client;
+    private SoapClient $client;
     private ?OutputInterface $output = null;
 
-    public function __construct(Client $client)
+    public function __construct(SoapClient $client)
     {
         $this->client = $client;    
     }

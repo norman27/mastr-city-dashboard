@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Marktstammdatenregister\Types;
+namespace App\Importer\Types;
 
 class Einheit 
 {

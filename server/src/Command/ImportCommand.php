@@ -3,7 +3,7 @@
 namespace App\Command;
 
 use App\Entity\ImportData;
-use App\Marktstammdatenregister\SolarFacade;
+use App\Importer\SolarFacade;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -28,6 +28,7 @@ class ImportCommand extends Command
     protected function configure(): void
     {
         $this
+            ->setDescription('import data for a city')
             ->addArgument('city', InputArgument::REQUIRED, 'City to import data for')
         ;
     }

@@ -1,0 +1,26 @@
+name: Trigger Import
+on:
+  schedule:
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger_import:
+    name: Import
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+            
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.2
+          coverage: none
+          tools: composer:v2
+          extensions: pdo pdo_mysql sockets zip gd soap
+        env:
+          update: true
+
+      - name: Check PHP Version
+        run: php -v

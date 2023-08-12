@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Marktstammdatenregister\SolarUnits;
-use App\Marktstammdatenregister\Types\Einheit;
+use App\Importer\SolarUnits;
+use App\Importer\Types\Einheit;
 use stdClass;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Marktstammdatenregister\Soap;
+namespace App\Importer;
 
-use SoapClient;
-use App\Marktstammdatenregister\Types\Einheit;
+use App\Importer\Types\Einheit;
 use stdClass;
 
-class Client 
+class SoapClient 
 {
     private string $apiKey;
     private string $apiUser;
@@ -20,7 +19,7 @@ class Client
         // Available endpoints:
         // Test - https://test.marktstammdatenregister.de/MaStRAPI/wsdl/mastr.wsdl
         // Prod - https://www.marktstammdatenregister.de/MaStRApi/wsdl/mastr.wsdl
-        $this->soapClient = new SoapClient('https://www.marktstammdatenregister.de/MaStRApi/wsdl/mastr.wsdl');
+        $this->soapClient = new \SoapClient('https://www.marktstammdatenregister.de/MaStRApi/wsdl/mastr.wsdl');
     }
 
     public function GetAktuellerStandTageskontingent(): stdClass

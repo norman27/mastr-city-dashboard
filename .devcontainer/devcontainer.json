@@ -20,7 +20,8 @@
         "xdebug.php-debug",
         "mrmlnc.vscode-apache",
         "esbenp.prettier-vscode",
-	      "dbaeumer.vscode-eslint"
+	      "dbaeumer.vscode-eslint",
+        "github.vscode-github-actions"
       ]
     }
   },

@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Marktstammdatenregister\Soap\Client as SoapClient;
+use App\Importer\SoapClient;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
