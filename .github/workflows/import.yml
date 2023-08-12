@@ -30,7 +30,7 @@ jobs:
 
       - name: Get composer cache directory
         id: composer-cache
-        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+        run: echo "dir=$(cd server && composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Cache composer dependencies
         uses: actions/cache@v1
@@ -40,7 +40,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install Composer dependencies
-        run: composer install --no-dev
+        run: cd server && composer install --no-dev
 
       #- name: Check Symfony requirements
       #  run: vendor/bin/requirements-checker
