@@ -46,6 +46,10 @@ jobs:
       #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
+        env:
+            MASTR_API_KEY: ${{ secrets.MASTR_API_KEY }}
+            MASTR_API_USER: ${{ secrets.MASTR_API_USER }}
+            DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: |
-            APP_ENV=prod server/bin/console
+            APP_ENV=prod MASTR_API_KEY= MASTR_API_USER=$MASTR_API_USER DATABASE_URL= server/bin/console
             APP_ENV=prod server/bin/console -V
