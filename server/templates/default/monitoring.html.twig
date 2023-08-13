@@ -31,22 +31,28 @@
                             <tr>
                                 <th>Date</th>
                                 <th>City</th>
-                                <th>Stats</th>
+                                <th>Units</th>
+                                <th>Gross</th>
+                                <th>Net</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Date</th>
                                 <th>City</th>
-                                <th>Stats</th>
+                                <th>Units</th>
+                                <th>Gross</th>
+                                <th>Net</th>
                             </tr>
                         </tfoot>
                         <tbody>
                             {% for import in imports %}
                             <tr>
-                                <td>{{ import.NameStromerzeugungseinheit }}</td>
-                                <td>{{ import.Postleitzahl }}</td>
-                                <td>{{ import.Inbetriebnahmedatum }}</td>
+                                <td>{{ import.ymd }}</td>
+                                <td>{{ import.city }}</td>
+                                <td>{{ import.units }}</td>
+                                <td>{{ import.gross }}</td>
+                                <td>{{ import.net }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>

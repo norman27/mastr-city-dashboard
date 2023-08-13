@@ -70,10 +70,10 @@ class DashboardController extends AbstractController
     }
 
     #[Route('/monitoring', name: 'app_monitoring')]
-    public function monitoring(): Response 
+    public function monitoring(ImportDataRepository $importDataRepository): Response 
     {
         return $this->render('default/monitoring.html.twig', [
-            'imports' => []
+            'imports' => $importDataRepository->getImportOverview()
         ]);
     }
 
