@@ -22,17 +22,8 @@ jobs:
         env:
           update: true
 
-      #- name: Check PHP Version
-      #  run: php -v
-
-      #- name: Validate composer.json and composer.lock
-      #  run: composer validate
-
       - name: Install Composer dependencies
         run: cd server && APP_ENV=prod composer install --no-dev
-
-      #- name: Check Symfony requirements
-      #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
         env:

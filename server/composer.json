@@ -1,4 +1,6 @@
 {
+    "name": "norman27/mastr-city-dashboard",
+    "description": "Visualize data from Marktstammdatenregister (MaStR, https://www.marktstammdatenregister.de/)",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
