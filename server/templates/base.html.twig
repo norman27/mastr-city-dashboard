@@ -19,6 +19,8 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    {% block stylesheets %}{% endblock %}
+
 </head>
 
 <body id="page-top">
@@ -46,21 +48,21 @@
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_dashboard' %} active{% endif %}">
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Table -->
-            <li class="nav-item">
+            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_table' %} active{% endif %}">
                 <a class="nav-link" href="/table">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Table</span></a>
             </li>
 
             <!-- Nav Item - Monitoring -->
-            <li class="nav-item">
+            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_monitoring' %} active{% endif %}">
                 <a class="nav-link" href="/monitoring">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Monitoring</span></a>
@@ -75,7 +77,7 @@
             </div>
 
             <!-- Nav Item - Documentation -->
-            <li class="nav-item">
+            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_documentation' %} active{% endif %}">
                 <a class="nav-link" href="/documentation">
                     <i class="fas fa-fw fa-file"></i>
                     <span>Documentation</span></a>
@@ -145,62 +147,6 @@
                         <h1 class="h3 mb-0 text-gray-800">{{ pageTitle|default('abc') }}</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Sum Units</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.units|default('') }}</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-solar-panel fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Sum Gross Power</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.gross_power|default('0') }}</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-2x text-gray-300">kW</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Sum Net Power</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.net_power|default('0') }}</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-2x text-gray-300">kW</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                     <!-- Body -->
                     {% block body %}{% endblock %}
 
@@ -261,14 +207,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
+    {% block javascripts %}{% endblock %}
 </body>
 
 </html>

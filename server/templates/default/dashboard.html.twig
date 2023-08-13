@@ -1,7 +1,77 @@
 {% extends 'base.html.twig' %}
+
 {% set title = 'Herne Solar' %}
 {% set pageTitle = 'Dashboard' %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        var myAreaChartLabels = {{ areaChart.labels|json_encode|raw }};
+        var myAreaChartValuesPower = {{ areaChart.values.power|json_encode|raw }};
+        var myAreaChartValuesUnits = {{ areaChart.values.units|json_encode|raw }};
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+{% endblock %}
+
 {% block body %}
+    <!-- Content Row -->
+    <div class="row">
+
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Sum Units</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.units|default('') }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-solar-panel fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Sum Gross Power</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.gross_power|default('0') }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-2x text-gray-300">kW</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Sum Net Power</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ sum.net_power|default('0') }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-2x text-gray-300">kW</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="row">
 
         <!-- Area Chart -->
@@ -15,11 +85,6 @@
                 <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
-                        <script type="text/javascript">
-                        var myAreaChartLabels = {{ areaChart.labels|json_encode|raw }};
-                        var myAreaChartValuesPower = {{ areaChart.values.power|json_encode|raw }};
-                        var myAreaChartValuesUnits = {{ areaChart.values.units|json_encode|raw }};
-                        </script>
                         <canvas id="myAreaChart"></canvas>
                     </div>
                 </div>

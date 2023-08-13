@@ -56,15 +56,25 @@ class DashboardController extends AbstractController
     }
 
     #[Route('/table', name: 'app_table')]
-    public function table(): Response 
+    public function table(ImportDataRepository $importDataRepository): Response 
     {
-        return new Response('TODO');
+        /** @var ImportData $importData */
+        $importData = $importDataRepository->findOneBy(
+            ['city' => 'herne'],
+            ['ymd' => 'DESC'] // this should get us the most recent
+        );
+
+        return $this->render('default/table.html.twig', [
+            'units' => $importData->getSnapshot()
+        ]);
     }
 
     #[Route('/monitoring', name: 'app_monitoring')]
     public function monitoring(): Response 
     {
-        return new Response('TODO');
+        return $this->render('default/monitoring.html.twig', [
+            'imports' => []
+        ]);
     }
 
     #[Route('/documentation', name: 'app_documentation')]
