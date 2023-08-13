@@ -7,12 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Direct", "Referral", "Social"],
+    labels: myPieChartLabels,
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
+      data: myPieChartValues,
+      backgroundColor: ['#ff6961', '#ffb480', '#f8f38d', '#42d6a4', '#59adf6', '#9d94ff', '#c780e8'],
+      hoverBackgroundColor: ['#8d0700', '#993f00', '#938c09', '#145c44', '#07477f', '#0e00a1', '#5a167a'],
     }],
   },
   options: {
@@ -28,7 +27,15 @@ var myPieChart = new Chart(ctx, {
       caretPadding: 10,
     },
     legend: {
-      display: false
+      display: true
+    },
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, chart) {
+          var datasetLabel = chart.labels[tooltipItem.index];
+          return datasetLabel + ': ' + Math.round(chart.datasets[0].data[tooltipItem.index] * 10) / 10 + ' kWp';
+        }
+      }
     },
     cutoutPercentage: 80,
   },

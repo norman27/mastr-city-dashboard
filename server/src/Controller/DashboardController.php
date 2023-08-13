@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'],
+            ['city' => 'neuss'],
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
@@ -23,6 +23,15 @@ class DashboardController extends AbstractController
         $sumNetPower = 0.0;
         $installedPowerByDay = [];
         $installedUnitsByDay = [];
+        $clusters = [
+            '0-1 kWp' => 0.0,
+            '1-10 kWp' => 0.0,
+            '10-30 kWp' => 0.0,
+            '30-100 kWp' => 0.0,
+            '100-500 kWp' => 0.0,
+            '500-1000 kWp' => 0.0,
+            '>1000 kWp' => 0.0,
+        ];
         foreach ($importData->getSnapshot() as $unit) {
             $day = $unit['Inbetriebnahmedatum'];
             if (! isset($installedPowerByDay[$day])) {
@@ -34,6 +43,23 @@ class DashboardController extends AbstractController
 
             $sumGrossPower += (float) $unit['Bruttoleistung'];
             $sumNetPower += (float) $unit['Nettonennleistung'];
+
+            //@TODO not very beutiful
+            if ($unit['Nettonennleistung'] < 1) {
+                $clusters['0-1 kWp'] += (float) $unit['Nettonennleistung'];
+            } elseif ($unit['Nettonennleistung'] < 10) {
+                $clusters['1-10 kWp'] += (float) $unit['Nettonennleistung'];
+            } elseif ($unit['Nettonennleistung'] < 30) {
+                $clusters['10-30 kWp'] += (float) $unit['Nettonennleistung'];
+            } elseif ($unit['Nettonennleistung'] < 100) {
+                $clusters['30-100 kWp'] += (float) $unit['Nettonennleistung'];
+            } elseif ($unit['Nettonennleistung'] < 500) {
+                $clusters['100-500 kWp'] += (float) $unit['Nettonennleistung'];
+            } elseif ($unit['Nettonennleistung'] < 1000) {
+                $clusters['500-1000 kWp'] += (float) $unit['Nettonennleistung'];
+            } else {
+                $clusters['>1000 kWp'] += (float) $unit['Nettonennleistung'];
+            }
         }
 
         ksort($installedPowerByDay);
@@ -45,12 +71,16 @@ class DashboardController extends AbstractController
                 'gross_power' => round($sumGrossPower, 1),
                 'net_power' => round($sumNetPower, 1),
             ],
-            'areaChart' => [
+            'areaChart' => [ //@TODO rename
                 'labels' => array_keys($installedPowerByDay),
                 'values' => [
                     'power' => array_values($installedPowerByDay),
-                    'units' => array_values($installedUnitsByDay),
+                    'units' => array_values($installedUnitsByDay), //@TODO unused
                 ],
+            ],
+            'pieChart' => [ //@TODO rename
+                'labels' => array_keys($clusters),
+                'values' => array_values($clusters),
             ]
         ]);
     }
@@ -60,7 +90,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'],
+            ['city' => 'neuss'],
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
