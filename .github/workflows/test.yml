@@ -49,7 +49,7 @@ jobs:
       #  run: vendor/bin/requirements-checker
 
       - name: Check the Symfony console
-        run: bin/console -V
+        run: server/bin/console -V
 
       #- name: PHP-CS-Fixer
       #  uses: docker://oskarstark/php-cs-fixer-ga
