@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'neuss'],
+            ['city' => 'herne'],
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
@@ -90,7 +90,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'neuss'],
+            ['city' => 'herne'],
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
