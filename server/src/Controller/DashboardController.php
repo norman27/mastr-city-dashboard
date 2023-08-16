@@ -64,6 +64,22 @@ class DashboardController extends AbstractController
 
         ksort($installedPowerByDay);
         ksort($installedUnitsByDay);
+        $installedCumulativeUnits = [];
+
+        foreach ($installedUnitsByDay as $day => $units) {
+            if (empty($installedCumulativeUnits)) {
+                $installedCumulativeUnits[$day] = $units;
+            } else {
+                $installedCumulativeUnits[$day] = $units + end($installedCumulativeUnits);
+            }
+        }
+
+        $activeResult = $this->forward('App\Controller\ApiController::activeList', ['city'  => 'herne']);
+        $filteredActive = [];
+
+        foreach (json_decode($activeResult->getContent()) as $active) {
+            $filteredActive[$active->ymd] = $active->net;
+        }
 
         return $this->render('default/dashboard.html.twig', [
             'sum' => [
@@ -75,13 +91,17 @@ class DashboardController extends AbstractController
                 'labels' => array_keys($installedPowerByDay),
                 'values' => [
                     'power' => array_values($installedPowerByDay),
-                    'units' => array_values($installedUnitsByDay), //@TODO unused
+                    'units' => array_values($installedCumulativeUnits),
                 ],
             ],
             'pieChart' => [ //@TODO rename
                 'labels' => array_keys($clusters),
                 'values' => array_values($clusters),
-            ]
+            ],
+            'netPowerChart' => [
+                'ymd' => array_keys($filteredActive),
+                'net' => array_values($filteredActive),
+            ],
         ]);
     }
 
@@ -99,10 +119,10 @@ class DashboardController extends AbstractController
         ]);
     }
 
-    #[Route('/monitoring', name: 'app_monitoring')]
+    #[Route('/imports', name: 'app_imports')]
     public function monitoring(ImportDataRepository $importDataRepository): Response 
     {
-        return $this->render('default/monitoring.html.twig', [
+        return $this->render('default/imports.html.twig', [
             'imports' => $importDataRepository->getImportOverview()
         ]);
     }

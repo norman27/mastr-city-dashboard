@@ -9,6 +9,9 @@
         var myAreaChartValuesPower = {{ areaChart.values.power|json_encode|raw }};
         var myAreaChartValuesUnits = {{ areaChart.values.units|json_encode|raw }};
 
+        var netPowerChartLabels = {{ netPowerChart.ymd|json_encode|raw }};
+        var netPowerChartValues = {{ netPowerChart.net|json_encode|raw }};
+
         var myPieChartLabels = {{ pieChart.labels|json_encode|raw }}
         var myPieChartValues = {{ pieChart.values|json_encode|raw }};
     </script>
@@ -77,37 +80,44 @@
     </div>
     <div class="row">
 
-        <!-- Area Chart -->
-        <div class="col-xl-8 col-lg-7">
+        <div class="col-xl-12">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Installed Power by Date</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Active Net Power</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
-                        <canvas id="myAreaChart"></canvas>
+                        <canvas id="netPowerChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pie Chart -->
-        <div class="col-xl-4 col-lg-5">
+        <div class="col-xl-6">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">Power Clusters</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-pie">
                         <canvas id="myPieChart"></canvas>
                     </div>
-                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Installed Units by Date</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>

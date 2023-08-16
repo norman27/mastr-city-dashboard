@@ -3,17 +3,76 @@ Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,Bli
 Chart.defaults.global.defaultFontColor = '#858796';
 
 // Area Chart Example
-var ctx = document.getElementById("myAreaChart");
+var ctx = document.getElementById("netPowerChart");
 var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: netPowerChartLabels,
+    datasets: [
+      {
+        label: "Net Power",
+        borderColor: "blue",
+        borderWidth: 1,
+        lineTension: 0,
+        data: netPowerChartValues,
+      }
+    ],
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+      padding: {
+        left: 10,
+        right: 25,
+        top: 25,
+        bottom: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        type: 'time',
+        time: {
+          unit: 'day'
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false
+        },
+        ticks: {
+          maxTicksLimit: 7
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          maxTicksLimit: 5,
+          padding: 10,
+          callback: function(value, index, values) {
+            return value + ' kW';
+          }
+        },
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
+
+// Area Chart Example
+var ctx2 = document.getElementById("myAreaChart");
+console.log(myAreaChartLabels);
+console.log(myAreaChartValuesUnits);
+var myLineChart = new Chart(ctx2, {
   type: 'line',
   data: {
     labels: myAreaChartLabels,
     datasets: [
       {
-        label: "Power",
+        label: "Units",
+        lineTension: 0,
         borderColor: "blue",
         borderWidth: 1,
-        data: myAreaChartValuesPower,
+        data: myAreaChartValuesUnits,
       }
     ],
   },
@@ -45,9 +104,6 @@ var myLineChart = new Chart(ctx, {
         ticks: {
           maxTicksLimit: 5,
           padding: 10,
-          callback: function(value, index, values) {
-            return value + ' kW';
-          }
         },
         gridLines: {
           color: "rgb(234, 236, 244)",

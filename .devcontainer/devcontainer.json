@@ -12,7 +12,8 @@
             "path": "/usr/bin/zsh"
           }
         },
-        "php.validate.executablePath": "/usr/local/bin/php"
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
       },
       "extensions": [
         "mutantdino.resourcemonitor",
