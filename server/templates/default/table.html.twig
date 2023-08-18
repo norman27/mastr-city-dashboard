@@ -29,6 +29,7 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Name</th>
                                 <th>Zip</th>
                                 <th>Activated</th>
@@ -36,18 +37,13 @@
                                 <th>Net Power</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Zip</th>
-                                <th>Activated</th>
-                                <th>Gross Power</th>
-                                <th>Net Power</th>
-                            </tr>
-                        </tfoot>
                         <tbody>
                             {% for unit in units %}
                             <tr>
+                                <td>
+                                    <a href="{{ path('app_detail', {ymd: ymd, city: city, mastr: unit.EinheitMastrNummer }) }}
+">{{ unit.EinheitMastrNummer }}</a>
+                                </td>
                                 <td>{{ unit.NameStromerzeugungseinheit }}</td>
                                 <td>{{ unit.Postleitzahl }}</td>
                                 <td>{{ unit.Inbetriebnahmedatum }}</td>

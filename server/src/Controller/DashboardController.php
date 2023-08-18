@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'],
+            ['city' => 'herne'], // @TODO make this dynamic
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
@@ -32,7 +32,7 @@ class DashboardController extends AbstractController
             '500-1000 kWp' => 0.0,
             '>1000 kWp' => 0.0,
         ];
-        foreach ($importData->getSnapshot() as $unit) {
+        foreach ($importData->snapshot as $unit) {
             $day = $unit['Inbetriebnahmedatum'];
             if (! isset($installedPowerByDay[$day])) {
                 $installedPowerByDay[$day] = 0.0;
@@ -83,7 +83,7 @@ class DashboardController extends AbstractController
 
         return $this->render('default/dashboard.html.twig', [
             'sum' => [
-                'units' => count($importData->getSnapshot()),
+                'units' => count($importData->snapshot),
                 'gross_power' => round($sumGrossPower, 1),
                 'net_power' => round($sumNetPower, 1),
             ],
@@ -110,20 +110,59 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'],
-            ['ymd' => 'DESC'] // this should get us the most recent
+            ['city' => 'herne'], // @TODO make this dynamic
+            ['ymd' => 'DESC'] // this gets us the most recent
         );
 
         return $this->render('default/table.html.twig', [
-            'units' => $importData->getSnapshot()
+            'ymd' => $importData->ymd,
+            'city' => $importData->city,
+            'units' => $importData->snapshot
         ]);
+    }
+
+    #[Route('/detail/{ymd}/{city}/{mastr}', name: 'app_detail')]
+    public function detail(string $ymd, string $city, string $mastr, ImportDataRepository $importDataRepository): Response 
+    {
+        return $this->render('default/detail.html.twig', [
+            'unit' => $importDataRepository->getUnit($ymd, $city, $mastr)
+        ]);
+    }
+
+    #[Route('/diff/{city}/{ymd1}/{ymd2}', name: 'app_diff')]
+    public function diff(string $city, string $ymd1, string $ymd2): Response 
+    {
+        $diff = $this->forward(
+            'App\Controller\Api\CompareController::compare',
+            ['city'  => $city, 'ymd1' => $ymd1, 'ymd2' => $ymd2]
+        );
+        return $this->render(
+            'default/diff.html.twig',
+            [
+                'diff' => json_decode($diff->getContent(), true),
+                'city' => $city,
+                'addedYmd' => $ymd1,
+                'removedYmd' => $ymd2,
+            ]
+        );
     }
 
     #[Route('/imports', name: 'app_imports')]
     public function monitoring(ImportDataRepository $importDataRepository): Response 
     {
+        $rows = $importDataRepository->getImportOverview();
+
+        // add link to previous day
+        foreach ($rows as $key => $row) {
+            if (isset($rows[$key + 1])) {
+                $rows[$key]['previous'] = $rows[$key + 1]['ymd'];
+            } else {
+                $rows[$key]['previous'] = null;
+            }
+        }
+
         return $this->render('default/imports.html.twig', [
-            'imports' => $importDataRepository->getImportOverview()
+            'imports' => $rows
         ]);
     }
 

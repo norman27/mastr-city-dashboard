@@ -20,7 +20,7 @@ class SolarFacade
     public function getUnitsForCity(string $city): array
     {
         $units = $this->client->GetGefilterteListeStromErzeuger($city);
-
+        
         $filteredUnits = array_filter($units, function($v, $k) {
             /** @var Einheit $v */
             return $v->Einheittyp === Einheit::EINHEITTYP_SOLAREINHEIT;
@@ -34,6 +34,8 @@ class SolarFacade
             $progressBar->start();
             $i = 0;
         }
+
+        exit;
 
         $solarUnits = [];
         

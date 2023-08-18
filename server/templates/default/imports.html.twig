@@ -4,13 +4,13 @@
 {% set pageTitle = 'Imports' %}
 
 {% block stylesheets %}
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 {% endblock %}
 
 {% block javascripts %}
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/js/demo/datatables-demo.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -34,17 +34,9 @@
                                 <th>Units</th>
                                 <th>Gross</th>
                                 <th>Net</th>
+                                <th>Diff</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Date</th>
-                                <th>City</th>
-                                <th>Units</th>
-                                <th>Gross</th>
-                                <th>Net</th>
-                            </tr>
-                        </tfoot>
                         <tbody>
                             {% for import in imports %}
                             <tr>
@@ -53,6 +45,11 @@
                                 <td>{{ import.units }}</td>
                                 <td>{{ import.gross }}</td>
                                 <td>{{ import.net }}</td>
+                                <td>
+                                    {% if import.previous %}
+                                        <a href="{{ path('app_diff', {city: import.city, ymd1: import.ymd, ymd2: import.previous  })}}">Diff to {{ import.previous }}</a>
+                                    {% endif%}
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>

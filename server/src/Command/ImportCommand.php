@@ -38,17 +38,13 @@ class ImportCommand extends Command
         $this->solarFacade->setOutput($output);
         $solarUnits = $this->solarFacade->getUnitsForCity($input->getArgument('city'));
 
-        // create new ImportData
         $data = new ImportData();
-        $data->setYmd((int) date('Ymd'));
-        $data->setCity($input->getArgument('city'));
-        $data->setSnapshot($solarUnits);
+        $data->ymd = (int) date('Ymd');
+        $data->city = $input->getArgument('city');
+        $data->snapshot = $solarUnits;
 
         $this->entityManager->persist($data);
         $this->entityManager->flush();
-
-        // write into db
-        //$entityManager = $this->getContainer()->get('doctrine')->getManager();
 
         return Command::SUCCESS;
     }

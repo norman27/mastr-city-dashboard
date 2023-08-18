@@ -43,6 +43,7 @@ class SoapClient
                 'marktakteurMastrNummer' => $this->apiUser,
                 'einheitBetriebsstatus' => 'InBetrieb',
                 'ort' => $city,
+                'limit' => 2000, //@TODO this is a bug for cities with more than 2000 units
             ]
         );
 
