@@ -1,5 +1,5 @@
 {
-  "name": "marktstammdatenregister",
+  "name": "mastr-city-dashboard",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
@@ -22,7 +22,9 @@
         "mrmlnc.vscode-apache",
         "esbenp.prettier-vscode",
 	      "dbaeumer.vscode-eslint",
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        "github.copilot",
+        "whatwedo.twig"
       ]
     }
   },

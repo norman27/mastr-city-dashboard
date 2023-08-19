@@ -15,12 +15,13 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => $this->getParameter('app.dashboard_city')], // @TODO make this dynamic
+            ['city' => $this->getParameter('app.dashboard_city')],
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
         $sumGrossPower = 0.0;
         $sumNetPower = 0.0;
+        $sumChecked = 0;
         $installedPowerByDay = [];
         $installedUnitsByDay = [];
         $clusters = [
@@ -33,6 +34,10 @@ class DashboardController extends AbstractController
             '>1000 kWp' => 0.0,
         ];
         foreach ($importData->snapshot as $unit) {
+            if ($unit['NetzbetreiberpruefungStatus'] !== 'Ungeprueft') {
+                $sumChecked++;
+            }
+
             $day = $unit['Inbetriebnahmedatum'];
             if (! isset($installedPowerByDay[$day])) {
                 $installedPowerByDay[$day] = 0.0;
@@ -64,13 +69,21 @@ class DashboardController extends AbstractController
 
         ksort($installedPowerByDay);
         ksort($installedUnitsByDay);
+
         $installedCumulativeUnits = [];
+        $installedCumulativePower = [];
 
         foreach ($installedUnitsByDay as $day => $units) {
             if (empty($installedCumulativeUnits)) {
                 $installedCumulativeUnits[$day] = $units;
             } else {
                 $installedCumulativeUnits[$day] = $units + end($installedCumulativeUnits);
+            }
+
+            if (empty($installedCumulativePower)) {
+                $installedCumulativePower[$day] = $installedPowerByDay[$day];
+            } else {
+                $installedCumulativePower[$day] = $installedPowerByDay[$day] + end($installedCumulativePower);
             }
         }
 
@@ -87,13 +100,14 @@ class DashboardController extends AbstractController
         return $this->render('default/dashboard.html.twig', [
             'sum' => [
                 'units' => count($importData->snapshot),
+                'checkedUnits' => $sumChecked,
                 'gross_power' => round($sumGrossPower, 1),
                 'net_power' => round($sumNetPower, 1),
             ],
-            'areaChart' => [ //@TODO rename
+            'cumulativeChart' => [
                 'labels' => array_keys($installedPowerByDay),
                 'values' => [
-                    'power' => array_values($installedPowerByDay),
+                    'power' => array_values($installedCumulativePower),
                     'units' => array_values($installedCumulativeUnits),
                 ],
             ],
