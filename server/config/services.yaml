@@ -6,6 +6,7 @@
 parameters:
     app.mastr_api_key: '%env(MASTR_API_KEY)%'
     app.mastr_api_user: '%env(MASTR_API_USER)%'
+    app.dashboard_city: '%env(DASHBOARD_CITY)%'
 
 services:
     # default configuration for services in *this* file
