@@ -8,7 +8,8 @@
     <meta name="description" content="Solar usage dashboard for your city">
     <meta name="author" content="Norman Malessa">
 
-    <title>{% block title %}{{ title|default('Solar') }}{% endblock %}</title>
+    {% set title = 'Solar Dashboard: Herne' %}
+    <title>{% block title %}{{ title|default('Solar Dashboard') }}{% endblock %}</title>
 
     <!-- Custom fonts for this template-->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -109,7 +110,7 @@
                     </button>
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-0 text-gray-800">{{ pageTitle|default('abc') }}</h1>
+                    <h1 class="h3 mb-0 text-gray-800">{{ pageTitle|default('undefined') }}</h1>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">

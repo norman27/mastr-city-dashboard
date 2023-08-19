@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'], // @TODO make this dynamic
+            ['city' => $this->getParameter('app.dashboard_city')], // @TODO make this dynamic
             ['ymd' => 'DESC'] // this should get us the most recent
         );
 
@@ -74,7 +74,10 @@ class DashboardController extends AbstractController
             }
         }
 
-        $activeResult = $this->forward('App\Controller\ApiController::activeList', ['city'  => 'herne']);
+        $activeResult = $this->forward(
+            'App\Controller\ApiController::activeList',
+            ['city' => $this->getParameter('app.dashboard_city')]
+        );
         $filteredActive = [];
 
         foreach (json_decode($activeResult->getContent()) as $active) {
@@ -110,7 +113,7 @@ class DashboardController extends AbstractController
     {
         /** @var ImportData $importData */
         $importData = $importDataRepository->findOneBy(
-            ['city' => 'herne'], // @TODO make this dynamic
+            ['city' => $this->getParameter('app.dashboard_city')], // @TODO make this dynamic
             ['ymd' => 'DESC'] // this gets us the most recent
         );
 

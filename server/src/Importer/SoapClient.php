@@ -35,19 +35,22 @@ class SoapClient
     /**
      * @return Einheit[]
      */
-    public function GetGefilterteListeStromErzeuger(string $city): array 
+    public function GetGefilterteListeStromErzeuger(string $city, int $page, $limit): array 
     {
+        $offset = (($page - 1) * $limit) + 1;
+
         $response = $this->soapClient->GetGefilterteListeStromErzeuger(
             [
                 'apiKey' => $this->apiKey,
                 'marktakteurMastrNummer' => $this->apiUser,
                 'einheitBetriebsstatus' => 'InBetrieb',
                 'ort' => $city,
-                'limit' => 2000, //@TODO this is a bug for cities with more than 2000 units
+                'startAb' => $offset,
+                'limit' => $limit, //@TODO this is a bug for cities with more than 2000 units
             ]
         );
 
-        return $response->Einheiten;
+        return (isset($response->Einheiten)) ? $response->Einheiten : [];
     }
 
     public function GetEinheitSolar(string $mastrNumber): stdClass 
