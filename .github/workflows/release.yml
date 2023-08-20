@@ -1,0 +1,38 @@
+name: Release
+
+on:
+    push:
+        branches: ['main']
+    #release:
+    #    types: [released]
+
+jobs:
+  web-deploy:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.2
+        coverage: none
+        tools: composer:v2
+        extensions: pdo pdo_mysql sockets zip gd soap
+      env:
+        update: true
+
+    - name: Install Composer dependencies
+      run: cd server && composer install --no-dev --no-interaction --no-progress --optimize-autoloader
+    
+    - name: FTP Sync
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./server/
+        exclude: |
+          **/.env
