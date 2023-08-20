@@ -35,6 +35,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./server/
         exclude: |
-          **/.env
+          **/.env*
           **/.git*
           **/.git*/**
