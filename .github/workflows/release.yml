@@ -36,3 +36,5 @@ jobs:
         local-dir: ./server/
         exclude: |
           **/.env
+          **/.git*
+          **/.git*/**
