@@ -35,8 +35,8 @@ SELECT
     ymd,
     city,
     SUM(1) AS units,
-    SUM(CAST(JSON_EXTRACT(value, "$.Bruttoleistung") AS FLOAT)) AS gross,
-    SUM(CAST(JSON_EXTRACT(value, "$.Nettonennleistung") AS FLOAT)) AS net
+    ROUND(SUM(CAST(JSON_EXTRACT(value, "$.Bruttoleistung") AS FLOAT))) AS gross,
+    ROUND(SUM(CAST(JSON_EXTRACT(value, "$.Nettonennleistung") AS FLOAT))) AS net
 FROM
     import_data AS id
     CROSS JOIN JSON_TABLE(id.snapshot, '$[*]' COLUMNS (value JSON PATH '$')) jsontable
