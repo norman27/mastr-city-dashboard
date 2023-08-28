@@ -2,6 +2,10 @@ FROM php:8.2-apache
 ENV NODE_VERSION=16.16.0
 ENV YARN_VERSION=1.22.18
 
+# install rust
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
 # install php dependencies
 RUN apt-get update && apt-get upgrade -y && apt-get install -y net-tools git libzip-dev libpng-dev zsh unzip build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev python3 libxml2-dev
 RUN docker-php-ext-install pdo pdo_mysql sockets zip gd soap

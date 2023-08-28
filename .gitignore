@@ -1,7 +1,11 @@
 .idea/
 .DS_Store
 
-###> symfony/framework-bundle ###
+###> importer ###
+/importer/target/
+###< importer ###
+
+###> server ###
 /server/.env.local
 /server/.env.local.php
 /server/.env.*.local
@@ -9,4 +13,4 @@
 /server/public/bundles/
 /server/var/
 /server/vendor/
-###< symfony/framework-bundle ###
+###< server ###

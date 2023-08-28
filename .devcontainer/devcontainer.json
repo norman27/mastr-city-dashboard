@@ -24,7 +24,10 @@
 	      "dbaeumer.vscode-eslint",
         "github.vscode-github-actions",
         "github.copilot",
-        "whatwedo.twig"
+        "whatwedo.twig",
+        "rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml",
+				"serayuzgur.crates"
       ]
     }
   },
