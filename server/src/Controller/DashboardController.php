@@ -33,6 +33,8 @@ class DashboardController extends AbstractController
             '500-1000 kWp' => 0.0,
             '>1000 kWp' => 0.0,
         ];
+        $typesOfUse = [];
+
         foreach ($importData->snapshot as $unit) {
             if ($unit['NetzbetreiberpruefungStatus'] !== 'Ungeprueft') {
                 $sumChecked++;
@@ -65,7 +67,14 @@ class DashboardController extends AbstractController
             } else {
                 $clusters['>1000 kWp'] += (float) $unit['Nettonennleistung'];
             }
+
+            // cluster by Nutzungsbereich
+            if (! isset($typesOfUse[$unit['Nutzungsbereich']])) {
+                $typesOfUse[$unit['Nutzungsbereich']] = 0;
+            }
+            $typesOfUse[$unit['Nutzungsbereich']] += (float) $unit['Nettonennleistung'];
         }
+
 
         ksort($installedPowerByDay);
         ksort($installedUnitsByDay);
@@ -114,6 +123,10 @@ class DashboardController extends AbstractController
             'pieChart' => [ //@TODO rename
                 'labels' => array_keys($clusters),
                 'values' => array_values($clusters),
+            ],
+            'typesOfUse' => [ //@TODO rename
+                'labels' => array_keys($typesOfUse),
+                'values' => array_values($typesOfUse),
             ],
             'netPowerChart' => [
                 'ymd' => array_keys($filteredActive),

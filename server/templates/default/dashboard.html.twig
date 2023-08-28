@@ -11,8 +11,11 @@
         var netPowerChartLabels = {{ netPowerChart.ymd|json_encode|raw }};
         var netPowerChartValues = {{ netPowerChart.net|json_encode|raw }};
 
-        var myPieChartLabels = {{ pieChart.labels|json_encode|raw }}
+        var myPieChartLabels = {{ pieChart.labels|json_encode|raw }};
         var myPieChartValues = {{ pieChart.values|json_encode|raw }};
+
+        var typesOfUseLabels = {{ typesOfUse.labels|json_encode|raw }};
+        var typesOfUseValues = {{ typesOfUse.values|json_encode|raw }};
     </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
@@ -146,6 +149,20 @@
                 <div class="card-body">
                     <div class="chart-pie">
                         <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Nutzungsbereich</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-pie">
+                        <canvas id="typesOfUseChart"></canvas>
                     </div>
                 </div>
             </div>
