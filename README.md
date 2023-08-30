@@ -24,3 +24,14 @@ In order to start the application it is recommended to open it in VSCode DevCont
 ```shell
 apachectl start
 ```
+
+### Development Database
+In case you want to dump the prod data into the local docker db run:
+
+```shell
+# go into the scripts directory
+cd scripts
+
+# use docker to dump the tables. replace <variables> with prod credentials
+docker run --rm -i --env DB_USER=<DB_USER> --env DB_PASSWORD=<DB_PASSWORD> --env DB_HOST=<DB_HOST> -v $(pwd)/mysqldumps:/mysqldumps ubuntu bash < dump_into_docker.sh
+```
