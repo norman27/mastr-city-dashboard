@@ -1,4 +1,4 @@
-name: Test Rust
+name: Test Importer
 on:
   push:
     paths:
