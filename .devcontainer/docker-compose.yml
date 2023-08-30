@@ -17,8 +17,21 @@ services:
       APP_DEBUG: '1'
       PHP_XDEBUG_ENABLED: 1
       XDEBUG_CONFIG: ${DEBUG_OPTIONS:-XDEBUG remote_enable=1 remote_connect_back=1}
-      # js envs
-      API_RESOURCE_BASE_URL: 'http://0.0.0.0:8081'
+  db:
+    image: mysql/mysql-server:8.0.24
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ../scripts/mysqldumps:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql_pass_root
+      MYSQL_PASSWORD: mysql_pass_user
+      MYSQL_USER: mysql_user
+      MYSQL_DATABASE: mastr_dashboard
+    security_opt:
+      - seccomp:unconfined
+
 volumes:
   php-vendor:
   php-var:
+  mysql-data:
