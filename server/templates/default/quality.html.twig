@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% set pageTitle = 'Qualitätssicherung' %}
+
+{% block stylesheets %}
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+
+        <div class="col-xl-12">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Unplausible Units ({{ meta.city }} on {{ meta.ymd }})</h6>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Regel</th>
+                                <th>Erklärung</th>
+                                <th>Bruttoleistung kWp</th
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for violation in units %}
+                            <tr>
+                                <td>
+                                    <a href="{{ path('app_detail', {ymd: meta.ymd, city: meta.city, mastr: violation.unit }) }}
+">{{ violation.unit }}</a>
+                                </td>
+                                <td>{{ violation.rule }}</td>
+                                <td>{{ violation.details }}</td>
+                                <td>{{ violation.gross_power }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-12">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold">Berücksichtige Regeln</h6>
+                </div>
+
+                <div class="card-body">
+                    {% for id, rule in meta.rules %}
+                    <ul class="text-xs">
+                        <li>{{ id }}: {{ rule }}</li>
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

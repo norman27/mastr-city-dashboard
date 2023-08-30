@@ -151,6 +151,20 @@ class DashboardController extends AbstractController
         ]);
     }
 
+    #[Route('/quality', name: 'app_quality')]
+    public function quality(): Response 
+    {
+        $list = $this->forward(
+            'App\Controller\Api\QualityController::unplausibleList',
+            ['city'  => $this->getParameter('app.dashboard_city')]
+        );
+
+        return $this->render(
+            'default/quality.html.twig',
+            json_decode($list->getContent(), true)
+        );
+    }
+
     #[Route('/detail/{ymd}/{city}/{mastr}', name: 'app_detail')]
     public function detail(string $ymd, string $city, string $mastr, ImportDataRepository $importDataRepository): Response 
     {

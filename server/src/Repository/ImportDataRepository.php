@@ -121,7 +121,7 @@ SELECT
 	JSON_EXTRACT(value, "$.NameStromerzeugungseinheit") AS NameStromerzeugungseinheit,
 	CAST(JSON_EXTRACT(value, "$.Bruttoleistung") AS FLOAT) AS Bruttoleistung,
     CAST(JSON_EXTRACT(value, "$.Nettonennleistung") AS FLOAT) AS Nettonennleistung,
-    CAST(JSON_EXTRACT(value, "$.AnzahlModule") AS INT) AS AnzahlModule,
+    CAST(JSON_EXTRACT(value, "$.AnzahlModule") AS UNSIGNED) AS AnzahlModule,
     JSON_EXTRACT(value, "$.Registrierungsdatum") AS Registrierungsdatum,
     JSON_EXTRACT(value, "$.Inbetriebnahmedatum") AS Inbetriebnahmedatum,
     JSON_EXTRACT(value, "$.Postleitzahl") AS Postleitzahl,
