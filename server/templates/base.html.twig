@@ -40,61 +40,54 @@
                 <div class="sidebar-brand-text mx-3">Solar</div>
             </a>
 
-            <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
             <div class="sidebar-heading">
                 Data
             </div>
 
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item{% if app.request.attributes.get('_route') == 'app_dashboard' %} active{% endif %}">
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
-            <!-- Nav Item - Table -->
-            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_table' %} active{% endif %}">
-                <a class="nav-link" href="/table">
+            <li class="nav-item{% if app.request.attributes.get('_route') in ['app_table', 'app_imports'] %} active{% endif %}">
+                <a class="nav-link" href="/table" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Table</span></a>
+                    <span>Daten</span>
+                </a>
+                <div id="collapseTable" class="collapse show" aria-labelledby="headingTable" data-parent="#accordionSidebar" style="">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_table' %} active{% endif %}" href="/table">Liste</a>
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_imports' %} active{% endif %}" href="/imports">Imports</a>
+                    </div>
+                </div>
             </li>
 
-            <!-- Nav Item - Imports -->
-            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_imports' %} active{% endif %}">
-                <a class="nav-link" href="/imports">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Imports</span></a>
-            </li>
-
-            <!-- Nav Item - Imports -->
             <li class="nav-item{% if app.request.attributes.get('_route') == 'app_quality' %} active{% endif %}">
                 <a class="nav-link" href="/quality">
                     <i class="fas fa-fw fa-spell-check"></i>
-                    <span>Qualität</span></a>
+                    <span>Qualität</span>
+                </a>
             </li>
 
-            <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
             <div class="sidebar-heading">
                 About
             </div>
 
-            <!-- Nav Item - Documentation -->
             <li class="nav-item">
                 <a class="nav-link" href="https://github.com/norman27/mastr-city-dashboard">
                     <i class="fas fa-fw fa-link"></i>
-                    <span>Github</span></a>
+                    <span>Github</span>
+                </a>
             </li>
 
-            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
