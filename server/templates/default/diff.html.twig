@@ -8,28 +8,41 @@
             <div class="card shadow mb-4">
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Added</h6>
+                    <h6 class="m-0 font-weight-bold">Veränderungen</h6>
                 </div>
                 <div class="card-body">
-                    {% for unit in diff.added %}
-                        <a href="{{ path('app_detail', {ymd: addedYmd, city: city, mastr: unit }) }}">{{ unit }}</a><br>
+                    <div>
+                    {% for diff in diffs %}
+                        <div class="mb-2">
+                            {% if diff.type == 'added' %}
+                                <span class="btn btn-success btn-circle btn-sm">
+                                    <i class="fas fa-plus"></i> 
+                                </span>
+                            {% elseif diff.type == 'removed' %}
+                                <span class="btn btn-danger btn-circle btn-sm">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            {% else %}
+                                <span class="btn btn-secondary btn-circle btn-sm">
+                                    <i class="fas fa-circle"></i>
+                                </span>
+                            {% endif %}
+                            <a href="{{ path('app_detail', {ymd: addedYmd, city: city, mastr: diff.unit }) }}">
+                                <strong>{{ diff.unit }}</strong>
+                            </a>
+                            <span class="text-muted">
+                                Gross: {{ diff.gross }} kWp,
+                                Net: {{ diff.net }} kWp
+                                {% if diff.additional | length > 0 %}(
+                                    {% for add in diff.additional %}
+                                        {% if loop.index > 1 %}, {% endif %}
+                                        {{ add }}
+                                    {% endfor %})
+                                {% endif %}
+                            </span>
+                        </div>
                     {% endfor %}
-                    <strong>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-12">
-            <div class="card shadow mb-4">
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Removed</h6>
-                </div>
-                <div class="card-body">
-                    {% for unit in diff.removed %}
-                        <a href="{{ path('app_detail', {ymd: removedYmd, city: city, mastr: unit }) }}">{{ unit }}</a><br>
-                    {% endfor %}
-                    <strong>
+                    </div>
                 </div>
             </div>
         </div>

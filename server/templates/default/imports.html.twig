@@ -46,7 +46,7 @@
                                 <td>{{ import.net }}</td>
                                 <td>
                                     {% if import.previous %}
-                                        <a href="{{ path('app_diff', {city: import.city, ymd1: import.ymd, ymd2: import.previous  })}}">Diff to {{ import.previous }}</a>
+                                        <a href="{{ path('app_diff', {city: import.city, ymdNew: import.ymd, ymdOld: import.previous  })}}">Diff to {{ import.previous }}</a>
                                     {% endif%}
                                 </td>
                             </tr>

@@ -173,26 +173,27 @@ class DashboardController extends AbstractController
         ]);
     }
 
-    #[Route('/diff/{city}/{ymd1}/{ymd2}', name: 'app_diff')]
-    public function diff(string $city, string $ymd1, string $ymd2): Response 
+    #[Route('/diff/{city}/{ymdNew}/{ymdOld}', name: 'app_diff')]
+    public function diff(string $city, string $ymdNew, string $ymdOld): Response 
     {
         $diff = $this->forward(
-            'App\Controller\Api\CompareController::compare',
-            ['city'  => $city, 'ymd1' => $ymd1, 'ymd2' => $ymd2]
+            'App\Controller\Api\DiffController::diff',
+            ['city'  => $city, 'ymdNew' => $ymdNew, 'ymdOld' => $ymdOld]
         );
+
         return $this->render(
             'default/diff.html.twig',
             [
-                'diff' => json_decode($diff->getContent(), true),
+                'diffs' => json_decode($diff->getContent(), true),
                 'city' => $city,
-                'addedYmd' => $ymd1,
-                'removedYmd' => $ymd2,
+                'addedYmd' => $ymdNew,
+                'removedYmd' => $ymdOld,
             ]
         );
     }
 
     #[Route('/imports', name: 'app_imports')]
-    public function monitoring(ImportDataRepository $importDataRepository): Response 
+    public function imports(ImportDataRepository $importDataRepository): Response 
     {
         $rows = $importDataRepository->getImportOverview();
 
