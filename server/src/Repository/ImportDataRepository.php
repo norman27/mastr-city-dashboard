@@ -151,6 +151,8 @@ SQL;
         $stmt->bindValue('city', $city);
         $stmt->bindValue('mastr', $mastr);
 
-        return $stmt->executeQuery()->fetchAssociative();
+        $result = $stmt->executeQuery()->fetchAssociative();
+
+        return $result ? $result : [];
     }
 }
