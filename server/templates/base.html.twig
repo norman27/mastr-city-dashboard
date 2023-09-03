@@ -53,12 +53,13 @@
                 </a>
             </li>
 
-            <li class="nav-item{% if app.request.attributes.get('_route') in ['app_table', 'app_imports'] %} active{% endif %}">
-                <a class="nav-link" href="/table" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+            {% set isActiveDaten = app.request.attributes.get('_route') in ['app_table', 'app_imports'] %}
+            <li class="nav-item{% if isActiveDaten %} active{% endif %}">
+                <a class="nav-link{% if not isActiveDaten %} collapsed{% endif %}" href="/table" data-toggle="collapse" data-target="#collapseDaten" aria-expanded="true" aria-controls="collapseDaten">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Daten</span>
                 </a>
-                <div id="collapseTable" class="collapse show" aria-labelledby="headingTable" data-parent="#accordionSidebar" style="">
+                <div id="collapseDaten" class="collapse{% if isActiveDaten %} show{% endif %}" aria-labelledby="headingTable" data-parent="#accordionSidebar" style="">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_table' %} active{% endif %}" href="/table">Liste</a>
                         <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_imports' %} active{% endif %}" href="/imports">Imports</a>
@@ -66,11 +67,18 @@
                 </div>
             </li>
 
-            <li class="nav-item{% if app.request.attributes.get('_route') == 'app_quality' %} active{% endif %}">
-                <a class="nav-link" href="/quality">
+            {% set isActiveQuality = app.request.attributes.get('_route') in ['app_quality', 'app_quality_netz'] %}
+            <li class="nav-item{% if isActiveQuality %} active{% endif %}">
+                <a class="nav-link{% if not isActiveQuality %} collapsed{% endif %}" href="/quality" data-toggle="collapse" data-target="#collapseQuality" aria-expanded="true" aria-controls="collapseQuality">
                     <i class="fas fa-fw fa-spell-check"></i>
                     <span>Qualität</span>
                 </a>
+                <div id="collapseQuality" class="collapse{% if isActiveQuality %} show{% endif %}" aria-labelledby="headingTable" data-parent="#accordionSidebar" style="">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality_netz' %} active{% endif %}" href="/quality/netz">Netzbetreiber</a>
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality' %} active{% endif %}" href="/quality">Plausibilität</a>
+                    </div>
+                </div>
             </li>
 
             <hr class="sidebar-divider">
@@ -120,7 +128,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <div class="nav-link dropdown-toggle">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size:1.5rem;font-weight:600">Herne</span>
-                                <img class="img-profile rounded-circle" src="img/logo-herne-50.png">
+                                <img class="img-profile rounded-circle" src="/img/logo-herne-50.png">
                             </div>
                         </li>
 

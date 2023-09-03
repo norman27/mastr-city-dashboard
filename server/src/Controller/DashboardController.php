@@ -165,6 +165,15 @@ class DashboardController extends AbstractController
         );
     }
 
+    #[Route('/quality/netz', name: 'app_quality_netz')]
+    public function netz(): Response 
+    {
+        return $this->render(
+            'base.html.twig',
+            []
+        );
+    }
+
     #[Route('/detail/{ymd}/{city}/{mastr}', name: 'app_detail')]
     public function detail(string $ymd, string $city, string $mastr, ImportDataRepository $importDataRepository): Response 
     {
