@@ -34,7 +34,7 @@ jobs:
         restore-keys: ${{ runner.os }}-composer-
 
     - name: Install Composer dependencies
-      run: cd server && composer install --no-dev --no-scripts --no-interaction --no-progress --optimize-autoloader
+      run: cd server && composer install --no-interaction --no-progress --optimize-autoloader
     
     - name: FTP Sync
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
