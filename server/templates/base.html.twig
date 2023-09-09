@@ -67,7 +67,7 @@
                 </div>
             </li>
 
-            {% set isActiveQuality = app.request.attributes.get('_route') in ['app_quality', 'app_quality_netz'] %}
+            {% set isActiveQuality = app.request.attributes.get('_route') in ['app_quality_netz', 'app_quality_validation'] %}
             <li class="nav-item{% if isActiveQuality %} active{% endif %}">
                 <a class="nav-link{% if not isActiveQuality %} collapsed{% endif %}" href="/quality" data-toggle="collapse" data-target="#collapseQuality" aria-expanded="true" aria-controls="collapseQuality">
                     <i class="fas fa-fw fa-spell-check"></i>
@@ -75,8 +75,8 @@
                 </a>
                 <div id="collapseQuality" class="collapse{% if isActiveQuality %} show{% endif %}" aria-labelledby="headingTable" data-parent="#accordionSidebar" style="">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality_netz' %} active{% endif %}" href="/quality/netz">Netzbetreiber</a>
-                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality' %} active{% endif %}" href="/quality">Plausibilität</a>
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality_netz' %} active{% endif %}" href="{{ path('app_quality_netz') }}">Netzbetreiber</a>
+                        <a class="collapse-item{% if app.request.attributes.get('_route') == 'app_quality_validation' %} active{% endif %}" href="{{ path('app_quality_validation') }}">Plausibilität</a>
                     </div>
                 </div>
             </li>

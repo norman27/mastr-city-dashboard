@@ -75,7 +75,6 @@ class DashboardController extends AbstractController
             $typesOfUse[$unit['Nutzungsbereich']] += (float) $unit['Nettonennleistung'];
         }
 
-
         ksort($installedPowerByDay);
         ksort($installedUnitsByDay);
 
@@ -151,26 +150,71 @@ class DashboardController extends AbstractController
         ]);
     }
 
-    #[Route('/quality', name: 'app_quality')]
-    public function quality(): Response 
+    #[Route('/quality/validation', name: 'app_quality_validation')]
+    public function validation(): Response 
     {
         $list = $this->forward(
-            'App\Controller\Api\QualityController::unplausibleList',
+            'App\Controller\Api\QualityController::invalidList',
             ['city'  => $this->getParameter('app.dashboard_city')]
         );
 
         return $this->render(
-            'default/quality.html.twig',
+            'default/validation.html.twig',
             json_decode($list->getContent(), true)
         );
     }
 
     #[Route('/quality/netz', name: 'app_quality_netz')]
-    public function netz(): Response 
+    public function netz(ImportDataRepository $importDataRepository): Response 
     {
+        /** @var ImportData $importData */
+        $importData = $importDataRepository->findOneBy(
+            ['city' => $this->getParameter('app.dashboard_city')],
+            ['ymd' => 'DESC'] // this should get us the most recent
+        );
+
+        $clusters = [];
+
+        foreach ($importData->snapshot as $unit) {
+            if (! isset($clusters[$unit['NetzbetreiberpruefungStatus']])) {
+                $clusters[$unit['NetzbetreiberpruefungStatus']] = 0;
+            }
+
+            // @TODO figure out if it is better to generally use gross or net
+            $clusters[$unit['NetzbetreiberpruefungStatus']] += $unit['Bruttoleistung'];
+        }
+
+        $activeResult = $this->forward(
+            'App\Controller\ApiController::activeList',
+            ['city' => $this->getParameter('app.dashboard_city')]
+        );
+        $filteredActive = [];
+
+        foreach (json_decode($activeResult->getContent()) as $active) {
+            // we have some old data that is not properly converted
+            if ((int) $active->geprueft === 0) {
+                continue;
+            }
+
+            $filteredActive[$active->ymd] = (int) $active->geprueft;
+        }
+
+        ksort($filteredActive);
+
         return $this->render(
-            'base.html.twig',
-            []
+            'default/netz.html.twig',
+            [
+                'cumulativeChart' => [
+                    'labels' => array_keys($filteredActive),
+                    'values' => [
+                        'units' => array_values($filteredActive),
+                    ],
+                ],
+                'pieChart' => [
+                    'labels' => array_keys($clusters),
+                    'values' => array_values($clusters),
+                ],
+            ]
         );
     }
 

@@ -14,7 +14,16 @@ class QualityController extends AbstractController
      * Return a list of unplausible entries
      */
     #[Route('/api/quality/{city}', name: 'app_api_quality')]
-    public function unplausibleList(string $city, ImportDataRepository $importDataRepository): JsonResponse
+    public function netzList(string $city, ImportDataRepository $importDataRepository): JsonResponse
+    {
+        return new JsonResponse();
+    }
+
+    /**
+     * Return a list of unplausible entries
+     */
+    #[Route('/api/quality/invalid/{city}', name: 'app_api_quality_invalid')]
+    public function invalidList(string $city, ImportDataRepository $importDataRepository): JsonResponse
     {
         $data = $importDataRepository->findOneBy(
             ['city' => $city],

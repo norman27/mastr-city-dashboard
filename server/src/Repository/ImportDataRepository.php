@@ -36,7 +36,10 @@ SELECT
     city,
     SUM(1) AS units,
     ROUND(SUM(CAST(JSON_EXTRACT(value, "$.Bruttoleistung") AS FLOAT))) AS gross,
-    ROUND(SUM(CAST(JSON_EXTRACT(value, "$.Nettonennleistung") AS FLOAT))) AS net
+    ROUND(SUM(CAST(JSON_EXTRACT(value, "$.Nettonennleistung") AS FLOAT))) AS net,
+    SUM(
+        IF(JSON_EXTRACT(value, "$.NetzbetreiberpruefungStatus") = 'Geprueft', 1, 0)
+    ) AS geprueft
 FROM
     import_data AS id
     CROSS JOIN JSON_TABLE(id.snapshot, '$[*]' COLUMNS (value JSON PATH '$')) jsontable

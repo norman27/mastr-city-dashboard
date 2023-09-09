@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% set pageTitle = 'Netzbetreiberprüfung' %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        var cumulativeChartLabels = {{ cumulativeChart.labels|json_encode|raw }};
+        var cumulativeChartValues = {{ cumulativeChart.values.units|json_encode|raw }};
+
+        var myPieChartLabels = {{ pieChart.labels|json_encode|raw }};
+        var myPieChartValues = {{ pieChart.values|json_encode|raw }};
+    </script>
+    
+    <script src="/vendor/moment.js/2.29.0/moment.min.js"></script>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="/js/demo/chart-area-netz.js"></script>
+    <script src="/js/demo/chart-pie-netz.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Geprüfte Einheiten pro Tag</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="cumulativeChartUnits"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Prüfungsstatus</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-pie">
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
