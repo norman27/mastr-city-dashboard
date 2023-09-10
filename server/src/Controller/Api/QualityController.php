@@ -68,6 +68,15 @@ class QualityController extends AbstractController
                 $unplausible[] = $record;
                 continue;
             }
+
+            if (
+                $unit['Inbetriebnahmedatum'] < '1993-01-01'
+            ) {
+                $record->rule = 5;
+                $record->details = 'Inbetriebnahmedatum vor 1993 (' . $unit['Inbetriebnahmedatum'] . ')';
+                $unplausible[] = $record;
+                continue;
+            }
         }
 
         return new JsonResponse([
@@ -76,7 +85,8 @@ class QualityController extends AbstractController
                     1 => 'Nettoleistung > Bruttoleistung',
                     2 => 'Leistung je Modul > 600 Wp',
                     3 => 'Leistung je Modul < 30 Wp',
-                    4 => 'Nettoleistung < 50% Bruttoleistung'
+                    4 => 'Nettoleistung < 50% Bruttoleistung',
+                    5 => 'Inbetriebnahmedatum < 1993',
                 ],
                 'ymd' => $data->ymd,
                 'city' => $data->city,

@@ -40,7 +40,10 @@ class DashboardController extends AbstractController
                 $sumChecked++;
             }
 
-            $day = $unit['Inbetriebnahmedatum'];
+            // for outliers in data, see validation rule 5
+            $day = ($unit['Inbetriebnahmedatum'] < '1993-01-01')
+                ? $unit['Registrierungsdatum']
+                : $unit['Inbetriebnahmedatum'];
             if (! isset($installedPowerByDay[$day])) {
                 $installedPowerByDay[$day] = 0.0;
                 $installedUnitsByDay[$day] = 0;
