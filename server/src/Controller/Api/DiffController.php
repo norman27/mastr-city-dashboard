@@ -78,11 +78,25 @@ class DiffController extends AbstractController
 
     private function getRelevantChange($unitNew, $unitOld): array {
         $changes = [];
-        $relevantAttributes = ['Bruttoleistung', 'Nettonennleistung', 'NetzbetreiberpruefungStatus'];
+        $relevantAttributes = [
+            'Bruttoleistung',
+            'Nettonennleistung',
+            'AnzahlModule',
+            'NetzbetreiberpruefungStatus',
+            'EinheitBetriebsstatus',
+            'zugeordneteWirkleistungWechselrichter',
+            'GemeinsamerWechselrichterMitSpeicher',
+            'Leistungsbegrenzung',
+        ];
 
         foreach ($relevantAttributes as $attr) {
-            if ($unitNew[$attr] !== $unitOld[$attr]) {
-                $changes[] = $attr . '=>' . $unitNew[$attr];
+            $unitNew[$attr] = $unitNew[$attr] ?? null;
+            $unitOld[$attr] = $unitOld[$attr] ?? null;
+
+            if (
+                $unitNew[$attr] !== $unitOld[$attr]
+            ) {
+                $changes[] = $attr . ': ' . $unitOld[$attr] . ' => ' . $unitNew[$attr];
             }
         }
 

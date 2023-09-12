@@ -225,7 +225,8 @@ class DashboardController extends AbstractController
     public function detail(string $ymd, string $city, string $mastr, ImportDataRepository $importDataRepository): Response 
     {
         return $this->render('default/detail.html.twig', [
-            'unit' => $importDataRepository->getUnit($ymd, $city, $mastr)
+            'unit' => $importDataRepository->getUnit($ymd, $city, $mastr),
+            'ymd' => $ymd,
         ]);
     }
 

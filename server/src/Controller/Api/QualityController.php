@@ -77,6 +77,16 @@ class QualityController extends AbstractController
                 $unplausible[] = $record;
                 continue;
             }
+
+            if (
+                isset($unit['NetzbetreiberpruefungDatum'])
+                && $unit['NetzbetreiberpruefungDatum'] < substr($unit['DatumLetzteAktualisierung'], 0, 10)
+            ) {
+                $record->rule = 6;
+                $record->details = 'Netzbetreiberprüfung (' . $unit['NetzbetreiberpruefungDatum'] . ') älter als letzte Aktualisierung (' . $unit['DatumLetzteAktualisierung'] . ')';
+                $unplausible[] = $record;
+                continue;
+            }
         }
 
         return new JsonResponse([
@@ -87,6 +97,7 @@ class QualityController extends AbstractController
                     3 => 'Leistung je Modul < 30 Wp',
                     4 => 'Nettoleistung < 50% Bruttoleistung',
                     5 => 'Inbetriebnahmedatum < 1993',
+                    6 => 'Aktualisierung nach Netzbetreiberprüfung',
                 ],
                 'ymd' => $data->ymd,
                 'city' => $data->city,

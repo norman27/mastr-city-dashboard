@@ -8,17 +8,19 @@
             <div class="card shadow mb-4">
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold">Veränderungen</h6>
+                    <h6 class="m-0 font-weight-bold">Veränderungen {{ addedYmd }} zum {{ removedYmd }}</h6>
                 </div>
                 <div class="card-body">
                     <div>
                     {% for diff in diffs %}
+                        {% set detailYmd = addedYmd %}
                         <div class="mb-2">
                             {% if diff.type == 'added' %}
                                 <span class="btn btn-success btn-circle btn-sm">
                                     <i class="fas fa-plus"></i> 
                                 </span>
                             {% elseif diff.type == 'removed' %}
+                                {% set detailYmd = removedYmd %}
                                 <span class="btn btn-danger btn-circle btn-sm">
                                     <i class="fas fa-minus"></i>
                                 </span>
@@ -27,17 +29,17 @@
                                     <i class="fas fa-circle"></i>
                                 </span>
                             {% endif %}
-                            <a href="{{ path('app_detail', {ymd: addedYmd, city: city, mastr: diff.unit }) }}">
+                            <a href="{{ path('app_detail', {ymd: detailYmd, city: city, mastr: diff.unit }) }}">
                                 <strong>{{ diff.unit }}</strong>
                             </a>
                             <span class="text-muted">
                                 Gross: {{ diff.gross }} kWp,
                                 Net: {{ diff.net }} kWp
-                                {% if diff.additional | length > 0 %}(
-                                    {% for add in diff.additional %}
+                                {% if diff.additional | length > 0 %}
+                                    <small>({% for add in diff.additional %}
                                         {% if loop.index > 1 %}, {% endif %}
                                         {{ add }}
-                                    {% endfor %})
+                                    {% endfor %})</small>
                                 {% endif %}
                             </span>
                         </div>
