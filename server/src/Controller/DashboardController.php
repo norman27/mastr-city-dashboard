@@ -177,6 +177,7 @@ class DashboardController extends AbstractController
         );
 
         $clusters = [];
+        $notCheckedUnits = [];
 
         foreach ($importData->snapshot as $unit) {
             if (! isset($clusters[$unit['NetzbetreiberpruefungStatus']])) {
@@ -185,6 +186,10 @@ class DashboardController extends AbstractController
 
             // @TODO figure out if it is better to generally use gross or net
             $clusters[$unit['NetzbetreiberpruefungStatus']] += $unit['Bruttoleistung'];
+
+            if ($unit['NetzbetreiberpruefungStatus'] !== 'Geprueft') {
+                $notCheckedUnits[] = $unit;
+            }
         }
 
         $activeResult = $this->forward(
@@ -217,6 +222,9 @@ class DashboardController extends AbstractController
                     'labels' => array_keys($clusters),
                     'values' => array_values($clusters),
                 ],
+                'units' => $notCheckedUnits,
+                'ymd' => $importData->ymd,
+                'city' => $importData->city,
             ]
         );
     }

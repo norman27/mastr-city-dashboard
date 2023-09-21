@@ -15,6 +15,9 @@
     <script src="/vendor/chart.js/Chart.min.js"></script>
     <script src="/js/demo/chart-area-netz.js"></script>
     <script src="/js/demo/chart-pie-netz.js"></script>
+    <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/js/demo/datatables-demo.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -23,7 +26,7 @@
             <div class="card shadow mb-4">
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Geprüfte Einheiten</h6>
+                    <h6 class="m-0 font-weight-bold">Geprüfte Einheiten</h6>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
@@ -42,6 +45,48 @@
                 <div class="card-body">
                     <div class="chart-pie">
                         <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-12">
+            <div class="card shadow mb-4">
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold">Ungeprüft / Datenkorrektur</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Zip</th>
+                                <th>Activated</th>
+                                <th>Gross Power</th>
+                                <th>Net Power</th>
+                                <th>Netzbetreiberprüfung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for unit in units %}
+                            <tr>
+                                <td>
+                                    <a href="{{ path('app_detail', {ymd: ymd, city: city, mastr: unit.EinheitMastrNummer }) }}
+">{{ unit.EinheitMastrNummer }}</a>
+                                </td>
+                                <td>{{ unit.NameStromerzeugungseinheit }}</td>
+                                <td>{{ unit.Postleitzahl }}</td>
+                                <td>{{ unit.Inbetriebnahmedatum }}</td>
+                                <td>{{ unit.Bruttoleistung }}</td>
+                                <td>{{ unit.Nettonennleistung }}</td>
+                                <td>{{ unit.NetzbetreiberpruefungStatus }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
