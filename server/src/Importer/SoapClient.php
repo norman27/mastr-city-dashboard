@@ -3,6 +3,7 @@
 namespace App\Importer;
 
 use App\Importer\Types\Einheit;
+use SoapFault;
 use stdClass;
 
 class SoapClient 
@@ -53,15 +54,24 @@ class SoapClient
         return (isset($response->Einheiten)) ? $response->Einheiten : [];
     }
 
-    public function GetEinheitSolar(string $mastrNumber): stdClass 
+    public function GetEinheitSolar(string $mastrNumber, int $requestTries = 0): stdClass 
     {
-        $response = $this->soapClient->GetEinheitSolar(
-            [
-                'apiKey' => $this->apiKey,
-                'marktakteurMastrNummer' => $this->apiUser,
-                'einheitMastrNummer' => $mastrNumber,
-            ]
-        );
+        try {
+            $response = $this->soapClient->GetEinheitSolar(
+                [
+                    'apiKey' => $this->apiKey,
+                    'marktakteurMastrNummer' => $this->apiUser,
+                    'einheitMastrNummer' => $mastrNumber,
+                ]
+            );
+        } catch (SoapFault $exception) {
+            if (
+                $requestTries < 3
+            ) {
+                sleep(1);
+                return $this->GetEinheitSolar($mastrNumber, $requestTries + 1);
+            }
+        }
 
         return $response;
     }
