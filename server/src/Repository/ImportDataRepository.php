@@ -49,6 +49,7 @@ GROUP BY
     ymd, city
 ORDER BY
     ymd DESC
+LIMIT 90
 SQL;
 
         $em = $this->getEntityManager();
