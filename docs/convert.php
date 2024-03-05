@@ -4,6 +4,13 @@
 $city = 'herne';
 $ymd = '20230712';
 
+$host = '';
+$user = '';
+$pass = '';
+$db = '';
+
+$mysqli = new mysqli($host, $user, $pass, $db);
+
 function getFormattedDate($old, $format = 'Y-m-d\TH:i:s.u') {
     $old = str_replace(['/Date(', ')/'], ['', ''], $old);
     $sec = intval($old / 1000);
@@ -74,8 +81,6 @@ foreach ($json->Data as $item) {
     
     $newJson[] = $newItem;
 }
-
-$mysqli = new mysqli("w009acfc.kasserver.com", "d03dd154", "QmM6KwquCrSnvJF8fsFv", "d03dd154");
 
 $stmt = $mysqli->prepare('INSERT INTO import_data SET ymd=?, city=?, snapshot=?');
 $snapshot = json_encode($newJson);
