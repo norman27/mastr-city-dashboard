@@ -35,11 +35,11 @@ class ImportCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $stmt = $this->entityManager->getConnection()->prepare('SELECT 1');
+        /*$stmt = $this->entityManager->getConnection()->prepare('SELECT 1');
         if (count($stmt->executeQuery()->fetchAllAssociative()) === 0) {
             $output->writeln('Database is not available');
             return Command::FAILURE;
-        }
+        }*/
         
         $this->solarFacade->setOutput($output);
         $solarUnits = $this->solarFacade->getUnitsForCity($input->getArgument('city'));

@@ -26,10 +26,9 @@ RUN curl -sSL https://getcomposer.org/installer | php \
 
 # install starship
 RUN sh -c "$(curl -fsSL https://starship.rs/install.sh)" "" -y
-RUN echo "eval \"$(starship init zsh)\"" >> ~/.zshrc
+RUN echo "$(starship init zsh)" >> ~/.zshrc
 
 # install deno
-# note that deno does not support Linux ARM64 yet
 RUN curl -fsSL https://deno.land/install.sh | sh
 RUN echo "export DENO_INSTALL=\"/root/.deno\"" >> ~/.zshrc
 RUN echo "export PATH=\"\$DENO_INSTALL/bin:\$PATH\"" >> ~/.zshrc
