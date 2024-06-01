@@ -212,6 +212,22 @@ pub struct GetMeineMarktakteureResponse {
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
+	rename = "GetListeGeloeschteUndDeaktivierteMarktakteureRequest",
+)]
+pub struct GetListeGeloeschteUndDeaktivierteMarktakteureRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::GetListeGeloeschteUndDeaktivierteMarktakteureRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeGeloeschteUndDeaktivierteMarktakteureResponse",
+)]
+pub struct GetListeGeloeschteUndDeaktivierteMarktakteureResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::GetListeGeloeschteUndDeaktivierteMarktakteureResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
 	rename = "GetListeLetzteAktualisierungRequest",
 )]
 pub struct GetListeLetzteAktualisierungRequest {
@@ -305,6 +321,22 @@ pub struct GetListeGeloeschteUndDeaktivierteEinheitenRequest {
 pub struct GetListeGeloeschteUndDeaktivierteEinheitenResponse {
 	#[yaserde(flatten, default)]
 	pub parameters_o: types::GetListeGeloeschteUndDeaktivierteEinheitenResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeEinheitenAenderungNetzbetreiberzuordnungRequest",
+)]
+pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::GetListeEinheitenAenderungNetzbetreiberzuordnungRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeEinheitenAenderungNetzbetreiberzuordnungResponse",
+)]
+pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::GetListeEinheitenAenderungNetzbetreiberzuordnungResponse, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -1666,6 +1698,262 @@ pub struct GetGefilterteListeLokationenGasVerbraucherResponse {
 	#[yaserde(flatten, default)]
 	pub parameters_o: types::GetGefilterteListeLokationenGasVerbraucherResponse, 
 }
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWindRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWindRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitWindRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWindResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWindResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitWindResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitSolarRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitSolarRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitSolarRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitSolarResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitSolarResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitSolarResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitBiomasseRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitBiomasseRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitBiomasseResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitBiomasseResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWasserRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWasserRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitWasserRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWasserResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWasserResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitWasserResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsTicketBearbeiterZuweisenRequest",
+)]
+pub struct MastrqsTicketBearbeiterZuweisenRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::MastrqsTicketBearbeiterZuweisenRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsTicketBearbeiterZuweisenResponse",
+)]
+pub struct MastrqsTicketBearbeiterZuweisenResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::MastrqsTicketBearbeiterZuweisenResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsStichwoerterAendernRequest",
+)]
+pub struct MastrqsStichwoerterAendernRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::MastrqsStichwoerterAendernRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsStichwoerterAendernResponse",
+)]
+pub struct MastrqsStichwoerterAendernResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::MastrqsStichwoerterAendernResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsKorrekturvorschlagStornierenRequest",
+)]
+pub struct MastrqsKorrekturvorschlagStornierenRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::MastrqsKorrekturvorschlagStornierenRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsKorrekturvorschlagStornierenResponse",
+)]
+pub struct MastrqsKorrekturvorschlagStornierenResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::MastrqsKorrekturvorschlagStornierenResponse, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetKorrekturVorschlagRequest",
+)]
+pub struct GetKorrekturVorschlagRequest {
+	#[yaserde(flatten, default)]
+	pub parameters_i: types::GetKorrekturVorschlagRequest, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetKorrekturVorschlagResponse",
+)]
+pub struct GetKorrekturVorschlagResponse {
+	#[yaserde(flatten, default)]
+	pub parameters_o: types::GetKorrekturVorschlagResponse, 
+}
 }
 
 pub mod types {
@@ -1853,6 +2141,1648 @@ pub struct NetzbetreiberpruefungTicketId {
 pub struct KorrekturVorschlagId {
 	#[yaserde(default)]
 	pub body: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MaStRQSProzessId",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MaStRQSProzessId {
+	#[yaserde(default)]
+	pub body: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MaStRQSTicketId",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MaStRQSTicketId {
+	#[yaserde(default)]
+	pub body: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MaStRQSRequestId",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MaStRQSRequestId {
+	#[yaserde(default)]
+	pub body: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "DatenuebernahmeEnum",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct DatenuebernahmeEnum {
+	#[yaserde(text, default)]
+	pub body: String, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWindAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWindAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitSolarAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitSolarAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitBiomasseAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWasserAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWasserAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennungAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicherAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucherAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeugerAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucherAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicherAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MaStRQSProzessId", prefix = "nsi2", default)]
+	pub ma_st_rqs_prozess_id: i32, 
+	#[yaserde(rename = "MaStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "MaStRQSRequestId", prefix = "nsi2", default)]
+	pub ma_st_rqs_request_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsKorrekturvorschlagStornierenAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsKorrekturvorschlagStornierenAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsTicketBearbeiterZuweisenParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsTicketBearbeiterZuweisenParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "TicketId", prefix = "nsi2", default)]
+	pub ticket_id: i32, 
+	#[yaserde(rename = "UserId", prefix = "nsi2", default)]
+	pub user_id: i32, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsTicketBearbeiterZuweisenAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsTicketBearbeiterZuweisenAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsStichwoerterAendernParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsStichwoerterAendernParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "ProzessId", prefix = "nsi2", default)]
+	pub prozess_id: i32, 
+	#[yaserde(rename = "StichwortIds", prefix = "nsi2", default)]
+	pub stichwort_ids: Vec<i32>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsStichwoerterAendernAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsStichwoerterAendernAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "anlagenbetreiberMastrNummer", prefix = "nsi2", default)]
+	pub anlagenbetreiber_mastr_nummer: MarktakteurMastrNummerId, 
+	#[yaserde(rename = "datenuebernahme", prefix = "nsi2", default)]
+	pub datenuebernahme: DatenuebernahmeEnum, 
+	#[yaserde(rename = "beschreibung", prefix = "nsi2", default)]
+	pub beschreibung: Option<String>, 
+	#[yaserde(rename = "letzteAenderung", prefix = "nsi2", default)]
+	pub letzte_aenderung: Option<String>, 
+	#[yaserde(rename = "Personenart", prefix = "nsi2", default)]
+	pub personenart: Option<PersonenartEnum>, 
+	#[yaserde(rename = "PersonenartZuPruefen", prefix = "nsi2", default)]
+	pub personenart_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Firmenname", prefix = "nsi2", default)]
+	pub firmenname: Option<String>, 
+	#[yaserde(rename = "FirmennameZuPruefen", prefix = "nsi2", default)]
+	pub firmenname_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RechtsformId", prefix = "nsi2", default)]
+	pub rechtsform_id: Option<KatalogwertId>, 
+	#[yaserde(rename = "RechtsformIdZuPruefen", prefix = "nsi2", default)]
+	pub rechtsform_id_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "SonstigeRechtsform", prefix = "nsi2", default)]
+	pub sonstige_rechtsform: Option<String>, 
+	#[yaserde(rename = "SonstigeRechtsformZuPruefen", prefix = "nsi2", default)]
+	pub sonstige_rechtsform_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Anrede", prefix = "nsi2", default)]
+	pub anrede: Option<SalutationEnum>, 
+	#[yaserde(rename = "AnredeZuPruefen", prefix = "nsi2", default)]
+	pub anrede_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Titel", prefix = "nsi2", default)]
+	pub titel: Option<TitelEnum>, 
+	#[yaserde(rename = "TitelZuPruefen", prefix = "nsi2", default)]
+	pub titel_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Vorname", prefix = "nsi2", default)]
+	pub vorname: Option<String>, 
+	#[yaserde(rename = "VornameZuPruefen", prefix = "nsi2", default)]
+	pub vorname_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Nachname", prefix = "nsi2", default)]
+	pub nachname: Option<String>, 
+	#[yaserde(rename = "NachnameZuPruefen", prefix = "nsi2", default)]
+	pub nachname_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Geburtsdatum", prefix = "nsi2", default)]
+	pub geburtsdatum: Option<String>, 
+	#[yaserde(rename = "GeburtsdatumZuPruefen", prefix = "nsi2", default)]
+	pub geburtsdatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Postleitzahl", prefix = "nsi2", default)]
+	pub postleitzahl: Option<String>, 
+	#[yaserde(rename = "PostleitzahlZuPruefen", prefix = "nsi2", default)]
+	pub postleitzahl_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Strasse", prefix = "nsi2", default)]
+	pub strasse: Option<String>, 
+	#[yaserde(rename = "StrasseZuPruefen", prefix = "nsi2", default)]
+	pub strasse_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "StrasseNichtGefunden", prefix = "nsi2", default)]
+	pub strasse_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "Hausnummer", prefix = "nsi2", default)]
+	pub hausnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "HausnummerZuPruefen", prefix = "nsi2", default)]
+	pub hausnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "HausnummerNichtGefunden", prefix = "nsi2", default)]
+	pub hausnummer_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "Adresszusatz", prefix = "nsi2", default)]
+	pub adresszusatz: Option<String>, 
+	#[yaserde(rename = "AdresszusatzZuPruefen", prefix = "nsi2", default)]
+	pub adresszusatz_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Ort", prefix = "nsi2", default)]
+	pub ort: Option<String>, 
+	#[yaserde(rename = "OrtZuPruefen", prefix = "nsi2", default)]
+	pub ort_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Bundesland", prefix = "nsi2", default)]
+	pub bundesland: Option<BundeslaenderEnum>, 
+	#[yaserde(rename = "BundeslandZuPruefen", prefix = "nsi2", default)]
+	pub bundesland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Land", prefix = "nsi2", default)]
+	pub land: Option<LandEnum>, 
+	#[yaserde(rename = "LandZuPruefen", prefix = "nsi2", default)]
+	pub land_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustelladresseVorhanden", prefix = "nsi2", default)]
+	pub zustelladresse_vorhanden: Option<bool>, 
+	#[yaserde(rename = "ZustelladresseVorhandenZuPruefen", prefix = "nsi2", default)]
+	pub zustelladresse_vorhanden_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellPostleitzahl", prefix = "nsi2", default)]
+	pub zustell_postleitzahl: Option<String>, 
+	#[yaserde(rename = "ZustellPostleitzahlZuPruefen", prefix = "nsi2", default)]
+	pub zustell_postleitzahl_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellStrasse", prefix = "nsi2", default)]
+	pub zustell_strasse: Option<String>, 
+	#[yaserde(rename = "ZustellStrasseZuPruefen", prefix = "nsi2", default)]
+	pub zustell_strasse_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellStrasseNichtGefunden", prefix = "nsi2", default)]
+	pub zustell_strasse_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "ZustellHausnummer", prefix = "nsi2", default)]
+	pub zustell_hausnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "ZustellHausnummerZuPruefen", prefix = "nsi2", default)]
+	pub zustell_hausnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellHausnummerNichtGefunden", prefix = "nsi2", default)]
+	pub zustell_hausnummer_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "ZustellAdresszusatz", prefix = "nsi2", default)]
+	pub zustell_adresszusatz: Option<String>, 
+	#[yaserde(rename = "ZustellAdresszusatzZuPruefen", prefix = "nsi2", default)]
+	pub zustell_adresszusatz_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellOrt", prefix = "nsi2", default)]
+	pub zustell_ort: Option<String>, 
+	#[yaserde(rename = "ZustellOrtZuPruefen", prefix = "nsi2", default)]
+	pub zustell_ort_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ZustellLand", prefix = "nsi2", default)]
+	pub zustell_land: Option<LandEnum>, 
+	#[yaserde(rename = "ZustellLandZuPruefen", prefix = "nsi2", default)]
+	pub zustell_land_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AbweichenderNameFirmenname", prefix = "nsi2", default)]
+	pub abweichender_name_firmenname: Option<String>, 
+	#[yaserde(rename = "AbweichenderNameFirmennameZuPruefen", prefix = "nsi2", default)]
+	pub abweichender_name_firmenname_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Email", prefix = "nsi2", default)]
+	pub email: Option<String>, 
+	#[yaserde(rename = "EmailZuPruefen", prefix = "nsi2", default)]
+	pub email_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Telefon", prefix = "nsi2", default)]
+	pub telefon: Option<String>, 
+	#[yaserde(rename = "TelefonZuPruefen", prefix = "nsi2", default)]
+	pub telefon_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Fax", prefix = "nsi2", default)]
+	pub fax: Option<ErweiterterString>, 
+	#[yaserde(rename = "FaxZuPruefen", prefix = "nsi2", default)]
+	pub fax_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Webseite", prefix = "nsi2", default)]
+	pub webseite: Option<ErweiterterString>, 
+	#[yaserde(rename = "WebseiteZuPruefen", prefix = "nsi2", default)]
+	pub webseite_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "EmailMarktakteurvertreter", prefix = "nsi2", default)]
+	pub email_marktakteurvertreter: Option<String>, 
+	#[yaserde(rename = "EmailMarktakteurvertreterZuPruefen", prefix = "nsi2", default)]
+	pub email_marktakteurvertreter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "TelefonMarktakteurvertreter", prefix = "nsi2", default)]
+	pub telefon_marktakteurvertreter: Option<String>, 
+	#[yaserde(rename = "TelefonMarktakteurvertreterZuPruefen", prefix = "nsi2", default)]
+	pub telefon_marktakteurvertreter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ImHandelsregisterEingetragen", prefix = "nsi2", default)]
+	pub im_handelsregister_eingetragen: Option<bool>, 
+	#[yaserde(rename = "ImHandelsregisterEingetragenZuPruefen", prefix = "nsi2", default)]
+	pub im_handelsregister_eingetragen_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegistergerichtId", prefix = "nsi2", default)]
+	pub registergericht_id: Option<KatalogwertId>, 
+	#[yaserde(rename = "RegistergerichtIdZuPruefen", prefix = "nsi2", default)]
+	pub registergericht_id_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegisternummerPraefix", prefix = "nsi2", default)]
+	pub registernummer_praefix: Option<RegisterNrPraefixEnum>, 
+	#[yaserde(rename = "RegisternummerPraefixZuPruefen", prefix = "nsi2", default)]
+	pub registernummer_praefix_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Registernummer", prefix = "nsi2", default)]
+	pub registernummer: Option<String>, 
+	#[yaserde(rename = "RegisternummerZuPruefen", prefix = "nsi2", default)]
+	pub registernummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegistergerichtAusland", prefix = "nsi2", default)]
+	pub registergericht_ausland: Option<String>, 
+	#[yaserde(rename = "RegistergerichtAuslandZuPruefen", prefix = "nsi2", default)]
+	pub registergericht_ausland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegisternummerAusland", prefix = "nsi2", default)]
+	pub registernummer_ausland: Option<String>, 
+	#[yaserde(rename = "RegisternummerAuslandZuPruefen", prefix = "nsi2", default)]
+	pub registernummer_ausland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Taetigkeitsbeginn", prefix = "nsi2", default)]
+	pub taetigkeitsbeginn: Option<String>, 
+	#[yaserde(rename = "TaetigkeitsbeginnZuPruefen", prefix = "nsi2", default)]
+	pub taetigkeitsbeginn_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Taetigkeitsende", prefix = "nsi2", default)]
+	pub taetigkeitsende: Option<String>, 
+	#[yaserde(rename = "TaetigkeitsendeZuPruefen", prefix = "nsi2", default)]
+	pub taetigkeitsende_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AcerCode", prefix = "nsi2", default)]
+	pub acer_code: Option<ErweiterterString>, 
+	#[yaserde(rename = "AcerCodeZuPruefen", prefix = "nsi2", default)]
+	pub acer_code_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Umsatzsteueridentifikationsnummer", prefix = "nsi2", default)]
+	pub umsatzsteueridentifikationsnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "UmsatzsteueridentifikationsnummerZuPruefen", prefix = "nsi2", default)]
+	pub umsatzsteueridentifikationsnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "HauptwirtdschaftszweigGruppe", prefix = "nsi2", default)]
+	pub hauptwirtdschaftszweig_gruppe: Option<NaceGruppeEnum>, 
+	#[yaserde(rename = "HauptwirtdschaftszweigGruppeZuPruefen", prefix = "nsi2", default)]
+	pub hauptwirtdschaftszweig_gruppe_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Kmu", prefix = "nsi2", default)]
+	pub kmu: Option<bool>, 
+	#[yaserde(rename = "KmuZuPruefen", prefix = "nsi2", default)]
+	pub kmu_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "EinkommenAusSelbstaendigerArbeit", prefix = "nsi2", default)]
+	pub einkommen_aus_selbstaendiger_arbeit: Option<bool>, 
+	#[yaserde(rename = "EinkommenAusSelbstaendigerArbeitZuPruefen", prefix = "nsi2", default)]
+	pub einkommen_aus_selbstaendiger_arbeit_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWindParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWindParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_stromerzeugungseinheit_parameter_basis: SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameWindpark", prefix = "nsi2", default)]
+	pub name_windpark: Option<String>, 
+	#[yaserde(rename = "nameWindparkZuPruefen", prefix = "nsi2", default)]
+	pub name_windpark_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "lage", prefix = "nsi2", default)]
+	pub lage: Option<WindLageEnum>, 
+	#[yaserde(rename = "lageZuPruefen", prefix = "nsi2", default)]
+	pub lage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "seelage", prefix = "nsi2", default)]
+	pub seelage: Option<SeelageEnum>, 
+	#[yaserde(rename = "seelageZuPruefen", prefix = "nsi2", default)]
+	pub seelage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "clusterOstsee", prefix = "nsi2", default)]
+	pub cluster_ostsee: Option<ClusterOstseeEnum>, 
+	#[yaserde(rename = "clusterOstseeZuPruefen", prefix = "nsi2", default)]
+	pub cluster_ostsee_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "clusterNordsee", prefix = "nsi2", default)]
+	pub cluster_nordsee: Option<ClusterNordseeEnum>, 
+	#[yaserde(rename = "clusterNordseeZuPruefen", prefix = "nsi2", default)]
+	pub cluster_nordsee_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<WindanlageTechnologieEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "herstellerId", prefix = "nsi2", default)]
+	pub hersteller_id: Option<KatalogwertId>, 
+	#[yaserde(rename = "herstellerIdZuPruefen", prefix = "nsi2", default)]
+	pub hersteller_id_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "typenbezeichnung", prefix = "nsi2", default)]
+	pub typenbezeichnung: Option<String>, 
+	#[yaserde(rename = "typenbezeichnungZuPruefen", prefix = "nsi2", default)]
+	pub typenbezeichnung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nabenhoehe", prefix = "nsi2", default)]
+	pub nabenhoehe: Option<f64>, 
+	#[yaserde(rename = "nabenhoeheZuPruefen", prefix = "nsi2", default)]
+	pub nabenhoehe_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "rotordurchmesser", prefix = "nsi2", default)]
+	pub rotordurchmesser: Option<f64>, 
+	#[yaserde(rename = "rotordurchmesserZuPruefen", prefix = "nsi2", default)]
+	pub rotordurchmesser_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Rotorblattenteisungssystem", prefix = "nsi2", default)]
+	pub rotorblattenteisungssystem: Option<bool>, 
+	#[yaserde(rename = "RotorblattenteisungssystemZuPruefen", prefix = "nsi2", default)]
+	pub rotorblattenteisungssystem_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "hoehe", prefix = "nsi2", default)]
+	pub hoehe: Option<f64>, 
+	#[yaserde(rename = "hoeheZuPruefen", prefix = "nsi2", default)]
+	pub hoehe_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "auflageAbschaltungLeistungsbegrenzung", prefix = "nsi2", default)]
+	pub auflage_abschaltung_leistungsbegrenzung: Option<bool>, 
+	#[yaserde(rename = "auflageAbschaltungLeistungsbegrenzungZuPruefen", prefix = "nsi2", default)]
+	pub auflage_abschaltung_leistungsbegrenzung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchallimmissionsschutzNachts", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schallimmissionsschutz_nachts: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchallimmissionsschutzNachtsZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schallimmissionsschutz_nachts_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchallimmissionsschutzTagsueber", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schallimmissionsschutz_tagsueber: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchallimmissionsschutzTagsueberZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schallimmissionsschutz_tagsueber_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchattenwurf", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schattenwurf: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSchattenwurfZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_schattenwurf_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungTierschutz", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_tierschutz: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungTierschutzZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_tierschutz_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungEiswurf", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_eiswurf: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungEiswurfZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_eiswurf_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSonstige", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_sonstige: Option<bool>, 
+	#[yaserde(rename = "AuflagenAbschaltungSonstigeZuPruefen", prefix = "nsi2", default)]
+	pub auflagen_abschaltung_sonstige_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "wassertiefe", prefix = "nsi2", default)]
+	pub wassertiefe: Option<f64>, 
+	#[yaserde(rename = "wassertiefeZuPruefen", prefix = "nsi2", default)]
+	pub wassertiefe_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kuestenentfernung", prefix = "nsi2", default)]
+	pub kuestenentfernung: Option<f64>, 
+	#[yaserde(rename = "kuestenentfernungZuPruefen", prefix = "nsi2", default)]
+	pub kuestenentfernung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegPrototypAnlage", prefix = "nsi2", default)]
+	pub eeg_prototyp_anlage: Option<bool>, 
+	#[yaserde(rename = "eegPrototypAnlageZuPruefen", prefix = "nsi2", default)]
+	pub eeg_prototyp_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegPilotAnlage", prefix = "nsi2", default)]
+	pub eeg_pilot_anlage: Option<bool>, 
+	#[yaserde(rename = "eegPilotAnlageZuPruefen", prefix = "nsi2", default)]
+	pub eeg_pilot_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung: Option<f64>, 
+	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegVerhaeltnisErtragsschaetzungReferenzertrag", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_ertragsschaetzung_referenzertrag: Option<ErweitertesDecimal>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtragZuPruefen", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag5Jahre", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_5_jahre: Option<ErweitertesDecimal>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag5JahreZuPruefen", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_5_jahre_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag10Jahre", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_10_jahre: Option<ErweitertesDecimal>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag10JahreZuPruefen", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_10_jahre_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag15Jahre", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_15_jahre: Option<ErweitertesDecimal>, 
+	#[yaserde(rename = "eegVerhaeltnisReferenzertragErtrag15JahreZuPruefen", prefix = "nsi2", default)]
+	pub eeg_verhaeltnis_referenzertrag_ertrag_15_jahre_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegZuschlagsnummer", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer: Option<String>, 
+	#[yaserde(rename = "eegZuschlagsnummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Buergerenergie", prefix = "nsi2", default)]
+	pub buergerenergie: Option<bool>, 
+	#[yaserde(rename = "BuergerenergieZuPruefen", prefix = "nsi2", default)]
+	pub buergerenergie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Nachtkennzeichnung", prefix = "nsi2", default)]
+	pub nachtkennzeichnung: Option<bool>, 
+	#[yaserde(rename = "NachtkennzeichnungZuPruefen", prefix = "nsi2", default)]
+	pub nachtkennzeichnung_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitSolarParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitSolarParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit: Option<String>, 
+	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einsatzverantwortlicher", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher: Option<String>, 
+	#[yaserde(rename = "einsatzverantwortlicherZuPruefen", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weic", prefix = "nsi2", default)]
+	pub weic: Option<ErweiterterString>, 
+	#[yaserde(rename = "weicZuPruefen", prefix = "nsi2", default)]
+	pub weic_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weicDisplayName", prefix = "nsi2", default)]
+	pub weic_display_name: Option<String>, 
+	#[yaserde(rename = "weicDisplayNameZuPruefen", prefix = "nsi2", default)]
+	pub weic_display_name_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kraftwerksnummer", prefix = "nsi2", default)]
+	pub kraftwerksnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "kraftwerksnummerZuPruefen", prefix = "nsi2", default)]
+	pub kraftwerksnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bruttoleistung", prefix = "nsi2", default)]
+	pub bruttoleistung: Option<f64>, 
+	#[yaserde(rename = "bruttoleistungZuPruefen", prefix = "nsi2", default)]
+	pub bruttoleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannung", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannungZuPruefen", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergie", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergieZuPruefen", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeit", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeit", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNb", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNbZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDv", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
+	pub einspeisungsart: Option<EinspeisungsartEnum>, 
+	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
+	pub einspeisungsart_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anzahlModule", prefix = "nsi2", default)]
+	pub anzahl_module: Option<i32>, 
+	#[yaserde(rename = "anzahlModuleZuPruefen", prefix = "nsi2", default)]
+	pub anzahl_module_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "lage", prefix = "nsi2", default)]
+	pub lage: Option<SolarLageEnum>, 
+	#[yaserde(rename = "lageZuPruefen", prefix = "nsi2", default)]
+	pub lage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "leistungsbegrenzung", prefix = "nsi2", default)]
+	pub leistungsbegrenzung: Option<SolarLeistungsbegrenzungEnum>, 
+	#[yaserde(rename = "leistungsbegrenzungZuPruefen", prefix = "nsi2", default)]
+	pub leistungsbegrenzung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einheitlicheAusrichtungUndNeigungswinkel", prefix = "nsi2", default)]
+	pub einheitliche_ausrichtung_und_neigungswinkel: Option<bool>, 
+	#[yaserde(rename = "einheitlicheAusrichtungUndNeigungswinkelZuPruefen", prefix = "nsi2", default)]
+	pub einheitliche_ausrichtung_und_neigungswinkel_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "hauptausrichtung", prefix = "nsi2", default)]
+	pub hauptausrichtung: Option<AnlagenartSolarAusrichtungEnum>, 
+	#[yaserde(rename = "hauptausrichtungZuPruefen", prefix = "nsi2", default)]
+	pub hauptausrichtung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "hauptausrichtungNeigungswinkel", prefix = "nsi2", default)]
+	pub hauptausrichtung_neigungswinkel: Option<AnlagenartSolarNeigungswinkelEnum>, 
+	#[yaserde(rename = "hauptausrichtungNeigungswinkelZuPruefen", prefix = "nsi2", default)]
+	pub hauptausrichtung_neigungswinkel_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nebenausrichtung", prefix = "nsi2", default)]
+	pub nebenausrichtung: Option<AnlagenartSolarAusrichtungEnum>, 
+	#[yaserde(rename = "nebenausrichtungZuPruefen", prefix = "nsi2", default)]
+	pub nebenausrichtung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nebenausrichtungNeigungswinkel", prefix = "nsi2", default)]
+	pub nebenausrichtung_neigungswinkel: Option<AnlagenartSolarNeigungswinkelEnum>, 
+	#[yaserde(rename = "nebenausrichtungNeigungswinkelZuPruefen", prefix = "nsi2", default)]
+	pub nebenausrichtung_neigungswinkel_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inAnspruchGenommeneFlaeche", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_flaeche: Option<f64>, 
+	#[yaserde(rename = "inAnspruchGenommeneFlaecheZuPruefen", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_flaeche_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "artDerFlaeche", prefix = "nsi2", default)]
+	pub art_der_flaeche: Vec<SolarFlaechenartEnum>, 
+	#[yaserde(rename = "artDerFlaecheZuPruefen", prefix = "nsi2", default)]
+	pub art_der_flaeche_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaeche", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche: Option<f64>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaecheZuPruefen", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nutzungsbereich", prefix = "nsi2", default)]
+	pub nutzungsbereich: Option<NutzungsbereichEnum>, 
+	#[yaserde(rename = "nutzungsbereichZuPruefen", prefix = "nsi2", default)]
+	pub nutzungsbereich_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInanspruchnahmeZahlungNachEeg", prefix = "nsi2", default)]
+	pub eeg_inanspruchnahme_zahlung_nach_eeg: Option<bool>, 
+	#[yaserde(rename = "eegInanspruchnahmeZahlungNachEegZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inanspruchnahme_zahlung_nach_eeg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregister", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister: Option<ErweiterterString>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegRegistrierungsnummerPvMeldeportal", prefix = "nsi2", default)]
+	pub eeg_registrierungsnummer_pv_meldeportal: Option<ErweiterterString>, 
+	#[yaserde(rename = "eegRegistrierungsnummerPvMeldeportalZuPruefen", prefix = "nsi2", default)]
+	pub eeg_registrierungsnummer_pv_meldeportal_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMieterstromZugeordnet", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_zugeordnet: Option<bool>, 
+	#[yaserde(rename = "eegMieterstromZugeordnetZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_zugeordnet_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMieterstromRegistrierungsdatum", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_registrierungsdatum: Option<String>, 
+	#[yaserde(rename = "eegMieterstromRegistrierungsdatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_registrierungsdatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMieterstromErsteZuordnungZuschlag", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_erste_zuordnung_zuschlag: Option<String>, 
+	#[yaserde(rename = "eegMieterstromErsteZuordnungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mieterstrom_erste_zuordnung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegZuschlagsnummer", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer: Option<String>, 
+	#[yaserde(rename = "eegZuschlagsnummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegZugeordneteGebotsmenge", prefix = "nsi2", default)]
+	pub eeg_zugeordnete_gebotsmenge: Option<f64>, 
+	#[yaserde(rename = "eegZugeordneteGebotsmengeZuPruefen", prefix = "nsi2", default)]
+	pub eeg_zugeordnete_gebotsmenge_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Buergerenergie", prefix = "nsi2", default)]
+	pub buergerenergie: Option<bool>, 
+	#[yaserde(rename = "BuergerenergieZuPruefen", prefix = "nsi2", default)]
+	pub buergerenergie_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitBiomasseParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_stromerzeugungseinheit_parameter_basis: SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "DatumBeginnVoruebergehendeStilllegung", prefix = "nsi2", default)]
+	pub datum_beginn_voruebergehende_stilllegung: Option<String>, 
+	#[yaserde(rename = "DatumBeginnVoruebergehendeStilllegungZuPruefen", prefix = "nsi2", default)]
+	pub datum_beginn_voruebergehende_stilllegung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumWiederaufnahmeBetrieb", prefix = "nsi2", default)]
+	pub datum_wiederaufnahme_betrieb: Option<String>, 
+	#[yaserde(rename = "DatumWiederaufnahmeBetriebZuPruefen", prefix = "nsi2", default)]
+	pub datum_wiederaufnahme_betrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "hauptbrennstoff", prefix = "nsi2", default)]
+	pub hauptbrennstoff: Option<BiomasseBrennstoffEnum>, 
+	#[yaserde(rename = "hauptbrennstoffZuPruefen", prefix = "nsi2", default)]
+	pub hauptbrennstoff_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMastrNummer", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
+	#[yaserde(rename = "eegMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregister", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister: Option<ErweiterterString>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung: Option<f64>, 
+	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAusschliesslicheVerwendungBiomasse", prefix = "nsi2", default)]
+	pub eeg_ausschliessliche_verwendung_biomasse: Option<bool>, 
+	#[yaserde(rename = "eegAusschliesslicheVerwendungBiomasseZuPruefen", prefix = "nsi2", default)]
+	pub eeg_ausschliessliche_verwendung_biomasse_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasZuschlagsnummer", prefix = "nsi2", default)]
+	pub eeg_biogas_zuschlagsnummer: Option<String>, 
+	#[yaserde(rename = "eegBiogasZuschlagsnummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_zuschlagsnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasInanspruchnahmeFlexiPraemie", prefix = "nsi2", default)]
+	pub eeg_biogas_inanspruchnahme_flexi_praemie: Option<bool>, 
+	#[yaserde(rename = "eegBiogasInanspruchnahmeFlexiPraemieZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_inanspruchnahme_flexi_praemie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasDatumInanspruchnahmeFlexiPraemie", prefix = "nsi2", default)]
+	pub eeg_biogas_datum_inanspruchnahme_flexi_praemie: Option<String>, 
+	#[yaserde(rename = "eegBiogasDatumInanspruchnahmeFlexiPraemieZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_datum_inanspruchnahme_flexi_praemie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasLeistungserhoehung", prefix = "nsi2", default)]
+	pub eeg_biogas_leistungserhoehung: Option<bool>, 
+	#[yaserde(rename = "eegBiogasLeistungserhoehungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_leistungserhoehung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasDatumLeistungserhoehung", prefix = "nsi2", default)]
+	pub eeg_biogas_datum_leistungserhoehung: Option<String>, 
+	#[yaserde(rename = "eegBiogasDatumLeistungserhoehungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_datum_leistungserhoehung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasUmfangLeistungserhoehung", prefix = "nsi2", default)]
+	pub eeg_biogas_umfang_leistungserhoehung: Option<f64>, 
+	#[yaserde(rename = "eegBiogasUmfangLeistungserhoehungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_umfang_leistungserhoehung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiogasGaserzeugungskapazitaet", prefix = "nsi2", default)]
+	pub eeg_biogas_gaserzeugungskapazitaet: Option<ErweitertesDecimal>, 
+	#[yaserde(rename = "eegBiogasGaserzeugungskapazitaetZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biogas_gaserzeugungskapazitaet_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegHoechstbemessungsleistung", prefix = "nsi2", default)]
+	pub eeg_hoechstbemessungsleistung: Option<f64>, 
+	#[yaserde(rename = "eegHoechstbemessungsleistungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_hoechstbemessungsleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegBiomethanErstmaligerEinsatz", prefix = "nsi2", default)]
+	pub eeg_biomethan_erstmaliger_einsatz: Option<ErweitertesDate>, 
+	#[yaserde(rename = "eegBiomethanErstmaligerEinsatzZuPruefen", prefix = "nsi2", default)]
+	pub eeg_biomethan_erstmaliger_einsatz_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlage", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkMastrNummer", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer: Option<KwkMastrNummerId>, 
+	#[yaserde(rename = "kwkMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkZuschlagnummer", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer: Option<String>, 
+	#[yaserde(rename = "kwkZuschlagnummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkThermischeNutzleistung", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung: Option<f64>, 
+	#[yaserde(rename = "kwkThermischeNutzleistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistung", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung: Option<f64>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitWasserParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitWasserParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_stromerzeugungseinheit_parameter_basis: SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameKraftwerk", prefix = "nsi2", default)]
+	pub name_kraftwerk: Option<String>, 
+	#[yaserde(rename = "nameKraftwerkZuPruefen", prefix = "nsi2", default)]
+	pub name_kraftwerk_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumWiederaufnahmeBetrieb", prefix = "nsi2", default)]
+	pub datum_wiederaufnahme_betrieb: Option<String>, 
+	#[yaserde(rename = "DatumWiederaufnahmeBetriebZuPruefen", prefix = "nsi2", default)]
+	pub datum_wiederaufnahme_betrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "artDerWasserkraftanlage", prefix = "nsi2", default)]
+	pub art_der_wasserkraftanlage: Option<ArtDerWasserkraftanlageEnum>, 
+	#[yaserde(rename = "artDerWasserkraftanlageZuPruefen", prefix = "nsi2", default)]
+	pub art_der_wasserkraftanlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "minderungStromerzeugung", prefix = "nsi2", default)]
+	pub minderung_stromerzeugung: Option<bool>, 
+	#[yaserde(rename = "minderungStromerzeugungZuPruefen", prefix = "nsi2", default)]
+	pub minderung_stromerzeugung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerk", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerkZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nettonennleistungDeutschland", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland: Option<f64>, 
+	#[yaserde(rename = "nettonennleistungDeutschlandZuPruefen", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "artDesZuflusses", prefix = "nsi2", default)]
+	pub art_des_zuflusses: Option<ZuflussartEnum>, 
+	#[yaserde(rename = "artDesZuflussesZuPruefen", prefix = "nsi2", default)]
+	pub art_des_zuflusses_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMastrNummer", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
+	#[yaserde(rename = "eegMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregister", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister: Option<ErweiterterString>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung: Option<f64>, 
+	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_stromerzeugungseinheit_parameter_basis: SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "energietraeger", prefix = "nsi2", default)]
+	pub energietraeger: Option<EnergietraegerEnum>, 
+	#[yaserde(rename = "energietraegerZuPruefen", prefix = "nsi2", default)]
+	pub energietraeger_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegMastrNummer", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
+	#[yaserde(rename = "eegMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregister", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister: Option<ErweiterterString>, 
+	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
+	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung: Option<f64>, 
+	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
+	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlage", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkMastrNummer", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer: Option<KwkMastrNummerId>, 
+	#[yaserde(rename = "kwkMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkZuschlagnummer", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer: Option<String>, 
+	#[yaserde(rename = "kwkZuschlagnummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkThermischeNutzleistung", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung: Option<f64>, 
+	#[yaserde(rename = "kwkThermischeNutzleistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistung", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung: Option<f64>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennungParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_stromerzeugungseinheit_parameter_basis: SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameKraftwerk", prefix = "nsi2", default)]
+	pub name_kraftwerk: Option<String>, 
+	#[yaserde(rename = "nameKraftwerkZuPruefen", prefix = "nsi2", default)]
+	pub name_kraftwerk_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nameKraftwerksblock", prefix = "nsi2", default)]
+	pub name_kraftwerksblock: Option<String>, 
+	#[yaserde(rename = "nameKraftwerksblockZuPruefen", prefix = "nsi2", default)]
+	pub name_kraftwerksblock_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "datumBaubeginn", prefix = "nsi2", default)]
+	pub datum_baubeginn: Option<String>, 
+	#[yaserde(rename = "datumBaubeginnZuPruefen", prefix = "nsi2", default)]
+	pub datum_baubeginn_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "steigerungNettonennleistungKombibetrieb", prefix = "nsi2", default)]
+	pub steigerung_nettonennleistung_kombibetrieb: Option<f64>, 
+	#[yaserde(rename = "steigerungNettonennleistungKombibetriebZuPruefen", prefix = "nsi2", default)]
+	pub steigerung_nettonennleistung_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anlageIstImKombibetrieb", prefix = "nsi2", default)]
+	pub anlage_ist_im_kombibetrieb: Option<bool>, 
+	#[yaserde(rename = "anlageIstImKombibetriebZuPruefen", prefix = "nsi2", default)]
+	pub anlage_ist_im_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "mastrNummernKombibetrieb", prefix = "nsi2", default)]
+	pub mastr_nummern_kombibetrieb: Option<String>, 
+	#[yaserde(rename = "mastrNummernKombibetriebZuPruefen", prefix = "nsi2", default)]
+	pub mastr_nummern_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "netzreserveAbDatum", prefix = "nsi2", default)]
+	pub netzreserve_ab_datum: Option<String>, 
+	#[yaserde(rename = "netzreserveAbDatumZuPruefen", prefix = "nsi2", default)]
+	pub netzreserve_ab_datum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "sicherheitsbereitschaftAbDatum", prefix = "nsi2", default)]
+	pub sicherheitsbereitschaft_ab_datum: Option<String>, 
+	#[yaserde(rename = "sicherheitsbereitschaftAbDatumZuPruefen", prefix = "nsi2", default)]
+	pub sicherheitsbereitschaft_ab_datum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "energietraeger", prefix = "nsi2", default)]
+	pub energietraeger: Option<EnergietraegerEnum>, 
+	#[yaserde(rename = "energietraegerZuPruefen", prefix = "nsi2", default)]
+	pub energietraeger_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "hauptbrennstoff", prefix = "nsi2", default)]
+	pub hauptbrennstoff: Option<VerbrennungBrennstoffEnum>, 
+	#[yaserde(rename = "hauptbrennstoffZuPruefen", prefix = "nsi2", default)]
+	pub hauptbrennstoff_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weitererHauptbrennstoff", prefix = "nsi2", default)]
+	pub weiterer_hauptbrennstoff: Option<ErweiterterWeitereBrennstoffe>, 
+	#[yaserde(rename = "weitererHauptbrennstoffZuPruefen", prefix = "nsi2", default)]
+	pub weiterer_hauptbrennstoff_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weitereBrennstoffe", prefix = "nsi2", default)]
+	pub weitere_brennstoffe: Option<ErweiterteWeitereBrennstoffe>, 
+	#[yaserde(rename = "weitereBrennstoffeZuPruefen", prefix = "nsi2", default)]
+	pub weitere_brennstoffe_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "verknuepfteErzeugungseinheiten", prefix = "nsi2", default)]
+	pub verknuepfte_erzeugungseinheiten: Vec<VerknuepfteEinheit>, 
+	#[yaserde(rename = "verknuepfteErzeugungseinheitenZuPruefen", prefix = "nsi2", default)]
+	pub verknuepfte_erzeugungseinheiten_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerk", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerkZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nettonennleistungDeutschland", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland: Option<f64>, 
+	#[yaserde(rename = "nettonennleistungDeutschlandZuPruefen", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "notstromaggregat", prefix = "nsi2", default)]
+	pub notstromaggregat: Option<bool>, 
+	#[yaserde(rename = "notstromaggregatZuPruefen", prefix = "nsi2", default)]
+	pub notstromaggregat_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einsatzort", prefix = "nsi2", default)]
+	pub einsatzort: Option<EinsatzortEnum>, 
+	#[yaserde(rename = "einsatzortZuPruefen", prefix = "nsi2", default)]
+	pub einsatzort_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlage", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilKWKAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_kwk_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkMastrNummer", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer: Option<KwkMastrNummerId>, 
+	#[yaserde(rename = "kwkMastrNummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_mastr_nummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "kwkAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub kwk_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkZuschlagnummer", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer: Option<String>, 
+	#[yaserde(rename = "kwkZuschlagnummerZuPruefen", prefix = "nsi2", default)]
+	pub kwk_zuschlagnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "kwkInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub kwk_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkThermischeNutzleistung", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung: Option<f64>, 
+	#[yaserde(rename = "kwkThermischeNutzleistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_thermische_nutzleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistung", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung: Option<f64>, 
+	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
+	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "AusschliesslicheVerwendungImKombibetrieb", prefix = "nsi2", default)]
+	pub ausschliessliche_verwendung_im_kombibetrieb: Option<bool>, 
+	#[yaserde(rename = "AusschliesslicheVerwendungImKombibetriebZuPruefen", prefix = "nsi2", default)]
+	pub ausschliessliche_verwendung_im_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicherParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "speichername", prefix = "nsi2", default)]
+	pub speichername: Option<String>, 
+	#[yaserde(rename = "speichernameZuPruefen", prefix = "nsi2", default)]
+	pub speichername_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "speicherart", prefix = "nsi2", default)]
+	pub speicherart: Option<GasSpeicherartEnum>, 
+	#[yaserde(rename = "speicherartZuPruefen", prefix = "nsi2", default)]
+	pub speicherart_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "maximalNutzbaresArbeitsgasvolumen", prefix = "nsi2", default)]
+	pub maximal_nutzbares_arbeitsgasvolumen: Option<f64>, 
+	#[yaserde(rename = "maximalNutzbaresArbeitsgasvolumenZuPruefen", prefix = "nsi2", default)]
+	pub maximal_nutzbares_arbeitsgasvolumen_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "maximaleEinspeicherleistung", prefix = "nsi2", default)]
+	pub maximale_einspeicherleistung: Option<f64>, 
+	#[yaserde(rename = "maximaleEinspeicherleistungZuPruefen", prefix = "nsi2", default)]
+	pub maximale_einspeicherleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "maximaleAusspeicherleistung", prefix = "nsi2", default)]
+	pub maximale_ausspeicherleistung: Option<f64>, 
+	#[yaserde(rename = "maximaleAusspeicherleistungZuPruefen", prefix = "nsi2", default)]
+	pub maximale_ausspeicherleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "durchschnittlicherBrennwert", prefix = "nsi2", default)]
+	pub durchschnittlicher_brennwert: Option<f64>, 
+	#[yaserde(rename = "durchschnittlicherBrennwertZuPruefen", prefix = "nsi2", default)]
+	pub durchschnittlicher_brennwert_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "speGasSpeicheranlage", prefix = "nsi2", default)]
+	pub spe_gas_speicheranlage: Option<GasSpeicherMastrNummerId>, 
+	#[yaserde(rename = "speGasSpeicheranlageZuPruefen", prefix = "nsi2", default)]
+	pub spe_gas_speicheranlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weic", prefix = "nsi2", default)]
+	pub weic: Option<ErweiterterString>, 
+	#[yaserde(rename = "weicZuPruefen", prefix = "nsi2", default)]
+	pub weic_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucherParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "NameStromverbrauchseinheit", prefix = "nsi2", default)]
+	pub name_stromverbrauchseinheit: Option<String>, 
+	#[yaserde(rename = "NameStromverbrauchseinheitZuPruefen", prefix = "nsi2", default)]
+	pub name_stromverbrauchseinheit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einsatzverantwortlicher", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher: Option<String>, 
+	#[yaserde(rename = "einsatzverantwortlicherZuPruefen", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anzahlStromverbrauchseinheitenGroesser50Mw", prefix = "nsi2", default)]
+	pub anzahl_stromverbrauchseinheiten_groesser_50_mw: Option<i32>, 
+	#[yaserde(rename = "anzahlStromverbrauchseinheitenGroesser50MwZuPruefen", prefix = "nsi2", default)]
+	pub anzahl_stromverbrauchseinheiten_groesser_50_mw_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeugerParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<TechnologieGasErzeugungEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "erzeugungsleistung", prefix = "nsi2", default)]
+	pub erzeugungsleistung: Option<f64>, 
+	#[yaserde(rename = "erzeugungsleistungZuPruefen", prefix = "nsi2", default)]
+	pub erzeugungsleistung_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucherParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "maximaleGasbezugsleistung", prefix = "nsi2", default)]
+	pub maximale_gasbezugsleistung: Option<f64>, 
+	#[yaserde(rename = "maximaleGasbezugsleistungZuPruefen", prefix = "nsi2", default)]
+	pub maximale_gasbezugsleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einheitDientDerStromerzeugung", prefix = "nsi2", default)]
+	pub einheit_dient_der_stromerzeugung: Option<bool>, 
+	#[yaserde(rename = "einheitDientDerStromerzeugungZuPruefen", prefix = "nsi2", default)]
+	pub einheit_dient_der_stromerzeugung_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicherParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherParameter {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit: Option<String>, 
+	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weic", prefix = "nsi2", default)]
+	pub weic: Option<ErweiterterString>, 
+	#[yaserde(rename = "weicZuPruefen", prefix = "nsi2", default)]
+	pub weic_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weicDisplayName", prefix = "nsi2", default)]
+	pub weic_display_name: Option<String>, 
+	#[yaserde(rename = "weicDisplayNameZuPruefen", prefix = "nsi2", default)]
+	pub weic_display_name_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kraftwerksnummer", prefix = "nsi2", default)]
+	pub kraftwerksnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "kraftwerksnummerZuPruefen", prefix = "nsi2", default)]
+	pub kraftwerksnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bruttoleistung", prefix = "nsi2", default)]
+	pub bruttoleistung: Option<f64>, 
+	#[yaserde(rename = "bruttoleistungZuPruefen", prefix = "nsi2", default)]
+	pub bruttoleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nettonennleistung", prefix = "nsi2", default)]
+	pub nettonennleistung: Option<f64>, 
+	#[yaserde(rename = "nettonennleistungZuPruefen", prefix = "nsi2", default)]
+	pub nettonennleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "technologie", prefix = "nsi2", default)]
+	pub technologie: Option<TechnologieSpeicherEnum>, 
+	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
+	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeit", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeit", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNb", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNbZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDv", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "acDcKoppelung", prefix = "nsi2", default)]
+	pub ac_dc_koppelung: Option<SystemkopplungEnum>, 
+	#[yaserde(rename = "acDcKoppelungZuPruefen", prefix = "nsi2", default)]
+	pub ac_dc_koppelung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "batterietechnologie", prefix = "nsi2", default)]
+	pub batterietechnologie: Option<BatterieTechnologieEnum>, 
+	#[yaserde(rename = "batterietechnologieZuPruefen", prefix = "nsi2", default)]
+	pub batterietechnologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannung", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannungZuPruefen", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergie", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergieZuPruefen", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichern", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern: Option<f64>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichernZuPruefen", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbar", prefix = "nsi2", default)]
+	pub pumpbetrieb_kontinuierlich_regelbar: Option<bool>, 
+	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbarZuPruefen", prefix = "nsi2", default)]
+	pub pumpbetrieb_kontinuierlich_regelbar_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "Pumpspeichertechnologie", prefix = "nsi2", default)]
+	pub pumpspeichertechnologie: Option<PumpspeichertechnologieEnum>, 
+	#[yaserde(rename = "PumpspeichertechnologieZuPruefen", prefix = "nsi2", default)]
+	pub pumpspeichertechnologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
+	pub einspeisungsart: Option<EinspeisungsartEnum>, 
+	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
+	pub einspeisungsart_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerk", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk: Option<bool>, 
+	#[yaserde(rename = "bestandteilGrenzkraftwerkZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_grenzkraftwerk_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nettonennleistungDeutschland", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland: Option<f64>, 
+	#[yaserde(rename = "nettonennleistungDeutschlandZuPruefen", prefix = "nsi2", default)]
+	pub nettonennleistung_deutschland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "notstromaggregat", prefix = "nsi2", default)]
+	pub notstromaggregat: Option<bool>, 
+	#[yaserde(rename = "notstromaggregatZuPruefen", prefix = "nsi2", default)]
+	pub notstromaggregat_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einsatzort", prefix = "nsi2", default)]
+	pub einsatzort: Option<EinsatzortEnum>, 
+	#[yaserde(rename = "einsatzortZuPruefen", prefix = "nsi2", default)]
+	pub einsatzort_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "speNutzbareSpeicherkapazitaet", prefix = "nsi2", default)]
+	pub spe_nutzbare_speicherkapazitaet: Option<f64>, 
+	#[yaserde(rename = "speNutzbareSpeicherkapazitaetZuPruefen", prefix = "nsi2", default)]
+	pub spe_nutzbare_speicherkapazitaet_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage: Option<bool>, 
+	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
+	pub bestandteil_eeg_anlage_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegZuschlagsnummer", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer: Option<String>, 
+	#[yaserde(rename = "eegZuschlagsnummerZuPruefen", prefix = "nsi2", default)]
+	pub eeg_zuschlagsnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlag", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag: Option<bool>, 
+	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
+	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MastrqsKorrekturvorschlagStornierenParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MastrqsKorrekturvorschlagStornierenParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "maStRQSTicketId", prefix = "nsi2", default)]
+	pub ma_st_rqs_ticket_id: i32, 
+	#[yaserde(rename = "beschreibung", prefix = "nsi2", default)]
+	pub beschreibung: Option<String>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagParameterBasis",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagParameterBasis {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "einheitMastrNummer", prefix = "nsi2", default)]
+	pub einheit_mastr_nummer: EinheitMastrNummerId, 
+	#[yaserde(rename = "datenuebernahme", prefix = "nsi2", default)]
+	pub datenuebernahme: DatenuebernahmeEnum, 
+	#[yaserde(rename = "beschreibung", prefix = "nsi2", default)]
+	pub beschreibung: Option<String>, 
+	#[yaserde(rename = "letzteAenderung", prefix = "nsi2", default)]
+	pub letzte_aenderung: Option<String>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagEinheitParameterBasis",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagEinheitParameterBasis {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_parameter_basis: SetMastrqsKorrekturVorschlagParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "postleitzahl", prefix = "nsi2", default)]
+	pub postleitzahl: Option<String>, 
+	#[yaserde(rename = "postleitzahlZuPruefen", prefix = "nsi2", default)]
+	pub postleitzahl_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "gemarkung", prefix = "nsi2", default)]
+	pub gemarkung: Option<String>, 
+	#[yaserde(rename = "gemarkungZuPruefen", prefix = "nsi2", default)]
+	pub gemarkung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "flurFlurstuecknummern", prefix = "nsi2", default)]
+	pub flur_flurstuecknummern: Option<String>, 
+	#[yaserde(rename = "flurFlurstuecknummernZuPruefen", prefix = "nsi2", default)]
+	pub flur_flurstuecknummern_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "strasse", prefix = "nsi2", default)]
+	pub strasse: Option<String>, 
+	#[yaserde(rename = "strasseZuPruefen", prefix = "nsi2", default)]
+	pub strasse_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "strasseNichtGefunden", prefix = "nsi2", default)]
+	pub strasse_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "hausnummer", prefix = "nsi2", default)]
+	pub hausnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "hausnummerNichtGefunden", prefix = "nsi2", default)]
+	pub hausnummer_nicht_gefunden: Option<bool>, 
+	#[yaserde(rename = "hausnummerZuPruefen", prefix = "nsi2", default)]
+	pub hausnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "adresszusatz", prefix = "nsi2", default)]
+	pub adresszusatz: Option<String>, 
+	#[yaserde(rename = "adresszusatzZuPruefen", prefix = "nsi2", default)]
+	pub adresszusatz_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ort", prefix = "nsi2", default)]
+	pub ort: Option<String>, 
+	#[yaserde(rename = "ortZuPruefen", prefix = "nsi2", default)]
+	pub ort_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bundesland", prefix = "nsi2", default)]
+	pub bundesland: Option<BundeslaenderEinheitenEnum>, 
+	#[yaserde(rename = "bundeslandZuPruefen", prefix = "nsi2", default)]
+	pub bundesland_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "land", prefix = "nsi2", default)]
+	pub land: Option<LaenderEinheitenEnum>, 
+	#[yaserde(rename = "landZuPruefen", prefix = "nsi2", default)]
+	pub land_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "geographischeLage", prefix = "nsi2", default)]
+	pub geographische_lage: Option<KorrekturdatenGeographischeLage>, 
+	#[yaserde(rename = "technischesInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub technisches_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "technischesInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub technisches_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "datumEndgueltigeStilllegung", prefix = "nsi2", default)]
+	pub datum_endgueltige_stilllegung: Option<String>, 
+	#[yaserde(rename = "datumEndgueltigeStilllegungZuPruefen", prefix = "nsi2", default)]
+	pub datum_endgueltige_stilllegung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "geplantesInbetriebnahmedatum", prefix = "nsi2", default)]
+	pub geplantes_inbetriebnahmedatum: Option<String>, 
+	#[yaserde(rename = "geplantesInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
+	pub geplantes_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumDesBetreiberwechsels", prefix = "nsi2", default)]
+	pub datum_des_betreiberwechsels: Option<String>, 
+	#[yaserde(rename = "DatumDesBetreiberwechselsZuPruefen", prefix = "nsi2", default)]
+	pub datum_des_betreiberwechsels_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct SetMastrqsKorrekturVorschlagStromerzeugungseinheitParameterBasis {
+	#[yaserde(flatten, default)]
+	pub set_mastrqs_korrektur_vorschlag_einheit_parameter_basis: SetMastrqsKorrekturVorschlagEinheitParameterBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit: Option<String>, 
+	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
+	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einsatzverantwortlicher", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher: Option<String>, 
+	#[yaserde(rename = "einsatzverantwortlicherZuPruefen", prefix = "nsi2", default)]
+	pub einsatzverantwortlicher_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weic", prefix = "nsi2", default)]
+	pub weic: Option<ErweiterterString>, 
+	#[yaserde(rename = "weicZuPruefen", prefix = "nsi2", default)]
+	pub weic_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "weicDisplayName", prefix = "nsi2", default)]
+	pub weic_display_name: Option<String>, 
+	#[yaserde(rename = "weicDisplayNameZuPruefen", prefix = "nsi2", default)]
+	pub weic_display_name_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "kraftwerksnummer", prefix = "nsi2", default)]
+	pub kraftwerksnummer: Option<ErweiterterString>, 
+	#[yaserde(rename = "kraftwerksnummerZuPruefen", prefix = "nsi2", default)]
+	pub kraftwerksnummer_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "bruttoleistung", prefix = "nsi2", default)]
+	pub bruttoleistung: Option<f64>, 
+	#[yaserde(rename = "bruttoleistungZuPruefen", prefix = "nsi2", default)]
+	pub bruttoleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "nettonennleistung", prefix = "nsi2", default)]
+	pub nettonennleistung: Option<f64>, 
+	#[yaserde(rename = "nettonennleistungZuPruefen", prefix = "nsi2", default)]
+	pub nettonennleistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannung", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung: Option<bool>, 
+	#[yaserde(rename = "anschlussAnHoechstOderHochSpannungZuPruefen", prefix = "nsi2", default)]
+	pub anschluss_an_hoechst_oder_hoch_spannung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergie", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie: Option<bool>, 
+	#[yaserde(rename = "praequalifiziertFuerRegelenergieZuPruefen", prefix = "nsi2", default)]
+	pub praequalifiziert_fuer_regelenergie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeit", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "schwarzstartfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub schwarzstartfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeit", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit: Option<bool>, 
+	#[yaserde(rename = "inselbetriebsfaehigkeitZuPruefen", prefix = "nsi2", default)]
+	pub inselbetriebsfaehigkeit_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNb", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitNbZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_nb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDv", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv: Option<bool>, 
+	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
+	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
+	pub einspeisungsart: Option<EinspeisungsartEnum>, 
+	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
+	pub einspeisungsart_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -2049,6 +3979,22 @@ pub struct NutsZweiRegion {
 	pub nuts_2_id: Nuts2Id, 
 	#[yaserde(rename = "nuts2Beschreibung", prefix = "nsi2", default)]
 	pub nuts_2_beschreibung: String, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "DatenkorrekturFeld",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct DatenkorrekturFeld {
+	#[yaserde(rename = "bezeichnungFeld", prefix = "nsi2", default)]
+	pub bezeichnung_feld: Option<String>, 
+	#[yaserde(rename = "infotextFeld", prefix = "nsi2", default)]
+	pub infotext_feld: Option<String>, 
+	#[yaserde(rename = "wertAktuell", prefix = "nsi2", default)]
+	pub wert_aktuell: Option<String>, 
+	#[yaserde(rename = "wertVorgeschlagen", prefix = "nsi2", default)]
+	pub wert_vorgeschlagen: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -2385,6 +4331,12 @@ pub struct Netzbetreiberpruefung {
 	pub frist: Option<String>, 
 	#[yaserde(rename = "FristverlaengerungAblehnungstext", prefix = "nsi2", default)]
 	pub fristverlaengerung_ablehnungstext: Option<String>, 
+	#[yaserde(rename = "AutomatischeDatenuebernahmeAm", prefix = "nsi2", default)]
+	pub automatische_datenuebernahme_am: Option<String>, 
+	#[yaserde(rename = "DatenaenderungsgrundFelder", prefix = "nsi2", default)]
+	pub datenaenderungsgrund_felder: Option<String>, 
+	#[yaserde(rename = "WeitereDatenaenderung", prefix = "nsi2", default)]
+	pub weitere_datenaenderung: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -2506,7 +4458,7 @@ pub struct Marktakteur {
 	#[yaserde(rename = "Taetigkeitsbeginn", prefix = "nsi2", default)]
 	pub taetigkeitsbeginn: Option<String>, 
 	#[yaserde(rename = "Taetigkeitsende", prefix = "nsi2", default)]
-	pub taetigkeitsende: Option<ErweitertesDate>, 
+	pub taetigkeitsende: Option<String>, 
 	#[yaserde(rename = "Status", prefix = "nsi2", default)]
 	pub status: MarktakteurStatusEnum, 
 	#[yaserde(rename = "Marktakteursvertreter", prefix = "nsi2", default)]
@@ -2807,6 +4759,10 @@ pub xsi_type: String,
 	pub datum_ab: Option<String>, 
 	#[yaserde(rename = "limit", prefix = "nsi2", default)]
 	pub limit: Option<i32>, 
+	#[yaserde(rename = "MastrNummer", prefix = "nsi2", default)]
+	pub mastr_nummer: Option<MarktakteurMastrNummerId>, 
+	#[yaserde(rename = "Marktfunktion", prefix = "nsi2", default)]
+	pub marktfunktion: Option<MarktfunktionEnum>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -2912,13 +4868,15 @@ pub xsi_type: String,
 	#[yaserde(rename = "ImHandelsregisterEingetragen", prefix = "nsi2", default)]
 	pub im_handelsregister_eingetragen: Option<bool>, 
 	#[yaserde(rename = "Registergericht", prefix = "nsi2", default)]
-	pub registergericht: ErweiterterKatalogwert, 
+	pub registergericht: Option<Katalogwert>, 
 	#[yaserde(rename = "RegistergerichtAusland", prefix = "nsi2", default)]
-	pub registergericht_ausland: Option<ErweiterterString>, 
+	pub registergericht_ausland: Option<String>, 
+	#[yaserde(rename = "RegisternummerPraefix", prefix = "nsi2", default)]
+	pub registernummer_praefix: Option<RegisterNrPraefixEnum>, 
 	#[yaserde(rename = "Registernummer", prefix = "nsi2", default)]
-	pub registernummer: ErweiterterString, 
+	pub registernummer: Option<String>, 
 	#[yaserde(rename = "RegisternummerAusland", prefix = "nsi2", default)]
-	pub registernummer_ausland: Option<ErweiterterString>, 
+	pub registernummer_ausland: Option<String>, 
 	#[yaserde(rename = "Taetigkeitsbeginn", prefix = "nsi2", default)]
 	pub taetigkeitsbeginn: Option<String>, 
 	#[yaserde(rename = "AcerCode", prefix = "nsi2", default)]
@@ -2926,7 +4884,7 @@ pub xsi_type: String,
 	#[yaserde(rename = "Umsatzsteueridentifikationsnummer", prefix = "nsi2", default)]
 	pub umsatzsteueridentifikationsnummer: ErweiterterString, 
 	#[yaserde(rename = "Taetigkeitsende", prefix = "nsi2", default)]
-	pub taetigkeitsende: ErweitertesDate, 
+	pub taetigkeitsende: Option<String>, 
 	#[yaserde(rename = "BundesnetzagenturBetriebsnummer", prefix = "nsi2", default)]
 	pub bundesnetzagentur_betriebsnummer: ErweiterterString, 
 	#[yaserde(rename = "AdresseIstZustelladresse", prefix = "nsi2", default)]
@@ -2977,6 +4935,10 @@ pub xsi_type: String,
 	pub belieferung_von_letztverbrauchern_gas: Option<bool>, 
 	#[yaserde(rename = "BelieferungHaushaltskundenGas", prefix = "nsi2", default)]
 	pub belieferung_haushaltskunden_gas: Option<bool>, 
+	#[yaserde(rename = "WebportalDesNetzbetreibers", prefix = "nsi2", default)]
+	pub webportal_des_netzbetreibers: Option<String>, 
+	#[yaserde(rename = "Status", prefix = "nsi2", default)]
+	pub status: MarktakteurStatusEnum, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -3192,6 +5154,86 @@ pub xsi_type: String,
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
+	rename = "GetListeEinheitenAenderungNetzbetreiberzuordnungParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "startAb", prefix = "nsi2", default)]
+	pub start_ab: Option<i32>, 
+	#[yaserde(rename = "datumAb", prefix = "nsi2", default)]
+	pub datum_ab: Option<String>, 
+	#[yaserde(rename = "limit", prefix = "nsi2", default)]
+	pub limit: Option<i32>, 
+	#[yaserde(rename = "EinheitMastrNummer", prefix = "nsi2", default)]
+	pub einheit_mastr_nummer: Option<EinheitMastrNummerId>, 
+	#[yaserde(rename = "LokationMastrNummer", prefix = "nsi2", default)]
+	pub lokation_mastr_nummer: Option<LokationMastrNummerId>, 
+	#[yaserde(rename = "NetzanschlusspunktMastrNummer", prefix = "nsi2", default)]
+	pub netzanschlusspunkt_mastr_nummer: Option<NetzanschlusspunktMastrNummerId>, 
+	#[yaserde(rename = "NetzbetreiberMastrNummerAlt", prefix = "nsi2", default)]
+	pub netzbetreiber_mastr_nummer_alt: Option<MarktakteurMastrNummerId>, 
+	#[yaserde(rename = "NetzbetreiberMastrNummerNeu", prefix = "nsi2", default)]
+	pub netzbetreiber_mastr_nummer_neu: Option<MarktakteurMastrNummerId>, 
+	#[yaserde(rename = "ArtDerAenderung", prefix = "nsi2", default)]
+	pub art_der_aenderung: Option<ArtDerAenderungEnum>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeEinheitenAenderungNetzbetreiberzuordnungAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "EinheitAenderungZuordnung", prefix = "nsi2", default)]
+	pub einheit_aenderung_zuordnung: Vec<EinheitAenderungZuordnung>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeGeloeschteUndDeaktivierteMarktakteureParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetListeGeloeschteUndDeaktivierteMarktakteureParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "startAb", prefix = "nsi2", default)]
+	pub start_ab: Option<i32>, 
+	#[yaserde(rename = "datumAb", prefix = "nsi2", default)]
+	pub datum_ab: Option<String>, 
+	#[yaserde(rename = "limit", prefix = "nsi2", default)]
+	pub limit: Option<i32>, 
+	#[yaserde(rename = "MarktakteurMastrNummern", prefix = "nsi2", default)]
+	pub marktakteur_mastr_nummern: Vec<MarktakteurMastrNummerId>, 
+	#[yaserde(rename = "Status", prefix = "nsi2", default)]
+	pub status: Option<MarktakteurStatusEnum>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetListeGeloeschteUndDeaktivierteMarktakteureAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetListeGeloeschteUndDeaktivierteMarktakteureAntwort {
+	#[yaserde(flatten, default)]
+	pub antwort_basis: AntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "MarktakteurMitStatus", prefix = "nsi2", default)]
+	pub marktakteur_mit_status: Vec<MarktakteurMitStatus>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
 	rename = "GetEinheitBasisParameter",
 	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
 	prefix = "nsi2",
@@ -3397,8 +5439,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_nb: Option<bool>, 
 	#[yaserde(rename = "FernsteuerbarkeitDv", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv: Option<bool>, 
-	#[yaserde(rename = "FernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
 	#[yaserde(rename = "Einspeisungsart", prefix = "nsi2", default)]
 	pub einspeisungsart: EinspeisungsartEnum, 
 	#[yaserde(rename = "PraequalifiziertFuerRegelenergie", prefix = "nsi2", default)]
@@ -3431,8 +5471,6 @@ pub xsi_type: String,
 	pub netzbetreiberpruefung_datum: Option<String>, 
 	#[yaserde(rename = "AnlagenbetreiberMastrNummer", prefix = "nsi2", default)]
 	pub anlagenbetreiber_mastr_nummer: Option<MarktakteurMastrNummerId>, 
-	#[yaserde(rename = "NetzbetreiberMastrNummer", prefix = "nsi2", default)]
-	pub netzbetreiber_mastr_nummer: Vec<MarktakteurMastrNummerId>, 
 	#[yaserde(rename = "Land", prefix = "nsi2", default)]
 	pub land: LaenderEinheitenEnum, 
 	#[yaserde(rename = "Bundesland", prefix = "nsi2", default)]
@@ -3573,8 +5611,6 @@ pub struct GetEinheitSolarAntwort {
 pub xsi_type: String,
 	#[yaserde(rename = "zugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
 	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
-	#[yaserde(rename = "GemeinsamerWechselrichterMitSpeicher", prefix = "nsi2", default)]
-	pub gemeinsamer_wechselrichter_mit_speicher: Option<WechselrichterEnum>, 
 	#[yaserde(rename = "AnzahlModule", prefix = "nsi2", default)]
 	pub anzahl_module: Option<i32>, 
 	#[yaserde(rename = "Lage", prefix = "nsi2", default)]
@@ -3595,12 +5631,14 @@ pub xsi_type: String,
 	pub in_anspruch_genommene_flaeche: Option<f64>, 
 	#[yaserde(rename = "ArtDerFlaeche", prefix = "nsi2", default)]
 	pub art_der_flaeche: Vec<SolarFlaechenartEnum>, 
-	#[yaserde(rename = "InAnspruchGenommeneAckerflaeche", prefix = "nsi2", default)]
-	pub in_anspruch_genommene_ackerflaeche: Option<f64>, 
+	#[yaserde(rename = "InAnspruchGenommeneLandwirtschaftlichGenutzteFlaeche", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche: Option<f64>, 
 	#[yaserde(rename = "Nutzungsbereich", prefix = "nsi2", default)]
 	pub nutzungsbereich: Option<NutzungsbereichEnum>, 
 	#[yaserde(rename = "Buergerenergie", prefix = "nsi2", default)]
 	pub buergerenergie: Option<bool>, 
+	#[yaserde(rename = "Zaehlernummer", prefix = "nsi2", default)]
+	pub zaehlernummer: Option<String>, 
 	#[yaserde(rename = "EegMastrNummer", prefix = "nsi2", default)]
 	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
 }
@@ -3690,6 +5728,44 @@ pub struct EinheitMitStatus {
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
+	rename = "EinheitAenderungZuordnung",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct EinheitAenderungZuordnung {
+	#[yaserde(rename = "EinheitMastrNummer", prefix = "nsi2", default)]
+	pub einheit_mastr_nummer: EinheitMastrNummerId, 
+	#[yaserde(rename = "LokationMastrNummer", prefix = "nsi2", default)]
+	pub lokation_mastr_nummer: Option<LokationMastrNummerId>, 
+	#[yaserde(rename = "NetzanschlusspunktMastrNummer", prefix = "nsi2", default)]
+	pub netzanschlusspunkt_mastr_nummer: Vec<NetzanschlusspunktMastrNummerId>, 
+	#[yaserde(rename = "NetzbetreiberMastrNummerAlt", prefix = "nsi2", default)]
+	pub netzbetreiber_mastr_nummer_alt: Option<MarktakteurMastrNummerId>, 
+	#[yaserde(rename = "NetzbetreiberMastrNummerNeu", prefix = "nsi2", default)]
+	pub netzbetreiber_mastr_nummer_neu: MarktakteurMastrNummerId, 
+	#[yaserde(rename = "ArtDerAenderung", prefix = "nsi2", default)]
+	pub art_der_aenderung: Option<ArtDerAenderungEnum>, 
+	#[yaserde(rename = "RegistrierungsdatumNetzbetreiberzuordnungsaenderung", prefix = "nsi2", default)]
+	pub registrierungsdatum_netzbetreiberzuordnungsaenderung: Option<String>, 
+	#[yaserde(rename = "Netzbetreiberzuordnungsaenderungsdatum", prefix = "nsi2", default)]
+	pub netzbetreiberzuordnungsaenderungsdatum: Option<String>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "MarktakteurMitStatus",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct MarktakteurMitStatus {
+	#[yaserde(rename = "MarktakteurMastrNummer", prefix = "nsi2", default)]
+	pub marktakteur_mastr_nummer: MarktakteurMastrNummerId, 
+	#[yaserde(rename = "MarktakteurStatus", prefix = "nsi2", default)]
+	pub marktakteur_status: MarktakteurStatusEnum, 
+	#[yaserde(rename = "DatumLetzteAktualisierung", prefix = "nsi2", default)]
+	pub datum_letzte_aktualisierung: String, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
 	rename = "EinheitLetzteAktualisierung",
 	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
 	prefix = "nsi2",
@@ -3753,6 +5829,10 @@ pub xsi_type: String,
 	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
 	#[yaserde(rename = "KwkMastrNummer", prefix = "nsi2", default)]
 	pub kwk_mastr_nummer: Option<KwkMastrNummerId>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -3769,14 +5849,6 @@ pub xsi_type: String,
 	pub name_kraftwerk: String, 
 	#[yaserde(rename = "ArtDerWasserkraftanlage", prefix = "nsi2", default)]
 	pub art_der_wasserkraftanlage: Option<ArtDerWasserkraftanlageEnum>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: bool, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: ArtDerStilllegungEnum, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
 	#[yaserde(rename = "MinderungStromerzeugung", prefix = "nsi2", default)]
 	pub minderung_stromerzeugung: Option<bool>, 
 	#[yaserde(rename = "BestandteilGrenzkraftwerk", prefix = "nsi2", default)]
@@ -3787,6 +5859,10 @@ pub xsi_type: String,
 	pub art_des_zuflusses: Option<ZuflussartEnum>, 
 	#[yaserde(rename = "EegMastrNummer", prefix = "nsi2", default)]
 	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -3805,6 +5881,10 @@ pub xsi_type: String,
 	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
 	#[yaserde(rename = "KwkMastrNummer", prefix = "nsi2", default)]
 	pub kwk_mastr_nummer: Option<KwkMastrNummerId>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -3823,14 +5903,6 @@ pub xsi_type: String,
 	pub name_kraftwerksblock: Option<String>, 
 	#[yaserde(rename = "DatumBaubeginn", prefix = "nsi2", default)]
 	pub datum_baubeginn: Option<String>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: bool, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: ArtDerStilllegungEnum, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
 	#[yaserde(rename = "SteigerungNettonennleistungKombibetrieb", prefix = "nsi2", default)]
 	pub steigerung_nettonennleistung_kombibetrieb: Option<f64>, 
 	#[yaserde(rename = "AnlageIstImKombibetrieb", prefix = "nsi2", default)]
@@ -3853,8 +5925,6 @@ pub xsi_type: String,
 	pub bestandteil_grenzkraftwerk: Option<bool>, 
 	#[yaserde(rename = "NettonennleistungDeutschland", prefix = "nsi2", default)]
 	pub nettonennleistung_deutschland: Option<f64>, 
-	#[yaserde(rename = "AnteiligNutzungsberechtigte", prefix = "nsi2", default)]
-	pub anteilig_nutzungsberechtigte: Option<String>, 
 	#[yaserde(rename = "Notstromaggregat", prefix = "nsi2", default)]
 	pub notstromaggregat: Option<bool>, 
 	#[yaserde(rename = "Einsatzort", prefix = "nsi2", default)]
@@ -3865,6 +5935,10 @@ pub xsi_type: String,
 	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
 	#[yaserde(rename = "AusschliesslicheVerwendungImKombibetrieb", prefix = "nsi2", default)]
 	pub ausschliessliche_verwendung_im_kombibetrieb: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -3901,8 +5975,8 @@ pub xsi_type: String,
 	pub ac_dc_koppelung: Option<SystemkopplungEnum>, 
 	#[yaserde(rename = "Batterietechnologie", prefix = "nsi2", default)]
 	pub batterietechnologie: Option<BatterieTechnologieEnum>, 
-	#[yaserde(rename = "PumpbetriebLeistungsaufnahme", prefix = "nsi2", default)]
-	pub pumpbetrieb_leistungsaufnahme: Option<f64>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichern", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern: Option<f64>, 
 	#[yaserde(rename = "PumpbetriebKontinuierlichRegelbar", prefix = "nsi2", default)]
 	pub pumpbetrieb_kontinuierlich_regelbar: Option<bool>, 
 	#[yaserde(rename = "Pumpspeichertechnologie", prefix = "nsi2", default)]
@@ -3913,8 +5987,8 @@ pub xsi_type: String,
 	pub bestandteil_grenzkraftwerk: Option<bool>, 
 	#[yaserde(rename = "NettonennleistungDeutschland", prefix = "nsi2", default)]
 	pub nettonennleistung_deutschland: Option<f64>, 
-	#[yaserde(rename = "ZugeordnenteWirkleistungWechselrichter", prefix = "nsi2", default)]
-	pub zugeordnente_wirkleistung_wechselrichter: Option<f64>, 
+	#[yaserde(rename = "ZugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
 	#[yaserde(rename = "NutzbareSpeicherkapazitaet", prefix = "nsi2", default)]
 	pub nutzbare_speicherkapazitaet: Option<f64>, 
 	#[yaserde(rename = "SpeMastrNummer", prefix = "nsi2", default)]
@@ -3925,6 +5999,10 @@ pub xsi_type: String,
 	pub eeg_anlagentyp: Option<EinheitTypEnum>, 
 	#[yaserde(rename = "Technologie", prefix = "nsi2", default)]
 	pub technologie: Option<TechnologieSpeicherEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -4743,6 +6821,8 @@ pub xsi_type: String,
 	pub einheit_mastr_nummer: Option<EinheitMastrNummerId>, 
 	#[yaserde(rename = "kategorie", prefix = "nsi2", default)]
 	pub kategorie: Option<NetzbetreiberpruefungsKategorieEnum>, 
+	#[yaserde(rename = "AbgeschlosseneTicketprozesseEinschliessen", prefix = "nsi2", default)]
+	pub abgeschlossene_ticketprozesse_einschliessen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -5165,8 +7245,6 @@ pub xsi_type: String,
 	pub netzbetreiberpruefung_id: NetzbetreiberpruefungId, 
 	#[yaserde(rename = "letzteAenderung", prefix = "nsi2", default)]
 	pub letzte_aenderung: String, 
-	#[yaserde(rename = "beschreibung", prefix = "nsi2", default)]
-	pub beschreibung: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -5223,8 +7301,8 @@ pub xsi_type: String,
 	pub netzbetreiberpruefung_id: NetzbetreiberpruefungId, 
 	#[yaserde(rename = "letzteAenderung", prefix = "nsi2", default)]
 	pub letzte_aenderung: String, 
-	#[yaserde(rename = "beschreibung", prefix = "nsi2", default)]
-	pub beschreibung: Option<String>, 
+	#[yaserde(rename = "NachrichtAnDieBundesnetzagentur", prefix = "nsi2", default)]
+	pub nachricht_an_die_bundesnetzagentur: Option<String>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -5641,10 +7719,6 @@ pub struct SetKorrekturVorschlagStromerzeugungseinheitParameterBasis {
 	pub set_korrektur_vorschlag_einheit_parameter_basis: SetKorrekturVorschlagEinheitParameterBasis, 
 #[yaserde(prefix = "xsi", rename="type", attribute)]
 pub xsi_type: String,
-	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit: Option<String>, 
-	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "einsatzverantwortlicher", prefix = "nsi2", default)]
 	pub einsatzverantwortlicher: Option<String>, 
 	#[yaserde(rename = "einsatzverantwortlicherZuPruefen", prefix = "nsi2", default)]
@@ -5689,10 +7763,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_dv: Option<bool>, 
 	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDrZuPruefen", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
 	pub einspeisungsart: Option<EinspeisungsartEnum>, 
 	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
@@ -5713,22 +7783,6 @@ pub xsi_type: String,
 	pub name_kraftwerk: Option<String>, 
 	#[yaserde(rename = "nameKraftwerkZuPruefen", prefix = "nsi2", default)]
 	pub name_kraftwerk_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: Option<ArtDerStilllegungEnum>, 
-	#[yaserde(rename = "ArtDerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub art_der_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetrieb", prefix = "nsi2", default)]
 	pub datum_wiederaufnahme_betrieb: Option<String>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetriebZuPruefen", prefix = "nsi2", default)]
@@ -5773,6 +7827,14 @@ pub xsi_type: String,
 	pub eeg_inbetriebnahmedatum: Option<String>, 
 	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
 	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -5841,26 +7903,10 @@ pub xsi_type: String,
 	pub name_kraftwerksblock: Option<String>, 
 	#[yaserde(rename = "nameKraftwerksblockZuPruefen", prefix = "nsi2", default)]
 	pub name_kraftwerksblock_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: Option<ArtDerStilllegungEnum>, 
-	#[yaserde(rename = "ArtDerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub art_der_stilllegung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "datumBaubeginn", prefix = "nsi2", default)]
 	pub datum_baubeginn: Option<String>, 
 	#[yaserde(rename = "datumBaubeginnZuPruefen", prefix = "nsi2", default)]
 	pub datum_baubeginn_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeginnVoruebergehendeStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_voruebergehende_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeginnVoruebergehendeStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beginn_voruebergehende_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "steigerungNettonennleistungKombibetrieb", prefix = "nsi2", default)]
 	pub steigerung_nettonennleistung_kombibetrieb: Option<f64>, 
 	#[yaserde(rename = "steigerungNettonennleistungKombibetriebZuPruefen", prefix = "nsi2", default)]
@@ -5909,10 +7955,6 @@ pub xsi_type: String,
 	pub nettonennleistung_deutschland: Option<f64>, 
 	#[yaserde(rename = "nettonennleistungDeutschlandZuPruefen", prefix = "nsi2", default)]
 	pub nettonennleistung_deutschland_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "anteiligNutzungsberechtigte", prefix = "nsi2", default)]
-	pub anteilig_nutzungsberechtigte: Option<String>, 
-	#[yaserde(rename = "anteiligNutzungsberechtigteZuPruefen", prefix = "nsi2", default)]
-	pub anteilig_nutzungsberechtigte_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "notstromaggregat", prefix = "nsi2", default)]
 	pub notstromaggregat: Option<bool>, 
 	#[yaserde(rename = "notstromaggregatZuPruefen", prefix = "nsi2", default)]
@@ -5957,6 +7999,14 @@ pub xsi_type: String,
 	pub ausschliessliche_verwendung_im_kombibetrieb: Option<bool>, 
 	#[yaserde(rename = "AusschliesslicheVerwendungImKombibetriebZuPruefen", prefix = "nsi2", default)]
 	pub ausschliessliche_verwendung_im_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -6041,10 +8091,6 @@ pub struct SetKorrekturVorschlagEinheitSolarParameter {
 	pub set_korrektur_vorschlag_einheit_parameter_basis: SetKorrekturVorschlagEinheitParameterBasis, 
 #[yaserde(prefix = "xsi", rename="type", attribute)]
 pub xsi_type: String,
-	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit: Option<String>, 
-	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "einsatzverantwortlicher", prefix = "nsi2", default)]
 	pub einsatzverantwortlicher: Option<String>, 
 	#[yaserde(rename = "einsatzverantwortlicherZuPruefen", prefix = "nsi2", default)]
@@ -6085,10 +8131,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_dv: Option<bool>, 
 	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDrZuPruefen", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
 	pub einspeisungsart: Option<EinspeisungsartEnum>, 
 	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
@@ -6097,10 +8139,6 @@ pub xsi_type: String,
 	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
 	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
 	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "gemeinsamerWechselrichterMitSpeicher", prefix = "nsi2", default)]
-	pub gemeinsamer_wechselrichter_mit_speicher: Option<WechselrichterEnum>, 
-	#[yaserde(rename = "gemeinsamerWechselrichterMitSpeicherZuPruefen", prefix = "nsi2", default)]
-	pub gemeinsamer_wechselrichter_mit_speicher_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "anzahlModule", prefix = "nsi2", default)]
 	pub anzahl_module: Option<i32>, 
 	#[yaserde(rename = "anzahlModuleZuPruefen", prefix = "nsi2", default)]
@@ -6141,10 +8179,10 @@ pub xsi_type: String,
 	pub art_der_flaeche: Vec<SolarFlaechenartEnum>, 
 	#[yaserde(rename = "artDerFlaecheZuPruefen", prefix = "nsi2", default)]
 	pub art_der_flaeche_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "inAnspruchGenommeneAckerflaeche", prefix = "nsi2", default)]
-	pub in_anspruch_genommene_ackerflaeche: Option<f64>, 
-	#[yaserde(rename = "inAnspruchGenommeneAckerflaecheZuPruefen", prefix = "nsi2", default)]
-	pub in_anspruch_genommene_ackerflaeche_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaeche", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche: Option<f64>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaecheZuPruefen", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "nutzungsbereich", prefix = "nsi2", default)]
 	pub nutzungsbereich: Option<NutzungsbereichEnum>, 
 	#[yaserde(rename = "nutzungsbereichZuPruefen", prefix = "nsi2", default)]
@@ -6157,10 +8195,6 @@ pub xsi_type: String,
 	pub eeg_anlagenkennziffer_anlagenregister: Option<ErweiterterString>, 
 	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
 	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
-	pub eeg_installierte_leistung: Option<f64>, 
-	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
-	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
 	pub eeg_inbetriebnahmedatum: Option<String>, 
 	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
@@ -6317,6 +8351,14 @@ pub xsi_type: String,
 	pub kwk_elektrische_kwk_leistung: Option<f64>, 
 	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
 	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -6453,10 +8495,6 @@ pub xsi_type: String,
 	pub kuestenentfernung: Option<f64>, 
 	#[yaserde(rename = "kuestenentfernungZuPruefen", prefix = "nsi2", default)]
 	pub kuestenentfernung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "eegMastrNummer", prefix = "nsi2", default)]
-	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
-	#[yaserde(rename = "eegMastrNummerZuPruefen", prefix = "nsi2", default)]
-	pub eeg_mastr_nummer_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "eegPrototypAnlage", prefix = "nsi2", default)]
 	pub eeg_prototyp_anlage: Option<bool>, 
 	#[yaserde(rename = "eegPrototypAnlageZuPruefen", prefix = "nsi2", default)]
@@ -6505,6 +8543,22 @@ pub xsi_type: String,
 	pub nachtkennzeichen: Option<bool>, 
 	#[yaserde(rename = "NachtkennzeichenZuPruefen", prefix = "nsi2", default)]
 	pub nachtkennzeichen_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetKorrekturVorschlagParameter",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetKorrekturVorschlagParameter {
+	#[yaserde(flatten, default)]
+	pub authentifizierte_anfrage_mit_marktakteur_basis: AuthentifizierteAnfrageMitMarktakteurBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "korrekturVorschlagId", prefix = "nsi2", default)]
+	pub korrektur_vorschlag_id: i32, 
+	#[yaserde(rename = "netzbetreiberpruefungId", prefix = "nsi2", default)]
+	pub netzbetreiberpruefung_id: Option<i32>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -6682,29 +8736,25 @@ pub xsi_type: String,
 	#[yaserde(rename = "ImHandelsregisterEingetragenZuPruefen", prefix = "nsi2", default)]
 	pub im_handelsregister_eingetragen_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegistergerichtId", prefix = "nsi2", default)]
-	pub registergericht_id: Option<ErweiterterKatalogwertId>, 
+	pub registergericht_id: Option<KatalogwertId>, 
 	#[yaserde(rename = "RegistergerichtIdZuPruefen", prefix = "nsi2", default)]
 	pub registergericht_id_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegisternummerPraefix", prefix = "nsi2", default)]
+	pub registernummer_praefix: Option<RegisterNrPraefixEnum>, 
+	#[yaserde(rename = "RegisternummerPraefixZuPruefen", prefix = "nsi2", default)]
+	pub registernummer_praefix_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "Registernummer", prefix = "nsi2", default)]
-	pub registernummer: Option<ErweiterterString>, 
+	pub registernummer: Option<String>, 
 	#[yaserde(rename = "RegisternummerZuPruefen", prefix = "nsi2", default)]
 	pub registernummer_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegistergerichtAusland", prefix = "nsi2", default)]
-	pub registergericht_ausland: Option<ErweiterterString>, 
+	pub registergericht_ausland: Option<String>, 
 	#[yaserde(rename = "RegistergerichtAuslandZuPruefen", prefix = "nsi2", default)]
 	pub registergericht_ausland_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegisternummerAusland", prefix = "nsi2", default)]
-	pub registernummer_ausland: Option<ErweiterterString>, 
+	pub registernummer_ausland: Option<String>, 
 	#[yaserde(rename = "RegisternummerAuslandZuPruefen", prefix = "nsi2", default)]
 	pub registernummer_ausland_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "Taetigkeitsbeginn", prefix = "nsi2", default)]
-	pub taetigkeitsbeginn: Option<String>, 
-	#[yaserde(rename = "TaetigkeitsbeginnZuPruefen", prefix = "nsi2", default)]
-	pub taetigkeitsbeginn_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "Taetigkeitsende", prefix = "nsi2", default)]
-	pub taetigkeitsende: Option<ErweitertesDate>, 
-	#[yaserde(rename = "TaetigkeitsendeZuPruefen", prefix = "nsi2", default)]
-	pub taetigkeitsende_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "AcerCode", prefix = "nsi2", default)]
 	pub acer_code: Option<ErweiterterString>, 
 	#[yaserde(rename = "AcerCodeZuPruefen", prefix = "nsi2", default)]
@@ -6741,6 +8791,10 @@ pub xsi_type: String,
 	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
 	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
 	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "energietraeger", prefix = "nsi2", default)]
+	pub energietraeger: Option<EnergietraegerEnum>, 
+	#[yaserde(rename = "energietraegerZuPruefen", prefix = "nsi2", default)]
+	pub energietraeger_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
 	pub bestandteil_eeg_anlage: Option<bool>, 
 	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
@@ -6789,6 +8843,14 @@ pub xsi_type: String,
 	pub kwk_elektrische_kwk_leistung: Option<f64>, 
 	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
 	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -6893,10 +8955,6 @@ pub struct SetKorrekturVorschlagEinheitStromSpeicherParameter {
 	pub set_korrektur_vorschlag_einheit_parameter_basis: SetKorrekturVorschlagEinheitParameterBasis, 
 #[yaserde(prefix = "xsi", rename="type", attribute)]
 pub xsi_type: String,
-	#[yaserde(rename = "nameStromerzeugungseinheit", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit: Option<String>, 
-	#[yaserde(rename = "nameStromerzeugungseinheitZuPruefen", prefix = "nsi2", default)]
-	pub name_stromerzeugungseinheit_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "weic", prefix = "nsi2", default)]
 	pub weic: Option<ErweiterterString>, 
 	#[yaserde(rename = "weicZuPruefen", prefix = "nsi2", default)]
@@ -6937,10 +8995,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_dv: Option<bool>, 
 	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDrZuPruefen", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "acDcKoppelung", prefix = "nsi2", default)]
 	pub ac_dc_koppelung: Option<SystemkopplungEnum>, 
 	#[yaserde(rename = "acDcKoppelungZuPruefen", prefix = "nsi2", default)]
@@ -6953,10 +9007,10 @@ pub xsi_type: String,
 	pub praequalifiziert_fuer_regelenergie: Option<bool>, 
 	#[yaserde(rename = "praequalifiziertFuerRegelenergieZuPruefen", prefix = "nsi2", default)]
 	pub praequalifiziert_fuer_regelenergie_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "pumpbetriebLeistungsaufnahme", prefix = "nsi2", default)]
-	pub pumpbetrieb_leistungsaufnahme: Option<f64>, 
-	#[yaserde(rename = "pumpbetriebLeistungsaufnahmeZuPruefen", prefix = "nsi2", default)]
-	pub pumpbetrieb_leistungsaufnahme_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichern", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern: Option<f64>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichernZuPruefen", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbar", prefix = "nsi2", default)]
 	pub pumpbetrieb_kontinuierlich_regelbar: Option<bool>, 
 	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbarZuPruefen", prefix = "nsi2", default)]
@@ -6985,10 +9039,10 @@ pub xsi_type: String,
 	pub einsatzort: Option<EinsatzortEnum>, 
 	#[yaserde(rename = "einsatzortZuPruefen", prefix = "nsi2", default)]
 	pub einsatzort_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "zugeordnenteWirkleistungWechselrichter", prefix = "nsi2", default)]
-	pub zugeordnente_wirkleistung_wechselrichter: Option<f64>, 
-	#[yaserde(rename = "zugeordnenteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
-	pub zugeordnente_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "speNutzbareSpeicherkapazitaet", prefix = "nsi2", default)]
 	pub spe_nutzbare_speicherkapazitaet: Option<f64>, 
 	#[yaserde(rename = "speNutzbareSpeicherkapazitaetZuPruefen", prefix = "nsi2", default)]
@@ -7009,6 +9063,14 @@ pub xsi_type: String,
 	pub eeg_ausschreibung_zuschlag: Option<bool>, 
 	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
 	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -7057,10 +9119,6 @@ pub xsi_type: String,
 	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
 	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
 	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "gemeinsamerWechselrichterMitSpeicher", prefix = "nsi2", default)]
-	pub gemeinsamer_wechselrichter_mit_speicher: Option<WechselrichterEnum>, 
-	#[yaserde(rename = "gemeinsamerWechselrichterMitSpeicherZuPruefen", prefix = "nsi2", default)]
-	pub gemeinsamer_wechselrichter_mit_speicher_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "anzahlModule", prefix = "nsi2", default)]
 	pub anzahl_module: Option<i32>, 
 	#[yaserde(rename = "anzahlModuleZuPruefen", prefix = "nsi2", default)]
@@ -7101,10 +9159,10 @@ pub xsi_type: String,
 	pub art_der_flaeche: Vec<SolarFlaechenartEnum>, 
 	#[yaserde(rename = "artDerFlaecheZuPruefen", prefix = "nsi2", default)]
 	pub art_der_flaeche_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "inAnspruchGenommeneAckerflaeche", prefix = "nsi2", default)]
-	pub in_anspruch_genommene_ackerflaeche: Option<f64>, 
-	#[yaserde(rename = "inAnspruchGenommeneAckerflaecheZuPruefen", prefix = "nsi2", default)]
-	pub in_anspruch_genommene_ackerflaeche_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaeche", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche: Option<f64>, 
+	#[yaserde(rename = "inAnspruchGenommeneLandwirtschaftlichGenutzteFlaecheZuPruefen", prefix = "nsi2", default)]
+	pub in_anspruch_genommene_landwirtschaftlich_genutzte_flaeche_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "nutzungsbereich", prefix = "nsi2", default)]
 	pub nutzungsbereich: Option<NutzungsbereichEnum>, 
 	#[yaserde(rename = "nutzungsbereichZuPruefen", prefix = "nsi2", default)]
@@ -7125,10 +9183,6 @@ pub xsi_type: String,
 	pub eeg_anlagenkennziffer_anlagenregister: ErweiterterString, 
 	#[yaserde(rename = "eegAnlagenkennzifferAnlagenregisterZuPruefen", prefix = "nsi2", default)]
 	pub eeg_anlagenkennziffer_anlagenregister_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "eegInstallierteLeistung", prefix = "nsi2", default)]
-	pub eeg_installierte_leistung: Option<f64>, 
-	#[yaserde(rename = "eegInstallierteLeistungZuPruefen", prefix = "nsi2", default)]
-	pub eeg_installierte_leistung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "eegInbetriebnahmedatum", prefix = "nsi2", default)]
 	pub eeg_inbetriebnahmedatum: Option<String>, 
 	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
@@ -7301,6 +9355,10 @@ pub xsi_type: String,
 	pub technologie: Option<TechnologieVerbrennungsanlageEnum>, 
 	#[yaserde(rename = "technologieZuPruefen", prefix = "nsi2", default)]
 	pub technologie_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "energietraeger", prefix = "nsi2", default)]
+	pub energietraeger: Option<EnergietraegerEnum>, 
+	#[yaserde(rename = "energietraegerZuPruefen", prefix = "nsi2", default)]
+	pub energietraeger_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "BestandteilEEGAnlage", prefix = "nsi2", default)]
 	pub bestandteil_eeg_anlage: Option<bool>, 
 	#[yaserde(rename = "BestandteilEEGAnlageZuPruefen", prefix = "nsi2", default)]
@@ -7353,6 +9411,14 @@ pub xsi_type: String,
 	pub kwk_elektrische_kwk_leistung: Option<f64>, 
 	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
 	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -7575,10 +9641,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_dv: Option<bool>, 
 	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDrZuPruefen", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "einspeisungsart", prefix = "nsi2", default)]
 	pub einspeisungsart: Option<EinspeisungsartEnum>, 
 	#[yaserde(rename = "einspeisungsartZuPruefen", prefix = "nsi2", default)]
@@ -7707,6 +9769,14 @@ pub xsi_type: String,
 	pub kwk_elektrische_kwk_leistung: Option<f64>, 
 	#[yaserde(rename = "kwkElektrischeKwkLeistungZuPruefen", prefix = "nsi2", default)]
 	pub kwk_elektrische_kwk_leistung_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -7793,22 +9863,6 @@ pub xsi_type: String,
 	pub datum_baubeginn: Option<String>, 
 	#[yaserde(rename = "datumBaubeginnZuPruefen", prefix = "nsi2", default)]
 	pub datum_baubeginn_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: Option<ArtDerStilllegungEnum>, 
-	#[yaserde(rename = "ArtDerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub art_der_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetrieb", prefix = "nsi2", default)]
 	pub datum_wiederaufnahme_betrieb: Option<String>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetriebZuPruefen", prefix = "nsi2", default)]
@@ -7861,10 +9915,6 @@ pub xsi_type: String,
 	pub nettonennleistung_deutschland: Option<f64>, 
 	#[yaserde(rename = "nettonennleistungDeutschlandZuPruefen", prefix = "nsi2", default)]
 	pub nettonennleistung_deutschland_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "anteiligNutzungsberechtigte", prefix = "nsi2", default)]
-	pub anteilig_nutzungsberechtigte: Option<String>, 
-	#[yaserde(rename = "anteiligNutzungsberechtigteZuPruefen", prefix = "nsi2", default)]
-	pub anteilig_nutzungsberechtigte_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "notstromaggregat", prefix = "nsi2", default)]
 	pub notstromaggregat: Option<bool>, 
 	#[yaserde(rename = "notstromaggregatZuPruefen", prefix = "nsi2", default)]
@@ -7909,6 +9959,14 @@ pub xsi_type: String,
 	pub ausschliessliche_verwendung_im_kombibetrieb: Option<bool>, 
 	#[yaserde(rename = "AusschliesslicheVerwendungImKombibetriebZuPruefen", prefix = "nsi2", default)]
 	pub ausschliessliche_verwendung_im_kombibetrieb_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -7979,10 +10037,6 @@ pub xsi_type: String,
 	pub fernsteuerbarkeit_dv: Option<bool>, 
 	#[yaserde(rename = "fernsteuerbarkeitDvZuPruefen", prefix = "nsi2", default)]
 	pub fernsteuerbarkeit_dv_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDr", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr: Option<bool>, 
-	#[yaserde(rename = "fernsteuerbarkeitDrZuPruefen", prefix = "nsi2", default)]
-	pub fernsteuerbarkeit_dr_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "acDcKoppelung", prefix = "nsi2", default)]
 	pub ac_dc_koppelung: Option<SystemkopplungEnum>, 
 	#[yaserde(rename = "acDcKoppelungZuPruefen", prefix = "nsi2", default)]
@@ -7995,10 +10049,10 @@ pub xsi_type: String,
 	pub praequalifiziert_fuer_regelenergie: Option<bool>, 
 	#[yaserde(rename = "praequalifiziertFuerRegelenergieZuPruefen", prefix = "nsi2", default)]
 	pub praequalifiziert_fuer_regelenergie_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "pumpbetriebLeistungsaufnahme", prefix = "nsi2", default)]
-	pub pumpbetrieb_leistungsaufnahme: Option<f64>, 
-	#[yaserde(rename = "pumpbetriebLeistungsaufnahmeZuPruefen", prefix = "nsi2", default)]
-	pub pumpbetrieb_leistungsaufnahme_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichern", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern: Option<f64>, 
+	#[yaserde(rename = "LeistungsaufnahmeBeimEinspeichernZuPruefen", prefix = "nsi2", default)]
+	pub leistungsaufnahme_beim_einspeichern_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbar", prefix = "nsi2", default)]
 	pub pumpbetrieb_kontinuierlich_regelbar: Option<bool>, 
 	#[yaserde(rename = "pumpbetriebKontinuierlichRegelbarZuPruefen", prefix = "nsi2", default)]
@@ -8027,10 +10081,10 @@ pub xsi_type: String,
 	pub einsatzort: Option<EinsatzortEnum>, 
 	#[yaserde(rename = "einsatzortZuPruefen", prefix = "nsi2", default)]
 	pub einsatzort_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "zugeordnenteWirkleistungWechselrichter", prefix = "nsi2", default)]
-	pub zugeordnente_wirkleistung_wechselrichter: Option<f64>, 
-	#[yaserde(rename = "zugeordnenteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
-	pub zugeordnente_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichter", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter: Option<f64>, 
+	#[yaserde(rename = "zugeordneteWirkleistungWechselrichterZuPruefen", prefix = "nsi2", default)]
+	pub zugeordnete_wirkleistung_wechselrichter_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "nutzbareSpeicherkapazitaet", prefix = "nsi2", default)]
 	pub nutzbare_speicherkapazitaet: Option<f64>, 
 	#[yaserde(rename = "nutzbareSpeicherkapazitaetZuPruefen", prefix = "nsi2", default)]
@@ -8055,6 +10109,30 @@ pub xsi_type: String,
 	pub eeg_ausschreibung_zuschlag: Option<bool>, 
 	#[yaserde(rename = "eegAusschreibungZuschlagZuPruefen", prefix = "nsi2", default)]
 	pub eeg_ausschreibung_zuschlag_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "GetKorrekturVorschlagAntwort",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct GetKorrekturVorschlagAntwort {
+	#[yaserde(flatten, default)]
+	pub get_korrektur_vorschlag_antwort_basis: GetKorrekturVorschlagAntwortBasis, 
+#[yaserde(prefix = "xsi", rename="type", attribute)]
+pub xsi_type: String,
+	#[yaserde(rename = "ListeDatenkorrekturFeld", prefix = "nsi2", default)]
+	pub liste_datenkorrektur_feld: Vec<DatenkorrekturFeld>, 
+	#[yaserde(rename = "ListeDatenkorrekturAnlagenbetreiberFeld", prefix = "nsi2", default)]
+	pub liste_datenkorrektur_anlagenbetreiber_feld: Vec<DatenkorrekturFeld>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -8155,10 +10233,6 @@ pub xsi_type: String,
 	pub eeg_anlagenschluessel: Option<ErweiterterString>, 
 	#[yaserde(rename = "eegAnlagenschluesselZuPruefen", prefix = "nsi2", default)]
 	pub eeg_anlagenschluessel_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "eegMastrNummer", prefix = "nsi2", default)]
-	pub eeg_mastr_nummer: Option<EegMastrNummerId>, 
-	#[yaserde(rename = "eegMastrNummerZuPruefen", prefix = "nsi2", default)]
-	pub eeg_mastr_nummer_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "eegPrototypAnlage", prefix = "nsi2", default)]
 	pub eeg_prototyp_anlage: Option<bool>, 
 	#[yaserde(rename = "eegPrototypAnlageZuPruefen", prefix = "nsi2", default)]
@@ -8354,29 +10428,25 @@ pub xsi_type: String,
 	#[yaserde(rename = "ImHandelsregisterEingetragenZuPruefen", prefix = "nsi2", default)]
 	pub im_handelsregister_eingetragen_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegistergerichtId", prefix = "nsi2", default)]
-	pub registergericht_id: Option<ErweiterterKatalogwertId>, 
+	pub registergericht_id: Option<KatalogwertId>, 
 	#[yaserde(rename = "RegistergerichtIdZuPruefen", prefix = "nsi2", default)]
 	pub registergericht_id_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "RegisternummerPraefix", prefix = "nsi2", default)]
+	pub registernummer_praefix: Option<RegisterNrPraefixEnum>, 
+	#[yaserde(rename = "RegisternummerPraefixZuPruefen", prefix = "nsi2", default)]
+	pub registernummer_praefix_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "Registernummer", prefix = "nsi2", default)]
-	pub registernummer: Option<ErweiterterString>, 
+	pub registernummer: Option<String>, 
 	#[yaserde(rename = "RegisternummerZuPruefen", prefix = "nsi2", default)]
 	pub registernummer_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegistergerichtAusland", prefix = "nsi2", default)]
-	pub registergericht_ausland: Option<ErweiterterString>, 
+	pub registergericht_ausland: Option<String>, 
 	#[yaserde(rename = "RegistergerichtAuslandZuPruefen", prefix = "nsi2", default)]
 	pub registergericht_ausland_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "RegisternummerAusland", prefix = "nsi2", default)]
-	pub registernummer_ausland: Option<ErweiterterString>, 
+	pub registernummer_ausland: Option<String>, 
 	#[yaserde(rename = "RegisternummerAuslandZuPruefen", prefix = "nsi2", default)]
 	pub registernummer_ausland_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "Taetigkeitsbeginn", prefix = "nsi2", default)]
-	pub taetigkeitsbeginn: Option<String>, 
-	#[yaserde(rename = "TaetigkeitsbeginnZuPruefen", prefix = "nsi2", default)]
-	pub taetigkeitsbeginn_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "Taetigkeitsende", prefix = "nsi2", default)]
-	pub taetigkeitsende: Option<ErweitertesDate>, 
-	#[yaserde(rename = "TaetigkeitsendeZuPruefen", prefix = "nsi2", default)]
-	pub taetigkeitsende_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "AcerCode", prefix = "nsi2", default)]
 	pub acer_code: Option<ErweiterterString>, 
 	#[yaserde(rename = "AcerCodeZuPruefen", prefix = "nsi2", default)]
@@ -8441,22 +10511,6 @@ pub xsi_type: String,
 	pub name_kraftwerk: Option<String>, 
 	#[yaserde(rename = "nameKraftwerkZuPruefen", prefix = "nsi2", default)]
 	pub name_kraftwerk_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegung", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung: Option<bool>, 
-	#[yaserde(rename = "AnzeigeEinerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub anzeige_einer_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "ArtDerStilllegung", prefix = "nsi2", default)]
-	pub art_der_stilllegung: Option<ArtDerStilllegungEnum>, 
-	#[yaserde(rename = "ArtDerStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub art_der_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeginnVorlaeufigenOderEndgueltigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beginn_vorlaeufigen_oder_endgueltigen_stilllegung_zu_pruefen: Option<bool>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegung", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung: Option<String>, 
-	#[yaserde(rename = "DatumBeendigungVorlaeufigenStilllegungZuPruefen", prefix = "nsi2", default)]
-	pub datum_beendigung_vorlaeufigen_stilllegung_zu_pruefen: Option<bool>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetrieb", prefix = "nsi2", default)]
 	pub datum_wiederaufnahme_betrieb: Option<String>, 
 	#[yaserde(rename = "DatumWiederaufnahmeBetriebZuPruefen", prefix = "nsi2", default)]
@@ -8505,6 +10559,14 @@ pub xsi_type: String,
 	pub eeg_inbetriebnahmedatum: Option<String>, 
 	#[yaserde(rename = "eegInbetriebnahmedatumZuPruefen", prefix = "nsi2", default)]
 	pub eeg_inbetriebnahmedatum_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "ReserveartNachDemEnWG", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg: Option<ReserveartEnum>, 
+	#[yaserde(rename = "ReserveartNachDemEnWGZuPruefen", prefix = "nsi2", default)]
+	pub reserveart_nach_dem_en_wg_zu_pruefen: Option<bool>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserve", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve: Option<String>, 
+	#[yaserde(rename = "DatumUeberfuehrungInReserveZuPruefen", prefix = "nsi2", default)]
+	pub datum_ueberfuehrung_in_reserve_zu_pruefen: Option<bool>, 
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
@@ -8599,8 +10661,16 @@ pub xsi_type: String,
 	pub postleitzahl: Option<String>, 
 	#[yaserde(rename = "ort", prefix = "nsi2", default)]
 	pub ort: Option<String>, 
+	#[yaserde(rename = "Landkreis", prefix = "nsi2", default)]
+	pub landkreis: Option<String>, 
+	#[yaserde(rename = "Gemeinde", prefix = "nsi2", default)]
+	pub gemeinde: Option<String>, 
+	#[yaserde(rename = "Gemeindeschluessel", prefix = "nsi2", default)]
+	pub gemeindeschluessel: Option<String>, 
 	#[yaserde(rename = "einheitBundesland", prefix = "nsi2", default)]
 	pub einheit_bundesland: Option<BundeslaenderEinheitenEnum>, 
+	#[yaserde(rename = "SolarLage", prefix = "nsi2", default)]
+	pub solar_lage: Option<SolarLageEnum>, 
 	#[yaserde(rename = "bruttoleistung", prefix = "nsi2", default)]
 	pub bruttoleistung: Option<f64>, 
 	#[yaserde(rename = "bruttoleistungKleiner", prefix = "nsi2", default)]
@@ -8685,6 +10755,12 @@ pub xsi_type: String,
 	pub postleitzahl: Option<String>, 
 	#[yaserde(rename = "ort", prefix = "nsi2", default)]
 	pub ort: Option<String>, 
+	#[yaserde(rename = "Landkreis", prefix = "nsi2", default)]
+	pub landkreis: Option<String>, 
+	#[yaserde(rename = "Gemeinde", prefix = "nsi2", default)]
+	pub gemeinde: Option<String>, 
+	#[yaserde(rename = "Gemeindeschluessel", prefix = "nsi2", default)]
+	pub gemeindeschluessel: Option<String>, 
 	#[yaserde(rename = "einheitBundesland", prefix = "nsi2", default)]
 	pub einheit_bundesland: Option<BundeslaenderEinheitenEnum>, 
 	#[yaserde(rename = "anzahlStromverbraucherGroesser50Mw", prefix = "nsi2", default)]
@@ -8747,6 +10823,12 @@ pub xsi_type: String,
 	pub postleitzahl: Option<String>, 
 	#[yaserde(rename = "ort", prefix = "nsi2", default)]
 	pub ort: Option<String>, 
+	#[yaserde(rename = "Landkreis", prefix = "nsi2", default)]
+	pub landkreis: Option<String>, 
+	#[yaserde(rename = "Gemeinde", prefix = "nsi2", default)]
+	pub gemeinde: Option<String>, 
+	#[yaserde(rename = "Gemeindeschluessel", prefix = "nsi2", default)]
+	pub gemeindeschluessel: Option<String>, 
 	#[yaserde(rename = "einheitBundesland", prefix = "nsi2", default)]
 	pub einheit_bundesland: Option<BundeslaenderEinheitenEnum>, 
 	#[yaserde(rename = "erzeugungsleistung", prefix = "nsi2", default)]
@@ -8807,6 +10889,12 @@ pub xsi_type: String,
 	pub postleitzahl: Option<String>, 
 	#[yaserde(rename = "ort", prefix = "nsi2", default)]
 	pub ort: Option<String>, 
+	#[yaserde(rename = "Landkreis", prefix = "nsi2", default)]
+	pub landkreis: Option<String>, 
+	#[yaserde(rename = "Gemeinde", prefix = "nsi2", default)]
+	pub gemeinde: Option<String>, 
+	#[yaserde(rename = "Gemeindeschluessel", prefix = "nsi2", default)]
+	pub gemeindeschluessel: Option<String>, 
 	#[yaserde(rename = "einheitBundesland", prefix = "nsi2", default)]
 	pub einheit_bundesland: Option<BundeslaenderEinheitenEnum>, 
 	#[yaserde(rename = "bezugsleistung", prefix = "nsi2", default)]
@@ -9192,11 +11280,21 @@ pub struct AnlagenUebertragungStatusEnum {
 }
 #[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
 #[yaserde(
-	rename = "ArtDerStilllegungEnum",
+	rename = "ArtDerAenderungEnum",
 	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
 	prefix = "nsi2",
 )]
-pub struct ArtDerStilllegungEnum {
+pub struct ArtDerAenderungEnum {
+	#[yaserde(text, default)]
+	pub body: String, 
+}
+#[derive(Debug, Default, YaSerialize, YaDeserialize, Clone)]
+#[yaserde(
+	rename = "ReserveartEnum",
+	namespace = "nsi2: https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle",
+	prefix = "nsi2",
+)]
+pub struct ReserveartEnum {
 	#[yaserde(text, default)]
 	pub body: String, 
 }
@@ -9950,6 +12048,70 @@ pub struct ZuflussartEnum {
 	#[yaserde(text, default)]
 	pub body: String, 
 }
+pub type SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest = SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse = SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWindRequest = SetMastrqsKorrekturVorschlagEinheitWindParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWindResponse = SetMastrqsKorrekturVorschlagEinheitWindAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitSolarRequest = SetMastrqsKorrekturVorschlagEinheitSolarParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitSolarResponse = SetMastrqsKorrekturVorschlagEinheitSolarAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitBiomasseRequest = SetMastrqsKorrekturVorschlagEinheitBiomasseParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitBiomasseResponse = SetMastrqsKorrekturVorschlagEinheitBiomasseAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWasserRequest = SetMastrqsKorrekturVorschlagEinheitWasserParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWasserResponse = SetMastrqsKorrekturVorschlagEinheitWasserAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest = SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse = SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest = SetMastrqsKorrekturVorschlagEinheitVerbrennungParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse = SetMastrqsKorrekturVorschlagEinheitVerbrennungAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest = SetMastrqsKorrekturVorschlagEinheitGasSpeicherParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse = SetMastrqsKorrekturVorschlagEinheitGasSpeicherAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest = SetMastrqsKorrekturVorschlagEinheitStromVerbraucherParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse = SetMastrqsKorrekturVorschlagEinheitStromVerbraucherAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest = SetMastrqsKorrekturVorschlagEinheitGasErzeugerParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse = SetMastrqsKorrekturVorschlagEinheitGasErzeugerAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest = SetMastrqsKorrekturVorschlagEinheitGasVerbraucherParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse = SetMastrqsKorrekturVorschlagEinheitGasVerbraucherAntwort;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest = SetMastrqsKorrekturVorschlagEinheitStromSpeicherParameter;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse = SetMastrqsKorrekturVorschlagEinheitStromSpeicherAntwort;
+
+pub type MastrqsTicketBearbeiterZuweisenRequest = MastrqsTicketBearbeiterZuweisenParameter;
+
+pub type MastrqsTicketBearbeiterZuweisenResponse = MastrqsTicketBearbeiterZuweisenAntwort;
+
+pub type MastrqsStichwoerterAendernRequest = MastrqsStichwoerterAendernParameter;
+
+pub type MastrqsStichwoerterAendernResponse = MastrqsStichwoerterAendernAntwort;
+
+pub type MastrqsKorrekturvorschlagStornierenRequest = MastrqsKorrekturvorschlagStornierenParameter;
+
+pub type MastrqsKorrekturvorschlagStornierenResponse = MastrqsKorrekturvorschlagStornierenAntwort;
+
+pub type GetKorrekturVorschlagRequest = GetKorrekturVorschlagParameter;
+
+pub type GetKorrekturVorschlagResponse = GetKorrekturVorschlagAntwort;
+
 pub type GetLokaleUhrzeitRequest = GetLokaleUhrzeitParameter;
 
 pub type GetLokaleUhrzeitResponse = GetLokaleUhrzeitAntwort;
@@ -9993,6 +12155,10 @@ pub type GetGefilterteListeMarktakteureResponse = GetGefilterteListeMarktakteure
 pub type GetMeineMarktakteureRequest = GetMeineMarktakteureParameter;
 
 pub type GetMeineMarktakteureResponse = GetMeineMarktakteureAntwort;
+
+pub type GetListeGeloeschteUndDeaktivierteMarktakteureRequest = GetListeGeloeschteUndDeaktivierteMarktakteureParameter;
+
+pub type GetListeGeloeschteUndDeaktivierteMarktakteureResponse = GetListeGeloeschteUndDeaktivierteMarktakteureAntwort;
 
 pub type GetListeMeineNetzbetreiberpruefungenRequest = GetListeMeineNetzbetreiberpruefungenParameter;
 
@@ -10181,6 +12347,10 @@ pub type GetListeEinheitenInMeinemNetzResponse = GetListeEinheitenInMeinemNetzAn
 pub type GetListeGeloeschteUndDeaktivierteEinheitenRequest = GetListeGeloeschteUndDeaktivierteEinheitenParameter;
 
 pub type GetListeGeloeschteUndDeaktivierteEinheitenResponse = GetListeGeloeschteUndDeaktivierteEinheitenAntwort;
+
+pub type GetListeEinheitenAenderungNetzbetreiberzuordnungRequest = GetListeEinheitenAenderungNetzbetreiberzuordnungParameter;
+
+pub type GetListeEinheitenAenderungNetzbetreiberzuordnungResponse = GetListeEinheitenAenderungNetzbetreiberzuordnungAntwort;
 
 pub type GetEinheitWindRequest = GetEinheitWindParameter;
 
@@ -10415,6 +12585,10 @@ pub type GetMeineMarktakteureRequest = messages::GetMeineMarktakteureRequest;
 
 pub type GetMeineMarktakteureResponse = messages::GetMeineMarktakteureResponse;
 
+pub type GetListeGeloeschteUndDeaktivierteMarktakteureRequest = messages::GetListeGeloeschteUndDeaktivierteMarktakteureRequest;
+
+pub type GetListeGeloeschteUndDeaktivierteMarktakteureResponse = messages::GetListeGeloeschteUndDeaktivierteMarktakteureResponse;
+
 #[async_trait]
 pub trait Akteur {
 	async fn get_gefilterte_liste_marktakteure (&self, get_gefilterte_liste_marktakteure_request: GetGefilterteListeMarktakteureRequest) -> Result<GetGefilterteListeMarktakteureResponse,Option<SoapFault>>;
@@ -10422,6 +12596,7 @@ pub trait Akteur {
 	async fn get_liste_freigegebene_marktakteure (&self, get_liste_freigegebene_marktakteure_request: GetListeFreigegebeneMarktakteureRequest) -> Result<GetListeFreigegebeneMarktakteureResponse,Option<SoapFault>>;
 	async fn get_marktakteur (&self, get_marktakteur_request: GetMarktakteurRequest) -> Result<GetMarktakteurResponse,Option<SoapFault>>;
 	async fn get_meine_marktakteure (&self, get_meine_marktakteure_request: GetMeineMarktakteureRequest) -> Result<GetMeineMarktakteureResponse,Option<SoapFault>>;
+	async fn get_liste_geloeschte_und_deaktivierte_marktakteure (&self, get_liste_geloeschte_und_deaktivierte_marktakteure_request: GetListeGeloeschteUndDeaktivierteMarktakteureRequest) -> Result<GetListeGeloeschteUndDeaktivierteMarktakteureResponse,Option<SoapFault>>;
 }
 pub type GetListeLetzteAktualisierungRequest = messages::GetListeLetzteAktualisierungRequest;
 
@@ -10446,6 +12621,10 @@ pub type GetListeEinheitenInMeinemNetzResponse = messages::GetListeEinheitenInMe
 pub type GetListeGeloeschteUndDeaktivierteEinheitenRequest = messages::GetListeGeloeschteUndDeaktivierteEinheitenRequest;
 
 pub type GetListeGeloeschteUndDeaktivierteEinheitenResponse = messages::GetListeGeloeschteUndDeaktivierteEinheitenResponse;
+
+pub type GetListeEinheitenAenderungNetzbetreiberzuordnungRequest = messages::GetListeEinheitenAenderungNetzbetreiberzuordnungRequest;
+
+pub type GetListeEinheitenAenderungNetzbetreiberzuordnungResponse = messages::GetListeEinheitenAenderungNetzbetreiberzuordnungResponse;
 
 pub type GetEinheitWindRequest = messages::GetEinheitWindRequest;
 
@@ -10599,6 +12778,7 @@ pub trait Anlage {
 	async fn get_meine_einheiten (&self, get_meine_einheiten_request: GetMeineEinheitenRequest) -> Result<GetMeineEinheitenResponse,Option<SoapFault>>;
 	async fn get_liste_einheiten_in_meinem_netz (&self, get_liste_einheiten_in_meinem_netz_request: GetListeEinheitenInMeinemNetzRequest) -> Result<GetListeEinheitenInMeinemNetzResponse,Option<SoapFault>>;
 	async fn get_liste_geloeschte_und_deaktivierte_einheiten (&self, get_liste_geloeschte_und_deaktivierte_einheiten_request: GetListeGeloeschteUndDeaktivierteEinheitenRequest) -> Result<GetListeGeloeschteUndDeaktivierteEinheitenResponse,Option<SoapFault>>;
+	async fn get_liste_einheiten_aenderung_netzbetreiberzuordnung (&self, get_liste_einheiten_aenderung_netzbetreiberzuordnung_request: GetListeEinheitenAenderungNetzbetreiberzuordnungRequest) -> Result<GetListeEinheitenAenderungNetzbetreiberzuordnungResponse,Option<SoapFault>>;
 	async fn get_einheit_wind (&self, get_einheit_wind_request: GetEinheitWindRequest) -> Result<GetEinheitWindResponse,Option<SoapFault>>;
 	async fn get_einheit_solar (&self, get_einheit_solar_request: GetEinheitSolarRequest) -> Result<GetEinheitSolarResponse,Option<SoapFault>>;
 	async fn get_einheit_biomasse (&self, get_einheit_biomasse_request: GetEinheitBiomasseRequest) -> Result<GetEinheitBiomasseResponse,Option<SoapFault>>;
@@ -10882,6 +13062,89 @@ pub trait Netzanschlusspunkt {
 	async fn get_liste_meine_netzanschlusspunkte (&self, get_liste_meine_netzanschlusspunkte_request: GetListeMeineNetzanschlusspunkteRequest) -> Result<GetListeMeineNetzanschlusspunkteResponse,Option<SoapFault>>;
 	async fn get_liste_alle_netzanschlusspunkte (&self, get_liste_alle_netzanschlusspunkte_request: GetListeAlleNetzanschlusspunkteRequest) -> Result<GetListeAlleNetzanschlusspunkteResponse,Option<SoapFault>>;
 }
+pub type SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest = messages::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse = messages::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWindRequest = messages::SetMastrqsKorrekturVorschlagEinheitWindRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWindResponse = messages::SetMastrqsKorrekturVorschlagEinheitWindResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitSolarRequest = messages::SetMastrqsKorrekturVorschlagEinheitSolarRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitSolarResponse = messages::SetMastrqsKorrekturVorschlagEinheitSolarResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitBiomasseRequest = messages::SetMastrqsKorrekturVorschlagEinheitBiomasseRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitBiomasseResponse = messages::SetMastrqsKorrekturVorschlagEinheitBiomasseResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWasserRequest = messages::SetMastrqsKorrekturVorschlagEinheitWasserRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitWasserResponse = messages::SetMastrqsKorrekturVorschlagEinheitWasserResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest = messages::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse = messages::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest = messages::SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse = messages::SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest = messages::SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse = messages::SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest = messages::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse = messages::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest = messages::SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse = messages::SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest = messages::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse = messages::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest = messages::SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest;
+
+pub type SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse = messages::SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse;
+
+pub type MastrqsTicketBearbeiterZuweisenRequest = messages::MastrqsTicketBearbeiterZuweisenRequest;
+
+pub type MastrqsTicketBearbeiterZuweisenResponse = messages::MastrqsTicketBearbeiterZuweisenResponse;
+
+pub type MastrqsStichwoerterAendernRequest = messages::MastrqsStichwoerterAendernRequest;
+
+pub type MastrqsStichwoerterAendernResponse = messages::MastrqsStichwoerterAendernResponse;
+
+pub type MastrqsKorrekturvorschlagStornierenRequest = messages::MastrqsKorrekturvorschlagStornierenRequest;
+
+pub type MastrqsKorrekturvorschlagStornierenResponse = messages::MastrqsKorrekturvorschlagStornierenResponse;
+
+pub type GetKorrekturVorschlagRequest = messages::GetKorrekturVorschlagRequest;
+
+pub type GetKorrekturVorschlagResponse = messages::GetKorrekturVorschlagResponse;
+
+#[async_trait]
+pub trait Mastrqs {
+	async fn set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber (&self, set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber_request: SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_wind (&self, set_mastrqs_korrektur_vorschlag_einheit_wind_request: SetMastrqsKorrekturVorschlagEinheitWindRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitWindResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_solar (&self, set_mastrqs_korrektur_vorschlag_einheit_solar_request: SetMastrqsKorrekturVorschlagEinheitSolarRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitSolarResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_biomasse (&self, set_mastrqs_korrektur_vorschlag_einheit_biomasse_request: SetMastrqsKorrekturVorschlagEinheitBiomasseRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitBiomasseResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_wasser (&self, set_mastrqs_korrektur_vorschlag_einheit_wasser_request: SetMastrqsKorrekturVorschlagEinheitWasserRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitWasserResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung (&self, set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request: SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_verbrennung (&self, set_mastrqs_korrektur_vorschlag_einheit_verbrennung_request: SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_speicher_request: SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher_request: SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger_request: SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher_request: SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse,Option<SoapFault>>;
+	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_speicher_request: SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest) -> Result<SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse,Option<SoapFault>>;
+	async fn mastrqs_ticket_bearbeiter_zuweisen (&self, mastrqs_ticket_bearbeiter_zuweisen_request: MastrqsTicketBearbeiterZuweisenRequest) -> Result<MastrqsTicketBearbeiterZuweisenResponse,Option<SoapFault>>;
+	async fn mastrqs_stichwoerter_aendern (&self, mastrqs_stichwoerter_aendern_request: MastrqsStichwoerterAendernRequest) -> Result<MastrqsStichwoerterAendernResponse,Option<SoapFault>>;
+	async fn mastrqs_korrekturvorschlag_stornieren (&self, mastrqs_korrekturvorschlag_stornieren_request: MastrqsKorrekturvorschlagStornierenRequest) -> Result<MastrqsKorrekturvorschlagStornierenResponse,Option<SoapFault>>;
+	async fn get_korrektur_vorschlag (&self, get_korrektur_vorschlag_request: GetKorrekturVorschlagRequest) -> Result<GetKorrekturVorschlagResponse,Option<SoapFault>>;
+}
 }
 
 pub mod bindings {
@@ -10947,7 +13210,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokaleUhrzeitRequest) -> Self {
                 GetLokaleUhrzeitRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -10989,7 +13252,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokaleUhrzeitResponse) -> Self {
                 GetLokaleUhrzeitResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11030,7 +13293,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokaleUhrzeitMitAuthentifizierungRequest) -> Self {
                 GetLokaleUhrzeitMitAuthentifizierungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11072,7 +13335,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokaleUhrzeitMitAuthentifizierungResponse) -> Self {
                 GetLokaleUhrzeitMitAuthentifizierungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11113,7 +13376,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeKatalogkategorienRequest) -> Self {
                 GetListeKatalogkategorienRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11155,7 +13418,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeKatalogkategorienResponse) -> Self {
                 GetListeKatalogkategorienResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11196,7 +13459,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKatalogwerteRequest) -> Self {
                 GetKatalogwerteRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11238,7 +13501,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKatalogwerteResponse) -> Self {
                 GetKatalogwerteResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11279,7 +13542,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetBilanzierungsgebieteRequest) -> Self {
                 GetBilanzierungsgebieteRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11321,7 +13584,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetBilanzierungsgebieteResponse) -> Self {
                 GetBilanzierungsgebieteResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11362,7 +13625,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAktuellerStandTageskontingentRequest) -> Self {
                 GetAktuellerStandTageskontingentRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11404,7 +13667,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAktuellerStandTageskontingentResponse) -> Self {
                 GetAktuellerStandTageskontingentResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11417,7 +13680,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Allgemein {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -11442,7 +13705,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokaleUhrzeitRequestSoapEnvelope::new(SoapGetLokaleUhrzeitRequest {
             body: get_lokale_uhrzeit_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokaleUhrzeit")
@@ -11453,7 +13716,6 @@ use yaserde::{YaSerialize, YaDeserialize};
                     })?;
 
         let r: GetLokaleUhrzeitResponseSoapEnvelope = from_str(&response).map_err(|err| {
-						println!("{:?}", response);
                         warn!("Failed to unmarshal SOAP response: {:?}", err);
                         None
                     })?;
@@ -11465,7 +13727,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokaleUhrzeitMitAuthentifizierungRequestSoapEnvelope::new(SoapGetLokaleUhrzeitMitAuthentifizierungRequest {
             body: get_lokale_uhrzeit_mit_authentifizierung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokaleUhrzeitMitAuthentifizierung")
@@ -11487,7 +13749,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeKatalogkategorienRequestSoapEnvelope::new(SoapGetListeKatalogkategorienRequest {
             body: get_liste_katalogkategorien_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeKatalogkategorien")
@@ -11509,7 +13771,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKatalogwerteRequestSoapEnvelope::new(SoapGetKatalogwerteRequest {
             body: get_katalogwerte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKatalogwerte")
@@ -11531,7 +13793,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetBilanzierungsgebieteRequestSoapEnvelope::new(SoapGetBilanzierungsgebieteRequest {
             body: get_bilanzierungsgebiete_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetBilanzierungsgebiete")
@@ -11553,7 +13815,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAktuellerStandTageskontingentRequestSoapEnvelope::new(SoapGetAktuellerStandTageskontingentRequest {
             body: get_aktueller_stand_tageskontingent_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAktuellerStandTageskontingent")
@@ -11601,7 +13863,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Allgemein12 {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -11626,7 +13888,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokaleUhrzeitRequestSoapEnvelope::new(SoapGetLokaleUhrzeitRequest {
             body: get_lokale_uhrzeit_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokaleUhrzeit")
@@ -11648,7 +13910,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokaleUhrzeitMitAuthentifizierungRequestSoapEnvelope::new(SoapGetLokaleUhrzeitMitAuthentifizierungRequest {
             body: get_lokale_uhrzeit_mit_authentifizierung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokaleUhrzeitMitAuthentifizierung")
@@ -11670,7 +13932,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeKatalogkategorienRequestSoapEnvelope::new(SoapGetListeKatalogkategorienRequest {
             body: get_liste_katalogkategorien_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeKatalogkategorien")
@@ -11692,7 +13954,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKatalogwerteRequestSoapEnvelope::new(SoapGetKatalogwerteRequest {
             body: get_katalogwerte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKatalogwerte")
@@ -11714,7 +13976,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetBilanzierungsgebieteRequestSoapEnvelope::new(SoapGetBilanzierungsgebieteRequest {
             body: get_bilanzierungsgebiete_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetBilanzierungsgebiete")
@@ -11736,7 +13998,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAktuellerStandTageskontingentRequestSoapEnvelope::new(SoapGetAktuellerStandTageskontingentRequest {
             body: get_aktueller_stand_tageskontingent_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAktuellerStandTageskontingent")
@@ -11812,7 +14074,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleMarktakteureRequest) -> Self {
                 GetListeAlleMarktakteureRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11854,7 +14116,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleMarktakteureResponse) -> Self {
                 GetListeAlleMarktakteureResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11895,7 +14157,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneMarktakteureRequest) -> Self {
                 GetListeFreigegebeneMarktakteureRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11937,7 +14199,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneMarktakteureResponse) -> Self {
                 GetListeFreigegebeneMarktakteureResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -11978,7 +14240,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMarktakteurRequest) -> Self {
                 GetMarktakteurRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12020,7 +14282,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMarktakteurResponse) -> Self {
                 GetMarktakteurResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12061,7 +14323,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeMarktakteureRequest) -> Self {
                 GetGefilterteListeMarktakteureRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12103,7 +14365,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeMarktakteureResponse) -> Self {
                 GetGefilterteListeMarktakteureResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12144,7 +14406,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMeineMarktakteureRequest) -> Self {
                 GetMeineMarktakteureRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12186,7 +14448,90 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMeineMarktakteureResponse) -> Self {
                 GetMeineMarktakteureResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetListeGeloeschteUndDeaktivierteMarktakteureRequest {
+                        #[yaserde(rename = "GetListeGeloeschteUndDeaktivierteMarktakteure", default)]
+                        pub body: ports::GetListeGeloeschteUndDeaktivierteMarktakteureRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetListeGeloeschteUndDeaktivierteMarktakteureRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetListeGeloeschteUndDeaktivierteMarktakteureRequest,
+        }
+        
+        impl GetListeGeloeschteUndDeaktivierteMarktakteureRequestSoapEnvelope {
+            pub fn new(body: SoapGetListeGeloeschteUndDeaktivierteMarktakteureRequest) -> Self {
+                GetListeGeloeschteUndDeaktivierteMarktakteureRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetListeGeloeschteUndDeaktivierteMarktakteureResponse {
+                    #[yaserde(rename = "GetListeGeloeschteUndDeaktivierteMarktakteureResponse", default)]
+                    pub body: ports::GetListeGeloeschteUndDeaktivierteMarktakteureResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetListeGeloeschteUndDeaktivierteMarktakteureResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetListeGeloeschteUndDeaktivierteMarktakteureResponse,
+        }
+        
+        impl GetListeGeloeschteUndDeaktivierteMarktakteureResponseSoapEnvelope {
+            pub fn new(body: SoapGetListeGeloeschteUndDeaktivierteMarktakteureResponse) -> Self {
+                GetListeGeloeschteUndDeaktivierteMarktakteureResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12199,7 +14544,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Akteur {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -12224,7 +14569,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleMarktakteureRequestSoapEnvelope::new(SoapGetListeAlleMarktakteureRequest {
             body: get_liste_alle_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleMarktakteure")
@@ -12246,7 +14591,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneMarktakteureRequestSoapEnvelope::new(SoapGetListeFreigegebeneMarktakteureRequest {
             body: get_liste_freigegebene_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneMarktakteure")
@@ -12268,7 +14613,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMarktakteurRequestSoapEnvelope::new(SoapGetMarktakteurRequest {
             body: get_marktakteur_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMarktakteur")
@@ -12290,7 +14635,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeMarktakteureRequestSoapEnvelope::new(SoapGetGefilterteListeMarktakteureRequest {
             body: get_gefilterte_liste_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeMarktakteure")
@@ -12312,7 +14657,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMeineMarktakteureRequestSoapEnvelope::new(SoapGetMeineMarktakteureRequest {
             body: get_meine_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMeineMarktakteure")
@@ -12323,6 +14668,28 @@ use yaserde::{YaSerialize, YaDeserialize};
                     })?;
 
         let r: GetMeineMarktakteureResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn get_liste_geloeschte_und_deaktivierte_marktakteure (&self, get_liste_geloeschte_und_deaktivierte_marktakteure_request: ports::GetListeGeloeschteUndDeaktivierteMarktakteureRequest) -> Result<ports::GetListeGeloeschteUndDeaktivierteMarktakteureResponse, Option<SoapFault>> {
+
+        let __request = GetListeGeloeschteUndDeaktivierteMarktakteureRequestSoapEnvelope::new(SoapGetListeGeloeschteUndDeaktivierteMarktakteureRequest {
+            body: get_liste_geloeschte_und_deaktivierte_marktakteure_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetListeGeloeschteUndDeaktivierteMarktakteure")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetListeGeloeschteUndDeaktivierteMarktakteureResponseSoapEnvelope = from_str(&response).map_err(|err| {
                         warn!("Failed to unmarshal SOAP response: {:?}", err);
                         None
                     })?;
@@ -12360,7 +14727,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Akteur12 {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -12385,7 +14752,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleMarktakteureRequestSoapEnvelope::new(SoapGetListeAlleMarktakteureRequest {
             body: get_liste_alle_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleMarktakteure")
@@ -12407,7 +14774,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneMarktakteureRequestSoapEnvelope::new(SoapGetListeFreigegebeneMarktakteureRequest {
             body: get_liste_freigegebene_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneMarktakteure")
@@ -12429,7 +14796,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMarktakteurRequestSoapEnvelope::new(SoapGetMarktakteurRequest {
             body: get_marktakteur_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMarktakteur")
@@ -12451,7 +14818,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeMarktakteureRequestSoapEnvelope::new(SoapGetGefilterteListeMarktakteureRequest {
             body: get_gefilterte_liste_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeMarktakteure")
@@ -12473,7 +14840,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMeineMarktakteureRequestSoapEnvelope::new(SoapGetMeineMarktakteureRequest {
             body: get_meine_marktakteure_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMeineMarktakteure")
@@ -12484,6 +14851,28 @@ use yaserde::{YaSerialize, YaDeserialize};
                     })?;
 
         let r: GetMeineMarktakteureResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn get_liste_geloeschte_und_deaktivierte_marktakteure (&self, get_liste_geloeschte_und_deaktivierte_marktakteure_request: ports::GetListeGeloeschteUndDeaktivierteMarktakteureRequest) -> Result<ports::GetListeGeloeschteUndDeaktivierteMarktakteureResponse, Option<SoapFault>> {
+
+        let __request = GetListeGeloeschteUndDeaktivierteMarktakteureRequestSoapEnvelope::new(SoapGetListeGeloeschteUndDeaktivierteMarktakteureRequest {
+            body: get_liste_geloeschte_und_deaktivierte_marktakteure_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetListeGeloeschteUndDeaktivierteMarktakteure")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetListeGeloeschteUndDeaktivierteMarktakteureResponseSoapEnvelope = from_str(&response).map_err(|err| {
                         warn!("Failed to unmarshal SOAP response: {:?}", err);
                         None
                     })?;
@@ -12549,7 +14938,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeMeineNetzbetreiberpruefungenRequest) -> Self {
                 GetListeMeineNetzbetreiberpruefungenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12591,7 +14980,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeMeineNetzbetreiberpruefungenResponse) -> Self {
                 GetListeMeineNetzbetreiberpruefungenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12632,7 +15021,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapErneuteNetzbetreiberpruefungStartenRequest) -> Self {
                 ErneuteNetzbetreiberpruefungStartenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12674,7 +15063,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapErneuteNetzbetreiberpruefungStartenResponse) -> Self {
                 ErneuteNetzbetreiberpruefungStartenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12715,7 +15104,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapVerschiebeEinheitZuAndererLokationRequest) -> Self {
                 VerschiebeEinheitZuAndererLokationRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12757,7 +15146,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapVerschiebeEinheitZuAndererLokationResponse) -> Self {
                 VerschiebeEinheitZuAndererLokationResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12798,7 +15187,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapVerschiebeEinheitZuNeuerLokationRequest) -> Self {
                 VerschiebeEinheitZuNeuerLokationRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12840,7 +15229,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapVerschiebeEinheitZuNeuerLokationResponse) -> Self {
                 VerschiebeEinheitZuNeuerLokationResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12881,7 +15270,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzbetreiberpruefungAbgeschlossenRequest) -> Self {
                 SetNetzbetreiberpruefungAbgeschlossenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12923,7 +15312,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzbetreiberpruefungAbgeschlossenResponse) -> Self {
                 SetNetzbetreiberpruefungAbgeschlossenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -12964,7 +15353,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetDatenkorrekturErforderlichRequest) -> Self {
                 SetDatenkorrekturErforderlichRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13006,7 +15395,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetDatenkorrekturErforderlichResponse) -> Self {
                 SetDatenkorrekturErforderlichResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13047,7 +15436,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzbetreiberNichtZustaendigRequest) -> Self {
                 SetNetzbetreiberNichtZustaendigRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13089,7 +15478,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzbetreiberNichtZustaendigResponse) -> Self {
                 SetNetzbetreiberNichtZustaendigResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13130,7 +15519,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetStilllegungAbgelehntRequest) -> Self {
                 SetStilllegungAbgelehntRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13172,7 +15561,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetStilllegungAbgelehntResponse) -> Self {
                 SetStilllegungAbgelehntResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13213,7 +15602,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetAntragAufFristverlaengerungRequest) -> Self {
                 SetAntragAufFristverlaengerungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13255,7 +15644,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetAntragAufFristverlaengerungResponse) -> Self {
                 SetAntragAufFristverlaengerungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13296,7 +15685,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapRuecknahmeFristverlaengerungRequest) -> Self {
                 RuecknahmeFristverlaengerungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13338,7 +15727,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapRuecknahmeFristverlaengerungResponse) -> Self {
                 RuecknahmeFristverlaengerungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13379,7 +15768,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKlaerungErforderlichRequest) -> Self {
                 SetKlaerungErforderlichRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13421,7 +15810,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKlaerungErforderlichResponse) -> Self {
                 SetKlaerungErforderlichResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13462,7 +15851,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturBetriebsstatusRequest) -> Self {
                 SetKorrekturBetriebsstatusRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13504,7 +15893,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturBetriebsstatusResponse) -> Self {
                 SetKorrekturBetriebsstatusResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13545,7 +15934,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagBetriebsstatusRequest) -> Self {
                 GetKorrekturVorschlagBetriebsstatusRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13587,7 +15976,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagBetriebsstatusResponse) -> Self {
                 GetKorrekturVorschlagBetriebsstatusResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13628,7 +16017,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetWiedervorlageVorschlagBetriebsstatusRequest) -> Self {
                 GetWiedervorlageVorschlagBetriebsstatusRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13670,7 +16059,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetWiedervorlageVorschlagBetriebsstatusResponse) -> Self {
                 GetWiedervorlageVorschlagBetriebsstatusResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13711,7 +16100,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturBetriebsstatusAbgeschlossenRequest) -> Self {
                 SetKorrekturBetriebsstatusAbgeschlossenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13753,7 +16142,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturBetriebsstatusAbgeschlossenResponse) -> Self {
                 SetKorrekturBetriebsstatusAbgeschlossenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13794,7 +16183,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetEegAnlagenschluesselRequest) -> Self {
                 SetEegAnlagenschluesselRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13836,7 +16225,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetEegAnlagenschluesselResponse) -> Self {
                 SetEegAnlagenschluesselResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13877,7 +16266,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitWindRequest) -> Self {
                 SetKorrekturVorschlagEinheitWindRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13919,7 +16308,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitWindResponse) -> Self {
                 SetKorrekturVorschlagEinheitWindResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -13960,7 +16349,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Self {
                 SetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14002,7 +16391,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitAnlagenbetreiberResponse) -> Self {
                 SetKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14043,7 +16432,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitSolarRequest) -> Self {
                 SetKorrekturVorschlagEinheitSolarRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14085,7 +16474,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitSolarResponse) -> Self {
                 SetKorrekturVorschlagEinheitSolarResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14126,7 +16515,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitBiomasseRequest) -> Self {
                 SetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14168,7 +16557,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitBiomasseResponse) -> Self {
                 SetKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14209,7 +16598,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitWasserRequest) -> Self {
                 SetKorrekturVorschlagEinheitWasserRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14251,7 +16640,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitWasserResponse) -> Self {
                 SetKorrekturVorschlagEinheitWasserResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14292,7 +16681,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Self {
                 SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14334,7 +16723,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse) -> Self {
                 SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14375,7 +16764,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitVerbrennungRequest) -> Self {
                 SetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14417,7 +16806,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitVerbrennungResponse) -> Self {
                 SetKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14458,7 +16847,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasSpeicherRequest) -> Self {
                 SetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14500,7 +16889,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasSpeicherResponse) -> Self {
                 SetKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14541,7 +16930,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitStromVerbraucherRequest) -> Self {
                 SetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14583,7 +16972,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitStromVerbraucherResponse) -> Self {
                 SetKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14624,7 +17013,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasErzeugerRequest) -> Self {
                 SetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14666,7 +17055,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasErzeugerResponse) -> Self {
                 SetKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14707,7 +17096,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasVerbraucherRequest) -> Self {
                 SetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14749,7 +17138,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitGasVerbraucherResponse) -> Self {
                 SetKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14790,7 +17179,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitStromSpeicherRequest) -> Self {
                 SetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14832,7 +17221,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetKorrekturVorschlagEinheitStromSpeicherResponse) -> Self {
                 SetKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14873,7 +17262,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitWindRequest) -> Self {
                 GetKorrekturVorschlagEinheitWindRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14915,7 +17304,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitWindResponse) -> Self {
                 GetKorrekturVorschlagEinheitWindResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14956,7 +17345,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Self {
                 GetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -14998,7 +17387,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitAnlagenbetreiberResponse) -> Self {
                 GetKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15039,7 +17428,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitSolarRequest) -> Self {
                 GetKorrekturVorschlagEinheitSolarRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15081,7 +17470,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitSolarResponse) -> Self {
                 GetKorrekturVorschlagEinheitSolarResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15122,7 +17511,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitBiomasseRequest) -> Self {
                 GetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15164,7 +17553,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitBiomasseResponse) -> Self {
                 GetKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15205,7 +17594,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitWasserRequest) -> Self {
                 GetKorrekturVorschlagEinheitWasserRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15247,7 +17636,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitWasserResponse) -> Self {
                 GetKorrekturVorschlagEinheitWasserResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15288,7 +17677,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Self {
                 GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15330,7 +17719,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse) -> Self {
                 GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15371,7 +17760,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitVerbrennungRequest) -> Self {
                 GetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15413,7 +17802,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitVerbrennungResponse) -> Self {
                 GetKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15454,7 +17843,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitStromVerbraucherRequest) -> Self {
                 GetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15496,7 +17885,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitStromVerbraucherResponse) -> Self {
                 GetKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15537,7 +17926,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasErzeugerRequest) -> Self {
                 GetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15579,7 +17968,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasErzeugerResponse) -> Self {
                 GetKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15620,7 +18009,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasVerbraucherRequest) -> Self {
                 GetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15662,7 +18051,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasVerbraucherResponse) -> Self {
                 GetKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15703,7 +18092,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitStromSpeicherRequest) -> Self {
                 GetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15745,7 +18134,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitStromSpeicherResponse) -> Self {
                 GetKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15786,7 +18175,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasSpeicherRequest) -> Self {
                 GetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15828,7 +18217,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetKorrekturVorschlagEinheitGasSpeicherResponse) -> Self {
                 GetKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15869,7 +18258,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapDeleteKorrekturvorschlagRequest) -> Self {
                 DeleteKorrekturvorschlagRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15911,7 +18300,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapDeleteKorrekturvorschlagResponse) -> Self {
                 DeleteKorrekturvorschlagResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -15924,7 +18313,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Netzbetreiberpruefung {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -15949,7 +18338,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeMeineNetzbetreiberpruefungenRequestSoapEnvelope::new(SoapGetListeMeineNetzbetreiberpruefungenRequest {
             body: get_liste_meine_netzbetreiberpruefungen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeMeineNetzbetreiberpruefungen")
@@ -15971,7 +18360,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = ErneuteNetzbetreiberpruefungStartenRequestSoapEnvelope::new(SoapErneuteNetzbetreiberpruefungStartenRequest {
             body: erneute_netzbetreiberpruefung_starten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "ErneuteNetzbetreiberpruefungStarten")
@@ -15993,7 +18382,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = VerschiebeEinheitZuAndererLokationRequestSoapEnvelope::new(SoapVerschiebeEinheitZuAndererLokationRequest {
             body: verschiebe_einheit_zu_anderer_lokation_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "VerschiebeEinheitZuAndererLokation")
@@ -16015,7 +18404,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = VerschiebeEinheitZuNeuerLokationRequestSoapEnvelope::new(SoapVerschiebeEinheitZuNeuerLokationRequest {
             body: verschiebe_einheit_zu_neuer_lokation_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "VerschiebeEinheitZuNeuerLokation")
@@ -16037,7 +18426,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzbetreiberpruefungAbgeschlossenRequestSoapEnvelope::new(SoapSetNetzbetreiberpruefungAbgeschlossenRequest {
             body: set_netzbetreiberpruefung_abgeschlossen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzbetreiberpruefungAbgeschlossen")
@@ -16059,7 +18448,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetDatenkorrekturErforderlichRequestSoapEnvelope::new(SoapSetDatenkorrekturErforderlichRequest {
             body: set_datenkorrektur_erforderlich_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetDatenkorrekturErforderlich")
@@ -16081,7 +18470,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzbetreiberNichtZustaendigRequestSoapEnvelope::new(SoapSetNetzbetreiberNichtZustaendigRequest {
             body: set_netzbetreiber_nicht_zustaendig_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzbetreiberNichtZustaendig")
@@ -16103,7 +18492,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetStilllegungAbgelehntRequestSoapEnvelope::new(SoapSetStilllegungAbgelehntRequest {
             body: set_stilllegung_abgelehnt_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetStilllegungAbgelehnt")
@@ -16125,7 +18514,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetAntragAufFristverlaengerungRequestSoapEnvelope::new(SoapSetAntragAufFristverlaengerungRequest {
             body: set_antrag_auf_fristverlaengerung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetAntragAufFristverlaengerung")
@@ -16147,7 +18536,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = RuecknahmeFristverlaengerungRequestSoapEnvelope::new(SoapRuecknahmeFristverlaengerungRequest {
             body: ruecknahme_fristverlaengerung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "RuecknahmeFristverlaengerung")
@@ -16169,7 +18558,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKlaerungErforderlichRequestSoapEnvelope::new(SoapSetKlaerungErforderlichRequest {
             body: set_klaerung_erforderlich_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKlaerungErforderlich")
@@ -16191,7 +18580,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturBetriebsstatusRequestSoapEnvelope::new(SoapSetKorrekturBetriebsstatusRequest {
             body: set_korrektur_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturBetriebsstatus")
@@ -16213,7 +18602,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagBetriebsstatusRequestSoapEnvelope::new(SoapGetKorrekturVorschlagBetriebsstatusRequest {
             body: get_korrektur_vorschlag_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagBetriebsstatus")
@@ -16235,7 +18624,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetWiedervorlageVorschlagBetriebsstatusRequestSoapEnvelope::new(SoapGetWiedervorlageVorschlagBetriebsstatusRequest {
             body: get_wiedervorlage_vorschlag_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetWiedervorlageVorschlagBetriebsstatus")
@@ -16257,7 +18646,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturBetriebsstatusAbgeschlossenRequestSoapEnvelope::new(SoapSetKorrekturBetriebsstatusAbgeschlossenRequest {
             body: set_korrektur_betriebsstatus_abgeschlossen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturBetriebsstatusAbgeschlossen")
@@ -16279,7 +18668,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetEegAnlagenschluesselRequestSoapEnvelope::new(SoapSetEegAnlagenschluesselRequest {
             body: set_eeg_anlagenschluessel_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetEegAnlagenschluessel")
@@ -16301,7 +18690,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitWindRequest {
             body: set_korrektur_vorschlag_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitWind")
@@ -16323,7 +18712,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitAnlagenbetreiberRequest {
             body: set_korrektur_vorschlag_einheit_anlagenbetreiber_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitAnlagenbetreiber")
@@ -16345,7 +18734,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitSolarRequest {
             body: set_korrektur_vorschlag_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitSolar")
@@ -16367,7 +18756,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitBiomasseRequest {
             body: set_korrektur_vorschlag_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitBiomasse")
@@ -16389,7 +18778,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitWasserRequest {
             body: set_korrektur_vorschlag_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitWasser")
@@ -16411,7 +18800,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
             body: set_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
@@ -16433,7 +18822,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitVerbrennungRequest {
             body: set_korrektur_vorschlag_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitVerbrennung")
@@ -16455,7 +18844,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasSpeicherRequest {
             body: set_korrektur_vorschlag_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasSpeicher")
@@ -16477,7 +18866,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitStromVerbraucherRequest {
             body: set_korrektur_vorschlag_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitStromVerbraucher")
@@ -16499,7 +18888,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasErzeugerRequest {
             body: set_korrektur_vorschlag_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasErzeuger")
@@ -16521,7 +18910,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasVerbraucherRequest {
             body: set_korrektur_vorschlag_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasVerbraucher")
@@ -16543,7 +18932,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitStromSpeicherRequest {
             body: set_korrektur_vorschlag_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitStromSpeicher")
@@ -16565,7 +18954,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitWindRequest {
             body: get_korrektur_vorschlag_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitWind")
@@ -16587,7 +18976,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitAnlagenbetreiberRequest {
             body: get_korrektur_vorschlag_einheit_anlagenbetreiber_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitAnlagenbetreiber")
@@ -16609,7 +18998,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitSolarRequest {
             body: get_korrektur_vorschlag_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitSolar")
@@ -16631,7 +19020,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitBiomasseRequest {
             body: get_korrektur_vorschlag_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitBiomasse")
@@ -16653,7 +19042,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitWasserRequest {
             body: get_korrektur_vorschlag_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitWasser")
@@ -16675,7 +19064,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
             body: get_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
@@ -16697,7 +19086,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitVerbrennungRequest {
             body: get_korrektur_vorschlag_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitVerbrennung")
@@ -16719,7 +19108,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitStromVerbraucherRequest {
             body: get_korrektur_vorschlag_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitStromVerbraucher")
@@ -16741,7 +19130,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasErzeugerRequest {
             body: get_korrektur_vorschlag_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasErzeuger")
@@ -16763,7 +19152,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasVerbraucherRequest {
             body: get_korrektur_vorschlag_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasVerbraucher")
@@ -16785,7 +19174,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitStromSpeicherRequest {
             body: get_korrektur_vorschlag_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitStromSpeicher")
@@ -16807,7 +19196,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasSpeicherRequest {
             body: get_korrektur_vorschlag_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasSpeicher")
@@ -16829,7 +19218,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = DeleteKorrekturvorschlagRequestSoapEnvelope::new(SoapDeleteKorrekturvorschlagRequest {
             body: delete_korrekturvorschlag_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "DeleteKorrekturvorschlag")
@@ -16877,7 +19266,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Netzbetreiberpruefung12 {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -16902,7 +19291,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeMeineNetzbetreiberpruefungenRequestSoapEnvelope::new(SoapGetListeMeineNetzbetreiberpruefungenRequest {
             body: get_liste_meine_netzbetreiberpruefungen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeMeineNetzbetreiberpruefungen")
@@ -16924,7 +19313,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = ErneuteNetzbetreiberpruefungStartenRequestSoapEnvelope::new(SoapErneuteNetzbetreiberpruefungStartenRequest {
             body: erneute_netzbetreiberpruefung_starten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "ErneuteNetzbetreiberpruefungStarten")
@@ -16946,7 +19335,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = VerschiebeEinheitZuAndererLokationRequestSoapEnvelope::new(SoapVerschiebeEinheitZuAndererLokationRequest {
             body: verschiebe_einheit_zu_anderer_lokation_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "VerschiebeEinheitZuAndererLokation")
@@ -16968,7 +19357,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = VerschiebeEinheitZuNeuerLokationRequestSoapEnvelope::new(SoapVerschiebeEinheitZuNeuerLokationRequest {
             body: verschiebe_einheit_zu_neuer_lokation_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "VerschiebeEinheitZuNeuerLokation")
@@ -16990,7 +19379,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzbetreiberpruefungAbgeschlossenRequestSoapEnvelope::new(SoapSetNetzbetreiberpruefungAbgeschlossenRequest {
             body: set_netzbetreiberpruefung_abgeschlossen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzbetreiberpruefungAbgeschlossen")
@@ -17012,7 +19401,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetDatenkorrekturErforderlichRequestSoapEnvelope::new(SoapSetDatenkorrekturErforderlichRequest {
             body: set_datenkorrektur_erforderlich_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetDatenkorrekturErforderlich")
@@ -17034,7 +19423,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzbetreiberNichtZustaendigRequestSoapEnvelope::new(SoapSetNetzbetreiberNichtZustaendigRequest {
             body: set_netzbetreiber_nicht_zustaendig_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzbetreiberNichtZustaendig")
@@ -17056,7 +19445,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetStilllegungAbgelehntRequestSoapEnvelope::new(SoapSetStilllegungAbgelehntRequest {
             body: set_stilllegung_abgelehnt_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetStilllegungAbgelehnt")
@@ -17078,7 +19467,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetAntragAufFristverlaengerungRequestSoapEnvelope::new(SoapSetAntragAufFristverlaengerungRequest {
             body: set_antrag_auf_fristverlaengerung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetAntragAufFristverlaengerung")
@@ -17100,7 +19489,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = RuecknahmeFristverlaengerungRequestSoapEnvelope::new(SoapRuecknahmeFristverlaengerungRequest {
             body: ruecknahme_fristverlaengerung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "RuecknahmeFristverlaengerung")
@@ -17122,7 +19511,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKlaerungErforderlichRequestSoapEnvelope::new(SoapSetKlaerungErforderlichRequest {
             body: set_klaerung_erforderlich_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKlaerungErforderlich")
@@ -17144,7 +19533,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturBetriebsstatusRequestSoapEnvelope::new(SoapSetKorrekturBetriebsstatusRequest {
             body: set_korrektur_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturBetriebsstatus")
@@ -17166,7 +19555,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagBetriebsstatusRequestSoapEnvelope::new(SoapGetKorrekturVorschlagBetriebsstatusRequest {
             body: get_korrektur_vorschlag_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagBetriebsstatus")
@@ -17188,7 +19577,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetWiedervorlageVorschlagBetriebsstatusRequestSoapEnvelope::new(SoapGetWiedervorlageVorschlagBetriebsstatusRequest {
             body: get_wiedervorlage_vorschlag_betriebsstatus_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetWiedervorlageVorschlagBetriebsstatus")
@@ -17210,7 +19599,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturBetriebsstatusAbgeschlossenRequestSoapEnvelope::new(SoapSetKorrekturBetriebsstatusAbgeschlossenRequest {
             body: set_korrektur_betriebsstatus_abgeschlossen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturBetriebsstatusAbgeschlossen")
@@ -17232,7 +19621,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetEegAnlagenschluesselRequestSoapEnvelope::new(SoapSetEegAnlagenschluesselRequest {
             body: set_eeg_anlagenschluessel_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetEegAnlagenschluessel")
@@ -17254,7 +19643,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitWindRequest {
             body: set_korrektur_vorschlag_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitWind")
@@ -17276,7 +19665,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitAnlagenbetreiberRequest {
             body: set_korrektur_vorschlag_einheit_anlagenbetreiber_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitAnlagenbetreiber")
@@ -17298,7 +19687,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitSolarRequest {
             body: set_korrektur_vorschlag_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitSolar")
@@ -17320,7 +19709,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitBiomasseRequest {
             body: set_korrektur_vorschlag_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitBiomasse")
@@ -17342,7 +19731,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitWasserRequest {
             body: set_korrektur_vorschlag_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitWasser")
@@ -17364,7 +19753,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
             body: set_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
@@ -17386,7 +19775,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitVerbrennungRequest {
             body: set_korrektur_vorschlag_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitVerbrennung")
@@ -17408,7 +19797,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasSpeicherRequest {
             body: set_korrektur_vorschlag_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasSpeicher")
@@ -17430,7 +19819,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitStromVerbraucherRequest {
             body: set_korrektur_vorschlag_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitStromVerbraucher")
@@ -17452,7 +19841,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasErzeugerRequest {
             body: set_korrektur_vorschlag_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasErzeuger")
@@ -17474,7 +19863,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitGasVerbraucherRequest {
             body: set_korrektur_vorschlag_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitGasVerbraucher")
@@ -17496,7 +19885,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapSetKorrekturVorschlagEinheitStromSpeicherRequest {
             body: set_korrektur_vorschlag_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetKorrekturVorschlagEinheitStromSpeicher")
@@ -17518,7 +19907,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitWindRequest {
             body: get_korrektur_vorschlag_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitWind")
@@ -17540,7 +19929,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitAnlagenbetreiberRequest {
             body: get_korrektur_vorschlag_einheit_anlagenbetreiber_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitAnlagenbetreiber")
@@ -17562,7 +19951,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitSolarRequest {
             body: get_korrektur_vorschlag_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitSolar")
@@ -17584,7 +19973,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitBiomasseRequest {
             body: get_korrektur_vorschlag_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitBiomasse")
@@ -17606,7 +19995,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitWasserRequest {
             body: get_korrektur_vorschlag_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitWasser")
@@ -17628,7 +20017,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
             body: get_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
@@ -17650,7 +20039,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitVerbrennungRequest {
             body: get_korrektur_vorschlag_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitVerbrennung")
@@ -17672,7 +20061,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitStromVerbraucherRequest {
             body: get_korrektur_vorschlag_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitStromVerbraucher")
@@ -17694,7 +20083,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasErzeugerRequest {
             body: get_korrektur_vorschlag_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasErzeuger")
@@ -17716,7 +20105,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasVerbraucherRequest {
             body: get_korrektur_vorschlag_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasVerbraucher")
@@ -17738,7 +20127,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitStromSpeicherRequest {
             body: get_korrektur_vorschlag_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitStromSpeicher")
@@ -17760,7 +20149,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapGetKorrekturVorschlagEinheitGasSpeicherRequest {
             body: get_korrektur_vorschlag_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlagEinheitGasSpeicher")
@@ -17782,7 +20171,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = DeleteKorrekturvorschlagRequestSoapEnvelope::new(SoapDeleteKorrekturvorschlagRequest {
             body: delete_korrekturvorschlag_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "DeleteKorrekturvorschlag")
@@ -17858,7 +20247,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeLetzteAktualisierungRequest) -> Self {
                 GetListeLetzteAktualisierungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -17900,7 +20289,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeLetzteAktualisierungResponse) -> Self {
                 GetListeLetzteAktualisierungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -17941,7 +20330,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleEinheitenRequest) -> Self {
                 GetListeAlleEinheitenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -17983,7 +20372,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleEinheitenResponse) -> Self {
                 GetListeAlleEinheitenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18024,7 +20413,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneEinheitenRequest) -> Self {
                 GetListeFreigegebeneEinheitenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18066,7 +20455,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneEinheitenResponse) -> Self {
                 GetListeFreigegebeneEinheitenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18107,7 +20496,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMeineEinheitenRequest) -> Self {
                 GetMeineEinheitenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18149,7 +20538,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetMeineEinheitenResponse) -> Self {
                 GetMeineEinheitenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18190,7 +20579,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeEinheitenInMeinemNetzRequest) -> Self {
                 GetListeEinheitenInMeinemNetzRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18232,7 +20621,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeEinheitenInMeinemNetzResponse) -> Self {
                 GetListeEinheitenInMeinemNetzResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18273,7 +20662,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeGeloeschteUndDeaktivierteEinheitenRequest) -> Self {
                 GetListeGeloeschteUndDeaktivierteEinheitenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18315,7 +20704,90 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeGeloeschteUndDeaktivierteEinheitenResponse) -> Self {
                 GetListeGeloeschteUndDeaktivierteEinheitenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetListeEinheitenAenderungNetzbetreiberzuordnungRequest {
+                        #[yaserde(rename = "GetListeEinheitenAenderungNetzbetreiberzuordnung", default)]
+                        pub body: ports::GetListeEinheitenAenderungNetzbetreiberzuordnungRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetListeEinheitenAenderungNetzbetreiberzuordnungRequest,
+        }
+        
+        impl GetListeEinheitenAenderungNetzbetreiberzuordnungRequestSoapEnvelope {
+            pub fn new(body: SoapGetListeEinheitenAenderungNetzbetreiberzuordnungRequest) -> Self {
+                GetListeEinheitenAenderungNetzbetreiberzuordnungRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetListeEinheitenAenderungNetzbetreiberzuordnungResponse {
+                    #[yaserde(rename = "GetListeEinheitenAenderungNetzbetreiberzuordnungResponse", default)]
+                    pub body: ports::GetListeEinheitenAenderungNetzbetreiberzuordnungResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetListeEinheitenAenderungNetzbetreiberzuordnungResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetListeEinheitenAenderungNetzbetreiberzuordnungResponse,
+        }
+        
+        impl GetListeEinheitenAenderungNetzbetreiberzuordnungResponseSoapEnvelope {
+            pub fn new(body: SoapGetListeEinheitenAenderungNetzbetreiberzuordnungResponse) -> Self {
+                GetListeEinheitenAenderungNetzbetreiberzuordnungResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18356,7 +20828,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitWindRequest) -> Self {
                 GetEinheitWindRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18398,7 +20870,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitWindResponse) -> Self {
                 GetEinheitWindResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18439,7 +20911,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitSolarRequest) -> Self {
                 GetEinheitSolarRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18481,7 +20953,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitSolarResponse) -> Self {
                 GetEinheitSolarResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18522,7 +20994,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitWasserRequest) -> Self {
                 GetEinheitWasserRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18564,7 +21036,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitWasserResponse) -> Self {
                 GetEinheitWasserResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18605,7 +21077,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGeothermieGrubengasDruckentspannungRequest) -> Self {
                 GetEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18647,7 +21119,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGeothermieGrubengasDruckentspannungResponse) -> Self {
                 GetEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18688,7 +21160,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitVerbrennungRequest) -> Self {
                 GetEinheitVerbrennungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18730,7 +21202,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitVerbrennungResponse) -> Self {
                 GetEinheitVerbrennungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18771,7 +21243,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitKernkraftRequest) -> Self {
                 GetEinheitKernkraftRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18813,7 +21285,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitKernkraftResponse) -> Self {
                 GetEinheitKernkraftResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18854,7 +21326,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitStromSpeicherRequest) -> Self {
                 GetEinheitStromSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18896,7 +21368,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitStromSpeicherResponse) -> Self {
                 GetEinheitStromSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18937,7 +21409,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitStromVerbraucherRequest) -> Self {
                 GetEinheitStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -18979,7 +21451,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitStromVerbraucherResponse) -> Self {
                 GetEinheitStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19020,7 +21492,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasErzeugerRequest) -> Self {
                 GetEinheitGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19062,7 +21534,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasErzeugerResponse) -> Self {
                 GetEinheitGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19103,7 +21575,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasSpeicherRequest) -> Self {
                 GetEinheitGasSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19145,7 +21617,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasSpeicherResponse) -> Self {
                 GetEinheitGasSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19186,7 +21658,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasVerbraucherRequest) -> Self {
                 GetEinheitGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19228,7 +21700,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGasVerbraucherResponse) -> Self {
                 GetEinheitGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19269,7 +21741,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGenehmigungRequest) -> Self {
                 GetEinheitGenehmigungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19311,7 +21783,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitGenehmigungResponse) -> Self {
                 GetEinheitGenehmigungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19352,7 +21824,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeStromErzeugerRequest) -> Self {
                 GetGefilterteListeStromErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19394,7 +21866,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeStromErzeugerResponse) -> Self {
                 GetGefilterteListeStromErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19435,7 +21907,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeStromVerbraucherRequest) -> Self {
                 GetGefilterteListeStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19477,7 +21949,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeStromVerbraucherResponse) -> Self {
                 GetGefilterteListeStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19518,7 +21990,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeGasErzeugerRequest) -> Self {
                 GetGefilterteListeGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19560,7 +22032,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeGasErzeugerResponse) -> Self {
                 GetGefilterteListeGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19601,7 +22073,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeGasVerbraucherRequest) -> Self {
                 GetGefilterteListeGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19643,7 +22115,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeGasVerbraucherResponse) -> Self {
                 GetGefilterteListeGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19684,7 +22156,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenStromErzeugerRequest) -> Self {
                 GetGefilterteListeLokationenStromErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19726,7 +22198,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenStromErzeugerResponse) -> Self {
                 GetGefilterteListeLokationenStromErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19767,7 +22239,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenStromVerbraucherRequest) -> Self {
                 GetGefilterteListeLokationenStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19809,7 +22281,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenStromVerbraucherResponse) -> Self {
                 GetGefilterteListeLokationenStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19850,7 +22322,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenGasErzeugerRequest) -> Self {
                 GetGefilterteListeLokationenGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19892,7 +22364,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenGasErzeugerResponse) -> Self {
                 GetGefilterteListeLokationenGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19933,7 +22405,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenGasVerbraucherRequest) -> Self {
                 GetGefilterteListeLokationenGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -19975,7 +22447,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGefilterteListeLokationenGasVerbraucherResponse) -> Self {
                 GetGefilterteListeLokationenGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20016,7 +22488,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitBiomasseRequest) -> Self {
                 GetEinheitBiomasseRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20058,7 +22530,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetEinheitBiomasseResponse) -> Self {
                 GetEinheitBiomasseResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20099,7 +22571,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetStromSpeicherRequest) -> Self {
                 GetStromSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20141,7 +22613,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetStromSpeicherResponse) -> Self {
                 GetStromSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20182,7 +22654,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGasSpeicherRequest) -> Self {
                 GetGasSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20224,7 +22696,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetGasSpeicherResponse) -> Self {
                 GetGasSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20265,7 +22737,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegWindRequest) -> Self {
                 GetAnlageEegWindRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20307,7 +22779,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegWindResponse) -> Self {
                 GetAnlageEegWindResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20348,7 +22820,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegSolarRequest) -> Self {
                 GetAnlageEegSolarRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20390,7 +22862,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegSolarResponse) -> Self {
                 GetAnlageEegSolarResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20431,7 +22903,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegBiomasseRequest) -> Self {
                 GetAnlageEegBiomasseRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20473,7 +22945,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegBiomasseResponse) -> Self {
                 GetAnlageEegBiomasseResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20514,7 +22986,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegWasserRequest) -> Self {
                 GetAnlageEegWasserRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20556,7 +23028,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegWasserResponse) -> Self {
                 GetAnlageEegWasserResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20597,7 +23069,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegSpeicherRequest) -> Self {
                 GetAnlageEegSpeicherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20639,7 +23111,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegSpeicherResponse) -> Self {
                 GetAnlageEegSpeicherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20680,7 +23152,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegGeothermieGrubengasDruckentspannungRequest) -> Self {
                 GetAnlageEegGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20722,7 +23194,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageEegGeothermieGrubengasDruckentspannungResponse) -> Self {
                 GetAnlageEegGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20763,7 +23235,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageKwkRequest) -> Self {
                 GetAnlageKwkRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20805,7 +23277,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetAnlageKwkResponse) -> Self {
                 GetAnlageKwkResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20846,7 +23318,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleLokationenRequest) -> Self {
                 GetListeAlleLokationenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20888,7 +23360,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleLokationenResponse) -> Self {
                 GetListeAlleLokationenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20929,7 +23401,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneLokationenRequest) -> Self {
                 GetListeFreigegebeneLokationenRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -20971,7 +23443,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeFreigegebeneLokationenResponse) -> Self {
                 GetListeFreigegebeneLokationenResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21012,7 +23484,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationStromErzeugerRequest) -> Self {
                 GetLokationStromErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21054,7 +23526,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationStromErzeugerResponse) -> Self {
                 GetLokationStromErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21095,7 +23567,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationStromVerbraucherRequest) -> Self {
                 GetLokationStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21137,7 +23609,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationStromVerbraucherResponse) -> Self {
                 GetLokationStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21178,7 +23650,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationGasErzeugerRequest) -> Self {
                 GetLokationGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21220,7 +23692,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationGasErzeugerResponse) -> Self {
                 GetLokationGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21261,7 +23733,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationGasVerbraucherRequest) -> Self {
                 GetLokationGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21303,7 +23775,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetLokationGasVerbraucherResponse) -> Self {
                 GetLokationGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -21316,7 +23788,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Anlage {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -21341,7 +23813,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeLetzteAktualisierungRequestSoapEnvelope::new(SoapGetListeLetzteAktualisierungRequest {
             body: get_liste_letzte_aktualisierung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeLetzteAktualisierung")
@@ -21363,7 +23835,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleEinheitenRequestSoapEnvelope::new(SoapGetListeAlleEinheitenRequest {
             body: get_liste_alle_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleEinheiten")
@@ -21385,7 +23857,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneEinheitenRequestSoapEnvelope::new(SoapGetListeFreigegebeneEinheitenRequest {
             body: get_liste_freigegebene_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneEinheiten")
@@ -21407,7 +23879,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMeineEinheitenRequestSoapEnvelope::new(SoapGetMeineEinheitenRequest {
             body: get_meine_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMeineEinheiten")
@@ -21429,7 +23901,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeEinheitenInMeinemNetzRequestSoapEnvelope::new(SoapGetListeEinheitenInMeinemNetzRequest {
             body: get_liste_einheiten_in_meinem_netz_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeEinheitenInMeinemNetz")
@@ -21451,7 +23923,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeGeloeschteUndDeaktivierteEinheitenRequestSoapEnvelope::new(SoapGetListeGeloeschteUndDeaktivierteEinheitenRequest {
             body: get_liste_geloeschte_und_deaktivierte_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeGeloeschteUndDeaktivierteEinheiten")
@@ -21469,11 +23941,33 @@ use yaserde::{YaSerialize, YaDeserialize};
             Ok(r.body.body)
         } else {
             Err(r.body.fault)
+        }}	async fn get_liste_einheiten_aenderung_netzbetreiberzuordnung (&self, get_liste_einheiten_aenderung_netzbetreiberzuordnung_request: ports::GetListeEinheitenAenderungNetzbetreiberzuordnungRequest) -> Result<ports::GetListeEinheitenAenderungNetzbetreiberzuordnungResponse, Option<SoapFault>> {
+
+        let __request = GetListeEinheitenAenderungNetzbetreiberzuordnungRequestSoapEnvelope::new(SoapGetListeEinheitenAenderungNetzbetreiberzuordnungRequest {
+            body: get_liste_einheiten_aenderung_netzbetreiberzuordnung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetListeEinheitenAenderungNetzbetreiberzuordnung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetListeEinheitenAenderungNetzbetreiberzuordnungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
         }}	async fn get_einheit_wind (&self, get_einheit_wind_request: ports::GetEinheitWindRequest) -> Result<ports::GetEinheitWindResponse, Option<SoapFault>> {
 
         let __request = GetEinheitWindRequestSoapEnvelope::new(SoapGetEinheitWindRequest {
             body: get_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitWind")
@@ -21495,7 +23989,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitSolarRequestSoapEnvelope::new(SoapGetEinheitSolarRequest {
             body: get_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitSolar")
@@ -21517,7 +24011,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitWasserRequestSoapEnvelope::new(SoapGetEinheitWasserRequest {
             body: get_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitWasser")
@@ -21539,7 +24033,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetEinheitGeothermieGrubengasDruckentspannungRequest {
             body: get_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGeothermieGrubengasDruckentspannung")
@@ -21561,7 +24055,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitVerbrennungRequestSoapEnvelope::new(SoapGetEinheitVerbrennungRequest {
             body: get_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitVerbrennung")
@@ -21583,7 +24077,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitKernkraftRequestSoapEnvelope::new(SoapGetEinheitKernkraftRequest {
             body: get_einheit_kernkraft_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitKernkraft")
@@ -21605,7 +24099,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitStromSpeicherRequestSoapEnvelope::new(SoapGetEinheitStromSpeicherRequest {
             body: get_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitStromSpeicher")
@@ -21627,7 +24121,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitStromVerbraucherRequestSoapEnvelope::new(SoapGetEinheitStromVerbraucherRequest {
             body: get_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitStromVerbraucher")
@@ -21649,7 +24143,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasErzeugerRequestSoapEnvelope::new(SoapGetEinheitGasErzeugerRequest {
             body: get_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasErzeuger")
@@ -21671,7 +24165,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasSpeicherRequestSoapEnvelope::new(SoapGetEinheitGasSpeicherRequest {
             body: get_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasSpeicher")
@@ -21693,7 +24187,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasVerbraucherRequestSoapEnvelope::new(SoapGetEinheitGasVerbraucherRequest {
             body: get_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasVerbraucher")
@@ -21715,7 +24209,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGenehmigungRequestSoapEnvelope::new(SoapGetEinheitGenehmigungRequest {
             body: get_einheit_genehmigung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGenehmigung")
@@ -21737,7 +24231,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeStromErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeStromErzeugerRequest {
             body: get_gefilterte_liste_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeStromErzeuger")
@@ -21759,7 +24253,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeStromVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeStromVerbraucherRequest {
             body: get_gefilterte_liste_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeStromVerbraucher")
@@ -21781,7 +24275,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeGasErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeGasErzeugerRequest {
             body: get_gefilterte_liste_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeGasErzeuger")
@@ -21803,7 +24297,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeGasVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeGasVerbraucherRequest {
             body: get_gefilterte_liste_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeGasVerbraucher")
@@ -21825,7 +24319,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenStromErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenStromErzeugerRequest {
             body: get_gefilterte_liste_lokationen_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenStromErzeuger")
@@ -21847,7 +24341,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenStromVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenStromVerbraucherRequest {
             body: get_gefilterte_liste_lokationen_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenStromVerbraucher")
@@ -21869,7 +24363,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenGasErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenGasErzeugerRequest {
             body: get_gefilterte_liste_lokationen_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenGasErzeuger")
@@ -21891,7 +24385,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenGasVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenGasVerbraucherRequest {
             body: get_gefilterte_liste_lokationen_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenGasVerbraucher")
@@ -21913,7 +24407,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitBiomasseRequestSoapEnvelope::new(SoapGetEinheitBiomasseRequest {
             body: get_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitBiomasse")
@@ -21935,7 +24429,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetStromSpeicherRequestSoapEnvelope::new(SoapGetStromSpeicherRequest {
             body: get_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetStromSpeicher")
@@ -21957,7 +24451,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGasSpeicherRequestSoapEnvelope::new(SoapGetGasSpeicherRequest {
             body: get_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGasSpeicher")
@@ -21979,7 +24473,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegWindRequestSoapEnvelope::new(SoapGetAnlageEegWindRequest {
             body: get_anlage_eeg_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegWind")
@@ -22001,7 +24495,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegSolarRequestSoapEnvelope::new(SoapGetAnlageEegSolarRequest {
             body: get_anlage_eeg_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegSolar")
@@ -22023,7 +24517,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegBiomasseRequestSoapEnvelope::new(SoapGetAnlageEegBiomasseRequest {
             body: get_anlage_eeg_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegBiomasse")
@@ -22045,7 +24539,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegWasserRequestSoapEnvelope::new(SoapGetAnlageEegWasserRequest {
             body: get_anlage_eeg_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegWasser")
@@ -22067,7 +24561,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegSpeicherRequestSoapEnvelope::new(SoapGetAnlageEegSpeicherRequest {
             body: get_anlage_eeg_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegSpeicher")
@@ -22089,7 +24583,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetAnlageEegGeothermieGrubengasDruckentspannungRequest {
             body: get_anlage_eeg_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegGeothermieGrubengasDruckentspannung")
@@ -22111,7 +24605,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageKwkRequestSoapEnvelope::new(SoapGetAnlageKwkRequest {
             body: get_anlage_kwk_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageKwk")
@@ -22133,7 +24627,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleLokationenRequestSoapEnvelope::new(SoapGetListeAlleLokationenRequest {
             body: get_liste_alle_lokationen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleLokationen")
@@ -22155,7 +24649,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneLokationenRequestSoapEnvelope::new(SoapGetListeFreigegebeneLokationenRequest {
             body: get_liste_freigegebene_lokationen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneLokationen")
@@ -22177,7 +24671,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationStromErzeugerRequestSoapEnvelope::new(SoapGetLokationStromErzeugerRequest {
             body: get_lokation_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationStromErzeuger")
@@ -22199,7 +24693,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationStromVerbraucherRequestSoapEnvelope::new(SoapGetLokationStromVerbraucherRequest {
             body: get_lokation_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationStromVerbraucher")
@@ -22221,7 +24715,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationGasErzeugerRequestSoapEnvelope::new(SoapGetLokationGasErzeugerRequest {
             body: get_lokation_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationGasErzeuger")
@@ -22243,7 +24737,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationGasVerbraucherRequestSoapEnvelope::new(SoapGetLokationGasVerbraucherRequest {
             body: get_lokation_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationGasVerbraucher")
@@ -22291,7 +24785,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Anlage12 {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -22316,7 +24810,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeLetzteAktualisierungRequestSoapEnvelope::new(SoapGetListeLetzteAktualisierungRequest {
             body: get_liste_letzte_aktualisierung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeLetzteAktualisierung")
@@ -22338,7 +24832,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleEinheitenRequestSoapEnvelope::new(SoapGetListeAlleEinheitenRequest {
             body: get_liste_alle_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleEinheiten")
@@ -22360,7 +24854,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneEinheitenRequestSoapEnvelope::new(SoapGetListeFreigegebeneEinheitenRequest {
             body: get_liste_freigegebene_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneEinheiten")
@@ -22382,7 +24876,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetMeineEinheitenRequestSoapEnvelope::new(SoapGetMeineEinheitenRequest {
             body: get_meine_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetMeineEinheiten")
@@ -22404,7 +24898,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeEinheitenInMeinemNetzRequestSoapEnvelope::new(SoapGetListeEinheitenInMeinemNetzRequest {
             body: get_liste_einheiten_in_meinem_netz_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeEinheitenInMeinemNetz")
@@ -22426,7 +24920,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeGeloeschteUndDeaktivierteEinheitenRequestSoapEnvelope::new(SoapGetListeGeloeschteUndDeaktivierteEinheitenRequest {
             body: get_liste_geloeschte_und_deaktivierte_einheiten_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeGeloeschteUndDeaktivierteEinheiten")
@@ -22444,11 +24938,33 @@ use yaserde::{YaSerialize, YaDeserialize};
             Ok(r.body.body)
         } else {
             Err(r.body.fault)
+        }}	async fn get_liste_einheiten_aenderung_netzbetreiberzuordnung (&self, get_liste_einheiten_aenderung_netzbetreiberzuordnung_request: ports::GetListeEinheitenAenderungNetzbetreiberzuordnungRequest) -> Result<ports::GetListeEinheitenAenderungNetzbetreiberzuordnungResponse, Option<SoapFault>> {
+
+        let __request = GetListeEinheitenAenderungNetzbetreiberzuordnungRequestSoapEnvelope::new(SoapGetListeEinheitenAenderungNetzbetreiberzuordnungRequest {
+            body: get_liste_einheiten_aenderung_netzbetreiberzuordnung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetListeEinheitenAenderungNetzbetreiberzuordnung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetListeEinheitenAenderungNetzbetreiberzuordnungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
         }}	async fn get_einheit_wind (&self, get_einheit_wind_request: ports::GetEinheitWindRequest) -> Result<ports::GetEinheitWindResponse, Option<SoapFault>> {
 
         let __request = GetEinheitWindRequestSoapEnvelope::new(SoapGetEinheitWindRequest {
             body: get_einheit_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitWind")
@@ -22470,7 +24986,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitSolarRequestSoapEnvelope::new(SoapGetEinheitSolarRequest {
             body: get_einheit_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitSolar")
@@ -22492,7 +25008,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitWasserRequestSoapEnvelope::new(SoapGetEinheitWasserRequest {
             body: get_einheit_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitWasser")
@@ -22514,7 +25030,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetEinheitGeothermieGrubengasDruckentspannungRequest {
             body: get_einheit_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGeothermieGrubengasDruckentspannung")
@@ -22536,7 +25052,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitVerbrennungRequestSoapEnvelope::new(SoapGetEinheitVerbrennungRequest {
             body: get_einheit_verbrennung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitVerbrennung")
@@ -22558,7 +25074,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitKernkraftRequestSoapEnvelope::new(SoapGetEinheitKernkraftRequest {
             body: get_einheit_kernkraft_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitKernkraft")
@@ -22580,7 +25096,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitStromSpeicherRequestSoapEnvelope::new(SoapGetEinheitStromSpeicherRequest {
             body: get_einheit_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitStromSpeicher")
@@ -22602,7 +25118,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitStromVerbraucherRequestSoapEnvelope::new(SoapGetEinheitStromVerbraucherRequest {
             body: get_einheit_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitStromVerbraucher")
@@ -22624,7 +25140,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasErzeugerRequestSoapEnvelope::new(SoapGetEinheitGasErzeugerRequest {
             body: get_einheit_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasErzeuger")
@@ -22646,7 +25162,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasSpeicherRequestSoapEnvelope::new(SoapGetEinheitGasSpeicherRequest {
             body: get_einheit_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasSpeicher")
@@ -22668,7 +25184,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGasVerbraucherRequestSoapEnvelope::new(SoapGetEinheitGasVerbraucherRequest {
             body: get_einheit_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGasVerbraucher")
@@ -22690,7 +25206,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitGenehmigungRequestSoapEnvelope::new(SoapGetEinheitGenehmigungRequest {
             body: get_einheit_genehmigung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitGenehmigung")
@@ -22712,7 +25228,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeStromErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeStromErzeugerRequest {
             body: get_gefilterte_liste_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeStromErzeuger")
@@ -22734,7 +25250,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeStromVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeStromVerbraucherRequest {
             body: get_gefilterte_liste_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeStromVerbraucher")
@@ -22756,7 +25272,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeGasErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeGasErzeugerRequest {
             body: get_gefilterte_liste_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeGasErzeuger")
@@ -22778,7 +25294,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeGasVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeGasVerbraucherRequest {
             body: get_gefilterte_liste_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeGasVerbraucher")
@@ -22800,7 +25316,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenStromErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenStromErzeugerRequest {
             body: get_gefilterte_liste_lokationen_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenStromErzeuger")
@@ -22822,7 +25338,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenStromVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenStromVerbraucherRequest {
             body: get_gefilterte_liste_lokationen_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenStromVerbraucher")
@@ -22844,7 +25360,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenGasErzeugerRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenGasErzeugerRequest {
             body: get_gefilterte_liste_lokationen_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenGasErzeuger")
@@ -22866,7 +25382,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGefilterteListeLokationenGasVerbraucherRequestSoapEnvelope::new(SoapGetGefilterteListeLokationenGasVerbraucherRequest {
             body: get_gefilterte_liste_lokationen_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGefilterteListeLokationenGasVerbraucher")
@@ -22888,7 +25404,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetEinheitBiomasseRequestSoapEnvelope::new(SoapGetEinheitBiomasseRequest {
             body: get_einheit_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetEinheitBiomasse")
@@ -22910,7 +25426,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetStromSpeicherRequestSoapEnvelope::new(SoapGetStromSpeicherRequest {
             body: get_strom_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetStromSpeicher")
@@ -22932,7 +25448,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetGasSpeicherRequestSoapEnvelope::new(SoapGetGasSpeicherRequest {
             body: get_gas_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetGasSpeicher")
@@ -22954,7 +25470,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegWindRequestSoapEnvelope::new(SoapGetAnlageEegWindRequest {
             body: get_anlage_eeg_wind_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegWind")
@@ -22976,7 +25492,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegSolarRequestSoapEnvelope::new(SoapGetAnlageEegSolarRequest {
             body: get_anlage_eeg_solar_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegSolar")
@@ -22998,7 +25514,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegBiomasseRequestSoapEnvelope::new(SoapGetAnlageEegBiomasseRequest {
             body: get_anlage_eeg_biomasse_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegBiomasse")
@@ -23020,7 +25536,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegWasserRequestSoapEnvelope::new(SoapGetAnlageEegWasserRequest {
             body: get_anlage_eeg_wasser_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegWasser")
@@ -23042,7 +25558,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegSpeicherRequestSoapEnvelope::new(SoapGetAnlageEegSpeicherRequest {
             body: get_anlage_eeg_speicher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegSpeicher")
@@ -23064,7 +25580,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageEegGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapGetAnlageEegGeothermieGrubengasDruckentspannungRequest {
             body: get_anlage_eeg_geothermie_grubengas_druckentspannung_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageEegGeothermieGrubengasDruckentspannung")
@@ -23086,7 +25602,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetAnlageKwkRequestSoapEnvelope::new(SoapGetAnlageKwkRequest {
             body: get_anlage_kwk_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetAnlageKwk")
@@ -23108,7 +25624,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleLokationenRequestSoapEnvelope::new(SoapGetListeAlleLokationenRequest {
             body: get_liste_alle_lokationen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleLokationen")
@@ -23130,7 +25646,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeFreigegebeneLokationenRequestSoapEnvelope::new(SoapGetListeFreigegebeneLokationenRequest {
             body: get_liste_freigegebene_lokationen_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeFreigegebeneLokationen")
@@ -23152,7 +25668,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationStromErzeugerRequestSoapEnvelope::new(SoapGetLokationStromErzeugerRequest {
             body: get_lokation_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationStromErzeuger")
@@ -23174,7 +25690,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationStromVerbraucherRequestSoapEnvelope::new(SoapGetLokationStromVerbraucherRequest {
             body: get_lokation_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationStromVerbraucher")
@@ -23196,7 +25712,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationGasErzeugerRequestSoapEnvelope::new(SoapGetLokationGasErzeugerRequest {
             body: get_lokation_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationGasErzeuger")
@@ -23218,7 +25734,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetLokationGasVerbraucherRequestSoapEnvelope::new(SoapGetLokationGasVerbraucherRequest {
             body: get_lokation_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetLokationGasVerbraucher")
@@ -23294,7 +25810,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktStromErzeugerRequest) -> Self {
                 SetNetzanschlusspunktStromErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23336,7 +25852,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktStromErzeugerResponse) -> Self {
                 SetNetzanschlusspunktStromErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23377,7 +25893,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktStromVerbraucherRequest) -> Self {
                 SetNetzanschlusspunktStromVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23419,7 +25935,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktStromVerbraucherResponse) -> Self {
                 SetNetzanschlusspunktStromVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23460,7 +25976,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktGasErzeugerRequest) -> Self {
                 SetNetzanschlusspunktGasErzeugerRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23502,7 +26018,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktGasErzeugerResponse) -> Self {
                 SetNetzanschlusspunktGasErzeugerResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23543,7 +26059,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktGasVerbraucherRequest) -> Self {
                 SetNetzanschlusspunktGasVerbraucherRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23585,7 +26101,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapSetNetzanschlusspunktGasVerbraucherResponse) -> Self {
                 SetNetzanschlusspunktGasVerbraucherResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23626,7 +26142,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapDeleteNetzanschlusspunktRequest) -> Self {
                 DeleteNetzanschlusspunktRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23668,7 +26184,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapDeleteNetzanschlusspunktResponse) -> Self {
                 DeleteNetzanschlusspunktResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23709,7 +26225,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeMeineNetzanschlusspunkteRequest) -> Self {
                 GetListeMeineNetzanschlusspunkteRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23751,7 +26267,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeMeineNetzanschlusspunkteResponse) -> Self {
                 GetListeMeineNetzanschlusspunkteResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23792,7 +26308,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleNetzanschlusspunkteRequest) -> Self {
                 GetListeAlleNetzanschlusspunkteRequestSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23834,7 +26350,7 @@ use yaserde::{YaSerialize, YaDeserialize};
             pub fn new(body: SoapGetListeAlleNetzanschlusspunkteResponse) -> Self {
                 GetListeAlleNetzanschlusspunkteResponseSoapEnvelope {
                     encoding_style: SOAP_ENCODING.to_string(),
-                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
                     body,
                     urnattr: None,
                     xsiattr: None,
@@ -23847,7 +26363,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Netzanschlusspunkt {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -23872,7 +26388,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktStromErzeugerRequestSoapEnvelope::new(SoapSetNetzanschlusspunktStromErzeugerRequest {
             body: set_netzanschlusspunkt_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktStromErzeuger")
@@ -23894,7 +26410,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktStromVerbraucherRequestSoapEnvelope::new(SoapSetNetzanschlusspunktStromVerbraucherRequest {
             body: set_netzanschlusspunkt_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktStromVerbraucher")
@@ -23916,7 +26432,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktGasErzeugerRequestSoapEnvelope::new(SoapSetNetzanschlusspunktGasErzeugerRequest {
             body: set_netzanschlusspunkt_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktGasErzeuger")
@@ -23938,7 +26454,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktGasVerbraucherRequestSoapEnvelope::new(SoapSetNetzanschlusspunktGasVerbraucherRequest {
             body: set_netzanschlusspunkt_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktGasVerbraucher")
@@ -23960,7 +26476,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = DeleteNetzanschlusspunktRequestSoapEnvelope::new(SoapDeleteNetzanschlusspunktRequest {
             body: delete_netzanschlusspunkt_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "DeleteNetzanschlusspunkt")
@@ -23982,7 +26498,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeMeineNetzanschlusspunkteRequestSoapEnvelope::new(SoapGetListeMeineNetzanschlusspunkteRequest {
             body: get_liste_meine_netzanschlusspunkte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeMeineNetzanschlusspunkte")
@@ -24004,7 +26520,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleNetzanschlusspunkteRequestSoapEnvelope::new(SoapGetListeAlleNetzanschlusspunkteRequest {
             body: get_liste_alle_netzanschlusspunkte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleNetzanschlusspunkte")
@@ -24052,7 +26568,7 @@ use yaserde::{YaSerialize, YaDeserialize};
                 fn default() -> Self {
                     Netzanschlusspunkt12 {
                         client: reqwest::Client::new(),
-                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
                         credentials: Option::None,
                      }
                 }
@@ -24077,7 +26593,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktStromErzeugerRequestSoapEnvelope::new(SoapSetNetzanschlusspunktStromErzeugerRequest {
             body: set_netzanschlusspunkt_strom_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktStromErzeuger")
@@ -24099,7 +26615,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktStromVerbraucherRequestSoapEnvelope::new(SoapSetNetzanschlusspunktStromVerbraucherRequest {
             body: set_netzanschlusspunkt_strom_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktStromVerbraucher")
@@ -24121,7 +26637,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktGasErzeugerRequestSoapEnvelope::new(SoapSetNetzanschlusspunktGasErzeugerRequest {
             body: set_netzanschlusspunkt_gas_erzeuger_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktGasErzeuger")
@@ -24143,7 +26659,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = SetNetzanschlusspunktGasVerbraucherRequestSoapEnvelope::new(SoapSetNetzanschlusspunktGasVerbraucherRequest {
             body: set_netzanschlusspunkt_gas_verbraucher_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "SetNetzanschlusspunktGasVerbraucher")
@@ -24165,7 +26681,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = DeleteNetzanschlusspunktRequestSoapEnvelope::new(SoapDeleteNetzanschlusspunktRequest {
             body: delete_netzanschlusspunkt_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "DeleteNetzanschlusspunkt")
@@ -24187,7 +26703,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeMeineNetzanschlusspunkteRequestSoapEnvelope::new(SoapGetListeMeineNetzanschlusspunkteRequest {
             body: get_liste_meine_netzanschlusspunkte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeMeineNetzanschlusspunkte")
@@ -24209,7 +26725,7 @@ use yaserde::{YaSerialize, YaDeserialize};
 
         let __request = GetListeAlleNetzanschlusspunkteRequestSoapEnvelope::new(SoapGetListeAlleNetzanschlusspunkteRequest {
             body: get_liste_alle_netzanschlusspunkte_request,
-            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Common".to_string()),
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
         });            
         
         let (status, response) = self.send_soap_request(&__request, "GetListeAlleNetzanschlusspunkte")
@@ -24220,6 +26736,2140 @@ use yaserde::{YaSerialize, YaDeserialize};
                     })?;
 
         let r: GetListeAlleNetzanschlusspunkteResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}}
+
+            impl Mastrqs {
+                async fn send_soap_request<T: YaSerialize>(&self, request: &T, action: &str) -> SoapResponse {
+                    let body = to_string(request).expect("failed to generate xml");
+                    debug!("SOAP Request: {}", body);
+                    let mut req = self
+                        .client
+                        .post(&self.url)
+                        .body(body)
+                        .header("Content-Type", "text/xml")
+                        .header("Soapaction", action);
+                    if let Some(credentials) = &self.credentials {
+                        req = req.basic_auth(
+                            credentials.0.to_string(),
+                            Option::Some(credentials.1.to_string()),
+                        );
+                    }
+                    let res = req.send().await?;
+                    let status = res.status();
+                    debug!("SOAP Status: {}", status);
+                    let txt = res.text().await.unwrap_or_default();
+                    debug!("SOAP Response: {}", txt);
+                    Ok((status, txt))
+                }
+            }
+            #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiber", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitWindRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitWind", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitWindRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitWindRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitWindRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitWindRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitWindRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitWindRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitWindResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitWindResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitWindResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitWindResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitWindResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitWindResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitWindResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitWindResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitSolarRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitSolar", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitSolarRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitSolarRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitSolarRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitSolarRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitSolarRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitSolarRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitSolarResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitSolarResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitSolarResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitSolarResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitSolarResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitSolarResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitSolarResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitSolarResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitBiomasseRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitBiomasse", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitBiomasseRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitBiomasseRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitBiomasseRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitBiomasseResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitBiomasseResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitBiomasseResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitBiomasseResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitBiomasseResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitWasserRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitWasser", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitWasserRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitWasserRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitWasserRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitWasserRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitWasserRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitWasserRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitWasserResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitWasserResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitWasserResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitWasserResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitWasserResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitWasserResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitWasserResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitWasserResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennung", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicher", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucher", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeuger", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucher", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest {
+                        #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicher", default)]
+                        pub body: ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse {
+                    #[yaserde(rename = "SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse", default)]
+                    pub body: ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse,
+        }
+        
+        impl SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope {
+            pub fn new(body: SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse) -> Self {
+                SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsTicketBearbeiterZuweisenRequest {
+                        #[yaserde(rename = "MastrqsTicketBearbeiterZuweisen", default)]
+                        pub body: ports::MastrqsTicketBearbeiterZuweisenRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsTicketBearbeiterZuweisenRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsTicketBearbeiterZuweisenRequest,
+        }
+        
+        impl MastrqsTicketBearbeiterZuweisenRequestSoapEnvelope {
+            pub fn new(body: SoapMastrqsTicketBearbeiterZuweisenRequest) -> Self {
+                MastrqsTicketBearbeiterZuweisenRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsTicketBearbeiterZuweisenResponse {
+                    #[yaserde(rename = "MastrqsTicketBearbeiterZuweisenResponse", default)]
+                    pub body: ports::MastrqsTicketBearbeiterZuweisenResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsTicketBearbeiterZuweisenResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsTicketBearbeiterZuweisenResponse,
+        }
+        
+        impl MastrqsTicketBearbeiterZuweisenResponseSoapEnvelope {
+            pub fn new(body: SoapMastrqsTicketBearbeiterZuweisenResponse) -> Self {
+                MastrqsTicketBearbeiterZuweisenResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsStichwoerterAendernRequest {
+                        #[yaserde(rename = "MastrqsStichwoerterAendern", default)]
+                        pub body: ports::MastrqsStichwoerterAendernRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsStichwoerterAendernRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsStichwoerterAendernRequest,
+        }
+        
+        impl MastrqsStichwoerterAendernRequestSoapEnvelope {
+            pub fn new(body: SoapMastrqsStichwoerterAendernRequest) -> Self {
+                MastrqsStichwoerterAendernRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsStichwoerterAendernResponse {
+                    #[yaserde(rename = "MastrqsStichwoerterAendernResponse", default)]
+                    pub body: ports::MastrqsStichwoerterAendernResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsStichwoerterAendernResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsStichwoerterAendernResponse,
+        }
+        
+        impl MastrqsStichwoerterAendernResponseSoapEnvelope {
+            pub fn new(body: SoapMastrqsStichwoerterAendernResponse) -> Self {
+                MastrqsStichwoerterAendernResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsKorrekturvorschlagStornierenRequest {
+                        #[yaserde(rename = "MastrqsKorrekturvorschlagStornieren", default)]
+                        pub body: ports::MastrqsKorrekturvorschlagStornierenRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsKorrekturvorschlagStornierenRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsKorrekturvorschlagStornierenRequest,
+        }
+        
+        impl MastrqsKorrekturvorschlagStornierenRequestSoapEnvelope {
+            pub fn new(body: SoapMastrqsKorrekturvorschlagStornierenRequest) -> Self {
+                MastrqsKorrekturvorschlagStornierenRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapMastrqsKorrekturvorschlagStornierenResponse {
+                    #[yaserde(rename = "MastrqsKorrekturvorschlagStornierenResponse", default)]
+                    pub body: ports::MastrqsKorrekturvorschlagStornierenResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct MastrqsKorrekturvorschlagStornierenResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapMastrqsKorrekturvorschlagStornierenResponse,
+        }
+        
+        impl MastrqsKorrekturvorschlagStornierenResponseSoapEnvelope {
+            pub fn new(body: SoapMastrqsKorrekturvorschlagStornierenResponse) -> Self {
+                MastrqsKorrekturvorschlagStornierenResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetKorrekturVorschlagRequest {
+                        #[yaserde(rename = "GetKorrekturVorschlag", default)]
+                        pub body: ports::GetKorrekturVorschlagRequest,
+                        #[yaserde(attribute)]
+                        pub xmlns: Option<String>,
+                    }
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetKorrekturVorschlagRequestSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetKorrekturVorschlagRequest,
+        }
+        
+        impl GetKorrekturVorschlagRequestSoapEnvelope {
+            pub fn new(body: SoapGetKorrekturVorschlagRequest) -> Self {
+                GetKorrekturVorschlagRequestSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                    #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+                    pub struct SoapGetKorrekturVorschlagResponse {
+                    #[yaserde(rename = "GetKorrekturVorschlagResponse", default)]
+                    pub body: ports::GetKorrekturVorschlagResponse,
+                         #[yaserde(rename = "Fault", default)]
+                            pub fault: Option<SoapFault>,
+                            
+                }
+                #[derive(Debug, Default, YaSerialize, YaDeserialize)]
+        #[yaserde(
+            rename = "Envelope",
+            namespace = "soapenv: http://schemas.xmlsoap.org/soap/envelope/",
+            prefix = "soapenv"
+        )]
+        pub struct GetKorrekturVorschlagResponseSoapEnvelope {
+            #[yaserde(rename = "encodingStyle", prefix = "soapenv", attribute)]
+            pub encoding_style: String,
+            #[yaserde(rename = "tns", prefix = "xmlns", attribute)]
+            pub tnsattr: Option<String>,
+            #[yaserde(rename = "urn", prefix = "xmlns", attribute)]
+            pub urnattr: Option<String>,
+            #[yaserde(rename = "xsi", prefix = "xmlns", attribute)]
+            pub xsiattr: Option<String>,
+            #[yaserde(rename = "Header", prefix = "soapenv")]
+            pub header: Option<Header>,
+            #[yaserde(rename = "Body", prefix = "soapenv")]
+            pub body: SoapGetKorrekturVorschlagResponse,
+        }
+        
+        impl GetKorrekturVorschlagResponseSoapEnvelope {
+            pub fn new(body: SoapGetKorrekturVorschlagResponse) -> Self {
+                GetKorrekturVorschlagResponseSoapEnvelope {
+                    encoding_style: SOAP_ENCODING.to_string(),
+                    tnsattr: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+                    body,
+                    urnattr: None,
+                    xsiattr: None,
+                    header: None,
+                }
+            }
+        }        
+        
+                impl Default for Mastrqs {
+                fn default() -> Self {
+                    Mastrqs {
+                        client: reqwest::Client::new(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
+                        credentials: Option::None,
+                     }
+                }
+            }
+            impl Mastrqs {
+                pub fn new(url: &str, credentials: Option<(String,String)>) -> Self {
+                    Mastrqs {
+                        client: reqwest::Client::new(),
+                        url: url.to_string(),
+                        credentials,
+                    }
+                }
+        }
+        pub struct Mastrqs {
+                client: reqwest::Client,
+                url: String,
+                credentials: Option<(String,String)>
+                }
+                #[async_trait]
+	impl ports::Mastrqs for Mastrqs {
+	async fn set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber (&self, set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber_request: ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiber")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_wind (&self, set_mastrqs_korrektur_vorschlag_einheit_wind_request: ports::SetMastrqsKorrekturVorschlagEinheitWindRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitWindResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitWindRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_wind_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitWind")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitWindResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_solar (&self, set_mastrqs_korrektur_vorschlag_einheit_solar_request: ports::SetMastrqsKorrekturVorschlagEinheitSolarRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitSolarResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitSolarRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_solar_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitSolar")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitSolarResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_biomasse (&self, set_mastrqs_korrektur_vorschlag_einheit_biomasse_request: ports::SetMastrqsKorrekturVorschlagEinheitBiomasseRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitBiomasseResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitBiomasseRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_biomasse_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitBiomasse")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_wasser (&self, set_mastrqs_korrektur_vorschlag_einheit_wasser_request: ports::SetMastrqsKorrekturVorschlagEinheitWasserRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitWasserResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitWasserRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_wasser_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitWasser")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitWasserResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung (&self, set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request: ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_verbrennung (&self, set_mastrqs_korrektur_vorschlag_einheit_verbrennung_request: ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_verbrennung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitVerbrennung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_speicher_request: ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_speicher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasSpeicher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher_request: ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitStromVerbraucher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger_request: ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasErzeuger")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher_request: ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasVerbraucher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_speicher_request: ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_strom_speicher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitStromSpeicher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_ticket_bearbeiter_zuweisen (&self, mastrqs_ticket_bearbeiter_zuweisen_request: ports::MastrqsTicketBearbeiterZuweisenRequest) -> Result<ports::MastrqsTicketBearbeiterZuweisenResponse, Option<SoapFault>> {
+
+        let __request = MastrqsTicketBearbeiterZuweisenRequestSoapEnvelope::new(SoapMastrqsTicketBearbeiterZuweisenRequest {
+            body: mastrqs_ticket_bearbeiter_zuweisen_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsTicketBearbeiterZuweisen")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsTicketBearbeiterZuweisenResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_stichwoerter_aendern (&self, mastrqs_stichwoerter_aendern_request: ports::MastrqsStichwoerterAendernRequest) -> Result<ports::MastrqsStichwoerterAendernResponse, Option<SoapFault>> {
+
+        let __request = MastrqsStichwoerterAendernRequestSoapEnvelope::new(SoapMastrqsStichwoerterAendernRequest {
+            body: mastrqs_stichwoerter_aendern_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsStichwoerterAendern")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsStichwoerterAendernResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_korrekturvorschlag_stornieren (&self, mastrqs_korrekturvorschlag_stornieren_request: ports::MastrqsKorrekturvorschlagStornierenRequest) -> Result<ports::MastrqsKorrekturvorschlagStornierenResponse, Option<SoapFault>> {
+
+        let __request = MastrqsKorrekturvorschlagStornierenRequestSoapEnvelope::new(SoapMastrqsKorrekturvorschlagStornierenRequest {
+            body: mastrqs_korrekturvorschlag_stornieren_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsKorrekturvorschlagStornieren")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsKorrekturvorschlagStornierenResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn get_korrektur_vorschlag (&self, get_korrektur_vorschlag_request: ports::GetKorrekturVorschlagRequest) -> Result<ports::GetKorrekturVorschlagResponse, Option<SoapFault>> {
+
+        let __request = GetKorrekturVorschlagRequestSoapEnvelope::new(SoapGetKorrekturVorschlagRequest {
+            body: get_korrektur_vorschlag_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlag")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetKorrekturVorschlagResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}}
+
+            impl Mastrqs12 {
+                async fn send_soap_request<T: YaSerialize>(&self, request: &T, action: &str) -> SoapResponse {
+                    let body = to_string(request).expect("failed to generate xml");
+                    debug!("SOAP Request: {}", body);
+                    let mut req = self
+                        .client
+                        .post(&self.url)
+                        .body(body)
+                        .header("Content-Type", "text/xml")
+                        .header("Soapaction", action);
+                    if let Some(credentials) = &self.credentials {
+                        req = req.basic_auth(
+                            credentials.0.to_string(),
+                            Option::Some(credentials.1.to_string()),
+                        );
+                    }
+                    let res = req.send().await?;
+                    let status = res.status();
+                    debug!("SOAP Status: {}", status);
+                    let txt = res.text().await.unwrap_or_default();
+                    debug!("SOAP Response: {}", txt);
+                    Ok((status, txt))
+                }
+            }
+            impl Default for Mastrqs12 {
+                fn default() -> Self {
+                    Mastrqs12 {
+                        client: reqwest::Client::new(),
+                        url: "https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string(),
+                        credentials: Option::None,
+                     }
+                }
+            }
+            impl Mastrqs12 {
+                pub fn new(url: &str, credentials: Option<(String,String)>) -> Self {
+                    Mastrqs12 {
+                        client: reqwest::Client::new(),
+                        url: url.to_string(),
+                        credentials,
+                    }
+                }
+        }
+        pub struct Mastrqs12 {
+                client: reqwest::Client,
+                url: String,
+                credentials: Option<(String,String)>
+                }
+                #[async_trait]
+	impl ports::Mastrqs for Mastrqs12 {
+	async fn set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber (&self, set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber_request: ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_anlagenbetreiber_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiber")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitAnlagenbetreiberResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_wind (&self, set_mastrqs_korrektur_vorschlag_einheit_wind_request: ports::SetMastrqsKorrekturVorschlagEinheitWindRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitWindResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitWindRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitWindRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_wind_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitWind")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitWindResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_solar (&self, set_mastrqs_korrektur_vorschlag_einheit_solar_request: ports::SetMastrqsKorrekturVorschlagEinheitSolarRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitSolarResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitSolarRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitSolarRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_solar_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitSolar")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitSolarResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_biomasse (&self, set_mastrqs_korrektur_vorschlag_einheit_biomasse_request: ports::SetMastrqsKorrekturVorschlagEinheitBiomasseRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitBiomasseResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitBiomasseRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitBiomasseRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_biomasse_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitBiomasse")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitBiomasseResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_wasser (&self, set_mastrqs_korrektur_vorschlag_einheit_wasser_request: ports::SetMastrqsKorrekturVorschlagEinheitWasserRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitWasserResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitWasserRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitWasserRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_wasser_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitWasser")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitWasserResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung (&self, set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request: ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_geothermie_grubengas_druckentspannung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGeothermieGrubengasDruckentspannungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_verbrennung (&self, set_mastrqs_korrektur_vorschlag_einheit_verbrennung_request: ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitVerbrennungResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitVerbrennungRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitVerbrennungRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_verbrennung_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitVerbrennung")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitVerbrennungResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_speicher_request: ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasSpeicherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasSpeicherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_speicher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasSpeicher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasSpeicherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher_request: ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitStromVerbraucherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_strom_verbraucher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitStromVerbraucher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitStromVerbraucherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger_request: ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasErzeugerRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasErzeugerRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_erzeuger_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasErzeuger")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasErzeugerResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher (&self, set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher_request: ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitGasVerbraucherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_gas_verbraucher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitGasVerbraucher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitGasVerbraucherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn set_mastrqs_korrektur_vorschlag_einheit_strom_speicher (&self, set_mastrqs_korrektur_vorschlag_einheit_strom_speicher_request: ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest) -> Result<ports::SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponse, Option<SoapFault>> {
+
+        let __request = SetMastrqsKorrekturVorschlagEinheitStromSpeicherRequestSoapEnvelope::new(SoapSetMastrqsKorrekturVorschlagEinheitStromSpeicherRequest {
+            body: set_mastrqs_korrektur_vorschlag_einheit_strom_speicher_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "SetMastrqsKorrekturVorschlagEinheitStromSpeicher")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: SetMastrqsKorrekturVorschlagEinheitStromSpeicherResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_ticket_bearbeiter_zuweisen (&self, mastrqs_ticket_bearbeiter_zuweisen_request: ports::MastrqsTicketBearbeiterZuweisenRequest) -> Result<ports::MastrqsTicketBearbeiterZuweisenResponse, Option<SoapFault>> {
+
+        let __request = MastrqsTicketBearbeiterZuweisenRequestSoapEnvelope::new(SoapMastrqsTicketBearbeiterZuweisenRequest {
+            body: mastrqs_ticket_bearbeiter_zuweisen_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsTicketBearbeiterZuweisen")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsTicketBearbeiterZuweisenResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_stichwoerter_aendern (&self, mastrqs_stichwoerter_aendern_request: ports::MastrqsStichwoerterAendernRequest) -> Result<ports::MastrqsStichwoerterAendernResponse, Option<SoapFault>> {
+
+        let __request = MastrqsStichwoerterAendernRequestSoapEnvelope::new(SoapMastrqsStichwoerterAendernRequest {
+            body: mastrqs_stichwoerter_aendern_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsStichwoerterAendern")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsStichwoerterAendernResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn mastrqs_korrekturvorschlag_stornieren (&self, mastrqs_korrekturvorschlag_stornieren_request: ports::MastrqsKorrekturvorschlagStornierenRequest) -> Result<ports::MastrqsKorrekturvorschlagStornierenResponse, Option<SoapFault>> {
+
+        let __request = MastrqsKorrekturvorschlagStornierenRequestSoapEnvelope::new(SoapMastrqsKorrekturvorschlagStornierenRequest {
+            body: mastrqs_korrekturvorschlag_stornieren_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "MastrqsKorrekturvorschlagStornieren")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: MastrqsKorrekturvorschlagStornierenResponseSoapEnvelope = from_str(&response).map_err(|err| {
+                        warn!("Failed to unmarshal SOAP response: {:?}", err);
+                        None
+                    })?;
+        if status.is_success() {
+            Ok(r.body.body)
+        } else {
+            Err(r.body.fault)
+        }}	async fn get_korrektur_vorschlag (&self, get_korrektur_vorschlag_request: ports::GetKorrekturVorschlagRequest) -> Result<ports::GetKorrekturVorschlagResponse, Option<SoapFault>> {
+
+        let __request = GetKorrekturVorschlagRequestSoapEnvelope::new(SoapGetKorrekturVorschlagRequest {
+            body: get_korrektur_vorschlag_request,
+            xmlns: Option::Some("https://www.marktstammdatenregister.de/Services/Public/1_2/Modelle/Mastrqs".to_string()),
+        });            
+        
+        let (status, response) = self.send_soap_request(&__request, "GetKorrekturVorschlag")
+                    .await
+                    .map_err(|err| {
+                        warn!("Failed to send SOAP request: {:?}", err);
+                        None
+                    })?;
+
+        let r: GetKorrekturVorschlagResponseSoapEnvelope = from_str(&response).map_err(|err| {
                         warn!("Failed to unmarshal SOAP response: {:?}", err);
                         None
                     })?;
