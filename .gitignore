@@ -12,3 +12,13 @@
 /server/var/
 /server/vendor/
 ###< symfony/framework-bundle ###
+
+###> symfony/framework-bundle ###
+/importer/.env.local
+/importer/.env.local.php
+/importer/.env.*.local
+/importer/config/secrets/prod/prod.decrypt.private.php
+/importer/public/bundles/
+/importer/var/
+/importer/vendor/
+###< symfony/framework-bundle ###
